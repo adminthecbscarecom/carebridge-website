@@ -243,29 +243,26 @@ nav a:hover::after {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background:
-    radial-gradient(circle at 20% 50%, rgba(15, 166, 166, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 30%, rgba(8, 38, 95, 0.08) 0%, transparent 40%),
-    linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%),
-    url("/images/hero-care.png") center right / cover no-repeat;
 }
 
-.hero::after {
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-bg::after {
   content: '';
   position: absolute;
-  bottom: -80px;
-  right: -80px;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(15, 166, 166, 0.10), transparent 70%);
-  border-radius: 50%;
-  animation: float 8s ease-in-out infinite;
-  z-index: 0;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(8, 38, 95, 0.85) 0%, rgba(8, 38, 95, 0.4) 50%, rgba(8, 38, 95, 0.1) 100%);
+  z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
   min-height: 780px;
@@ -273,7 +270,7 @@ nav a:hover::after {
 
 .hero-panel {
   max-width: 680px;
-  padding: 60px 0;
+  padding: 40px 0;
   animation: fadeInUp 1s ease forwards;
   opacity: 0;
 }
@@ -283,9 +280,9 @@ nav a:hover::after {
   padding: 10px 20px;
   margin-bottom: 28px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.9);
   color: var(--deep-navy);
   font-size: 13px;
   font-weight: 800;
@@ -686,19 +683,37 @@ p {
   margin-top: 40px;
 }
 
-.story-image {
-  overflow: hidden;
+.story-images-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   border-radius: var(--radius-xl);
+  overflow: hidden;
   border: 1px solid rgba(255,255,255,0.3);
   box-shadow: var(--shadow-lg);
-  background: #e2e8f0;
+  background: #f8fafc;
   min-height: 560px;
+  padding: 0;
 }
 
-.story-image img {
+.story-img-container {
+  flex: 1;
+  width: 100%;
+  min-height: 260px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+}
+
+.uncropped-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .story-list {
@@ -851,7 +866,8 @@ footer {
   .service-grid, .credential-grid { grid-template-columns: 1fr 1fr; }
   .mission-vision { grid-template-columns: 1fr; }
   .stories-layout { grid-template-columns: 1fr; }
-  .story-image { min-height: 320px; }
+  .story-images-wrapper { min-height: auto; }
+  .story-img-container { min-height: 200px; }
   .image-card img { min-height: 300px; }
   .footer-inner { flex-direction: column; text-align: center; }
   .career-card { padding: 32px; }
