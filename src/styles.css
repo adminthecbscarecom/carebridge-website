@@ -302,7 +302,7 @@ h1 {
 .hero-text {
   margin-top: 24px;
   max-width: 580px;
-  color: var(--slate);
+  color: #ffffff;
   font-size: 19px;
   line-height: 1.7;
   font-weight: 400;
@@ -316,16 +316,24 @@ h1 {
 }
 
 .trust-row span {
-  padding: 10px 20px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  color: var(--slate);
+  padding: 10px 18px;
+  border-radius: 4px;
+  background: rgba(15, 166, 166, 0.85);
+  backdrop-filter: none;
+  border: none;
+  color: #ffffff;
   font-size: 13px;
-  font-weight: 600;
-  box-shadow: 0 8px 20px rgba(8, 38, 95, 0.04);
-  letter-spacing: 0.01em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: none;
+  transition: none;
+  cursor: default;
+}
+
+/* Optional hover effect removed – they look like info labels, not links */
+.trust-row span:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 /* ===== SECTIONS ===== */
