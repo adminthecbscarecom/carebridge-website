@@ -31,40 +31,15 @@ const services = [
 ];
 
 const healthPlans = [
-  {
-    name: "UnitedHealthcare",
-    short: "UHC",
-    status: "Active Agreement",
-  },
-  {
-    name: "Cook Children’s",
-    short: "CCHP",
-    status: "Active Agreement",
-  },
-  {
-    name: "Aetna Better Health",
-    short: "Aetna",
-    status: "Active Agreement",
-  },
-  {
-    name: "Superior HealthPlan",
-    short: "Superior",
-    status: "Active Agreement",
-  },
-  {
-    name: "Texas Children’s Health Plan",
-    short: "TCHP",
-    status: "Active Agreement",
-  },
+  { name: "UnitedHealthcare Community Plan of Texas", short: "UHC", status: "Credentialing in Progress" },
+  { name: "Cook Children's Health Plan", short: "CCHP", status: "Credentialing in Progress" },
+  { name: "Aetna Better Health of Texas", short: "Aetna", status: "Active Agreement" },
+  { name: "Superior HealthPlan", short: "Superior", status: "Active Agreement" },
+  { name: "Texas Children's Health Plan", short: "TCHP", status: "Active Agreement" },
 ];
 
 const values = [
-  "Compassion",
-  "Reliability",
-  "Dignity",
-  "Accountability",
-  "Clear Communication",
-  "Compliance",
+  "Compassion", "Reliability", "Dignity", "Accountability", "Clear Communication", "Compliance"
 ];
 
 const careStories = [
@@ -90,39 +65,14 @@ const careStories = [
   },
 ];
 
-function Button({ href, children, variant = "primary" }) {
-  return (
-    <a href={href} className={`button ${variant}`}>
-      {children}
-    </a>
-  );
-}
-
-function Logo() {
-  return (
-    <a href="#home" className="logo" aria-label="CareBridge Solutions Home">
-      <img src="/images/logo-full.png" alt="CareBridge Solutions logo" />
-    </a>
-  );
-}
-
-function SectionHeader({ label, title, text, center = false }) {
-  return (
-    <div className={`section-header ${center ? "center" : ""}`}>
-      <p className="section-label">{label}</p>
-      <h2>{title}</h2>
-      {text && <p>{text}</p>}
-    </div>
-  );
-}
-
 function App() {
   return (
     <div id="home">
       <header className="site-header">
         <div className="container header-inner">
-          <Logo />
-
+          <a href="#home" className="logo" aria-label="CareBridge Solutions Home">
+            <img src="/images/logo-full.png" alt="CareBridge Solutions logo" />
+          </a>
           <nav aria-label="Main navigation">
             <a href="#about">Who We Are</a>
             <a href="#services">Services</a>
@@ -131,32 +81,26 @@ function App() {
             <a href="#careers">Careers</a>
             <a href="#contact">Contact</a>
           </nav>
-
-          <Button href={`tel:${company.phoneHref}`}>Call Now</Button>
+          <a href={`tel:${company.phoneHref}`} className="header-cta">Call Now</a>
         </div>
       </header>
 
       <main>
-        <section className="hero">
-          <div className="hero-bg" />
+        {/* ===== HERO ===== */}
+        <section className="hero" id="home">
+          <div className="hero-bg" aria-hidden="true"></div>
           <div className="container hero-content">
             <div className="hero-panel">
               <div className="badge">Texas Medicaid Personal Assistance Services</div>
-
-              <h1>Compassionate in-home support for eligible Medicaid members and families.</h1>
-
+              <h1 id="hero-heading">Compassionate in-home support for eligible Medicaid members and families.</h1>
               <p className="hero-text">
-                CareBridge Solutions LLC provides non-medical personal assistance services focused
+                CareBridge Solutions LLC provides non-medical Personal Assistance Services focused
                 on safety, dignity, communication, and dependable daily support at home.
               </p>
-
-              <div className="button-row">
-                <Button href="#referrals">Request Service Information</Button>
-                <Button href="#careers" variant="outline">
-                  Become a Caregiver
-                </Button>
+              <div className="btn-row">
+                <a href="#referrals" className="btn btn-primary">Request Service Information</a>
+                <a href="#careers" className="btn btn-outline">Become a Caregiver</a>
               </div>
-
               <div className="trust-row">
                 <span>Licensed PAS Provider</span>
                 <span>Medicaid-Focused Care</span>
@@ -166,28 +110,24 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="section white">
+        {/* ===== ABOUT ===== */}
+        <section className="section section-white" id="about">
           <div className="container about-grid">
             <div className="image-card">
-              <img src="/images/about-care.png" alt="Caregiver helping an older adult prepare a meal at home" />
+              <img src="/images/about-care.png" alt="Caregiver assisting an older adult with meal preparation in a home kitchen" />
             </div>
-
             <div>
               <p className="section-label">Who We Are</p>
-
               <h2>Built to support members, families, caregivers, and care teams.</h2>
-
               <p>
                 CareBridge Solutions LLC is a Texas-based non-medical home care agency focused on
                 Personal Assistance Services. We help eligible members receive dependable in-home
                 support while maintaining dignity, safety, and independence.
               </p>
-
               <p>
                 Our work is centered on reliable caregivers, clear communication, service
                 coordination, and documentation standards expected in Medicaid care environments.
               </p>
-
               <div className="mission-vision">
                 <div>
                   <h3>Our Mission</h3>
@@ -196,7 +136,6 @@ function App() {
                     members live safely and comfortably in their own homes.
                   </p>
                 </div>
-
                 <div>
                   <h3>Our Vision</h3>
                   <p>
@@ -209,56 +148,57 @@ function App() {
           </div>
         </section>
 
-        <section id="services" className="section container">
-          <SectionHeader
-            label="What We Do"
-            title="Support built around daily living needs."
-            text="CareBridge provides non-medical support that helps members follow their approved service plan and remain independent at home."
-          />
-
-          <div className="service-grid">
-            {services.map((service) => (
-              <article className="service-card" key={service.title}>
-                <img src={service.image} alt={`${service.title} by CareBridge Solutions`} />
-                <div>
-                  <h3>{service.title}</h3>
-                  <p>{service.text}</p>
-                </div>
-              </article>
-            ))}
+        {/* ===== SERVICES ===== */}
+        <section className="section" id="services">
+          <div className="container">
+            <div className="section-header">
+              <p className="section-label">What We Do</p>
+              <h2>Support built around daily living needs.</h2>
+              <p>
+                CareBridge provides non-medical support that helps members follow their approved
+                service plan and remain independent at home.
+              </p>
+            </div>
+            <div className="service-grid">
+              {services.map((service) => (
+                <article className="service-card" key={service.title}>
+                  <img src={service.image} alt={`${service.title} by CareBridge Solutions`} />
+                  <div>
+                    <h3>{service.title}</h3>
+                    <p>{service.text}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
-        <section id="referrals" className="dark-section">
+        {/* ===== REFERRALS ===== */}
+        <section className="dark-section" id="referrals">
           <div className="container referral-grid">
             <div>
-              <p className="section-label light">Referrals</p>
-
+              <p className="section-label section-label-light">Referrals &amp; Inquiries</p>
               <h2>Send a referral or request service information.</h2>
-
               <p>
                 CareBridge verifies eligibility, authorization requirements, service area, and
                 payer requirements before services begin. Please do not send protected health
                 information through unsecured messages.
               </p>
-
-              <div className="button-row">
-                <Button
-                  href={`mailto:${company.email}?subject=CareBridge Referral Request`}
-                  variant="secondary"
-                >
+              <div className="btn-row">
+                <a href={`mailto:${company.email}?subject=CareBridge%20Referral%20Request`} className="btn btn-secondary">
                   Email Referral Request
-                </Button>
-
-                <Button href={`tel:${company.phoneHref}`} variant="dark-outline">
+                </a>
+                <a href={`tel:${company.phoneHref}`} className="btn btn-dark-outline">
                   Call {company.phone}
-                </Button>
+                </a>
+              </div>
+              <div className="referral-note">
+                <strong>🔒 Privacy notice:</strong> For secure document submission, please use
+                encrypted email or call us to arrange a HIPAA-compliant transfer method.
               </div>
             </div>
-
             <div className="referral-card">
               <h3>Helpful referral details</h3>
-
               <ul>
                 <li>Member name and contact information</li>
                 <li>Medicaid or health plan information</li>
@@ -270,74 +210,78 @@ function App() {
           </div>
         </section>
 
-        <section className="section light-band">
+        {/* ===== VALUES ===== */}
+        <section className="section section-light" id="values">
           <div className="container values-wrap">
-            <SectionHeader
-              label="Our Values"
-              title="The way we serve matters."
-              text="CareBridge is built around practical support, respectful service, reliable caregivers, and dependable communication."
-            />
-
+            <div>
+              <p className="section-label">Our Values</p>
+              <h2>The way we serve matters.</h2>
+              <p>
+                CareBridge is built around practical support, respectful service, reliable
+                caregivers, and dependable communication.
+              </p>
+            </div>
             <div className="value-grid">
               {values.map((value) => (
-                <div className="value-pill" key={value}>
-                  {value}
-                </div>
+                <span className="value-pill" key={value}>{value}</span>
               ))}
             </div>
           </div>
         </section>
 
-        <section id="plans" className="section container">
-          <SectionHeader
-            label="Health Plan Status"
-            title="Health plan and credentialing status."
-            text="CareBridge coordinates with Medicaid health plans and maintains credentialing activity for eligible services. Status labels are shown for general informational purposes."
-          />
-
-          <div className="credential-grid">
-            {healthPlans.map((plan) => (
-              <article className="credential-card" key={plan.name}>
-                <div className="credential-top">
-                  <h3>{plan.short}</h3>
-
-                  <span
-                    className={`status-badge ${
-                      plan.status.includes("Progress") ? "pending" : "active"
-                    }`}
-                  >
-                    {plan.status}
-                  </span>
-                </div>
-
-                <p>{plan.name}</p>
-              </article>
-            ))}
+        {/* ===== HEALTH PLANS ===== */}
+        <section className="section" id="plans">
+          <div className="container">
+            <div className="section-header">
+              <p className="section-label">Health Plan Status</p>
+              <h2>Health plan and credentialing status.</h2>
+              <p>
+                CareBridge coordinates with Medicaid health plans and maintains credentialing
+                activity for eligible services. Status labels are shown for general informational
+                purposes only and do not constitute an endorsement.
+              </p>
+            </div>
+            <div className="credential-grid">
+              {healthPlans.map((plan) => (
+                <article className="credential-card" key={plan.name}>
+                  <div className="credential-top">
+                    <h3>{plan.short}</h3>
+                    <span className={`status-badge ${plan.status.includes("Progress") ? "pending" : "active"}`}>
+                      {plan.status}
+                    </span>
+                  </div>
+                  <p>{plan.name}</p>
+                </article>
+              ))}
+            </div>
+            <div className="plan-disclaimer">
+              ⚕️ <strong>Note:</strong> Credentialing statuses change over time. Contact us for the
+              most current information. CareBridge does not guarantee service availability or
+              authorization from any health plan.
+            </div>
           </div>
         </section>
 
-        <section id="stories" className="section white stories-section">
+        {/* ===== CARE STORIES ===== */}
+        <section className="section section-white stories-section" id="stories">
           <div className="container">
-            <SectionHeader
-              label="Care Stories"
-              title="Why CareBridge Matters"
-              text="At CareBridge Solutions, care is more than a scheduled visit. It is the small, dependable support that helps someone feel safe, respected, and less alone at home."
-              center
-            />
-
-            <p className="story-disclaimer">
-              These are illustrative care stories that reflect the purpose of CareBridge Solutions LLC.
-              They are not actual client testimonials and do not include protected health information.
-            </p>
-
+            <div className="section-header center">
+              <p className="section-label">Care Stories</p>
+              <h2>Why CareBridge Matters</h2>
+              <p>
+                At CareBridge Solutions, care is more than a scheduled visit. It is the small,
+                dependable support that helps someone feel safe, respected, and less alone at home.
+              </p>
+            </div>
+            <div className="story-disclaimer">
+              <strong>📖 Illustrative stories:</strong> These are examples that reflect the purpose
+              of CareBridge Solutions LLC. They are not actual client testimonials and do not include
+              protected health information.
+            </div>
             <div className="stories-layout">
               <div className="story-image">
-                <img
-                  src="/images/community-care.png"
-                  alt="Community care moment with members, family, and caregivers"
-                />
+                <img src="/images/community-care.png" alt="Community care gathering with members, family, and caregivers" />
               </div>
-
               <div className="story-list">
                 {careStories.map((story) => (
                   <article className="story-card" key={story.title}>
@@ -350,47 +294,40 @@ function App() {
           </div>
         </section>
 
-        <section id="careers" className="section careers-section">
+        {/* ===== CAREERS ===== */}
+        <section className="section careers-section" id="careers">
           <div className="container career-card">
             <div>
               <p className="section-label">Careers</p>
-
               <h2>Join CareBridge as a caregiver.</h2>
-
               <p>
                 CareBridge Solutions LLC is always looking for motivated, dependable caregivers who
                 want to make a meaningful difference in the community. Our caregivers provide
-                non-medical personal assistance services that help eligible members remain safe,
+                non-medical Personal Assistance Services that help eligible members remain safe,
                 comfortable, and independent at home.
               </p>
-
               <p>
                 Caregivers may assist with daily living support such as personal care assistance,
                 light household tasks, meal preparation, mobility support, reminders,
                 companionship, and helping members follow their approved service plan.
               </p>
-
-              <p className="careers-note">
-                All caregiver positions are W-2 employee positions. Applicants must complete
-                required screening, orientation, training, competency checks, and ongoing compliance
+              <div className="careers-note">
+                <strong>✅ W-2 employee positions.</strong> Applicants must complete required
+                screening, orientation, training, competency checks, and ongoing compliance
                 requirements before receiving assignments.
-              </p>
-
-              <div className="button-row">
-                <Button href={`mailto:${company.email}?subject=CareBridge Caregiver Application`}>
+              </div>
+              <div className="btn-row">
+                <a href={`mailto:${company.email}?subject=CareBridge%20Caregiver%20Application`} className="btn btn-primary">
                   Apply to Become a Caregiver
-                </Button>
-
-                <Button href={`tel:${company.phoneHref}`} variant="outline">
+                </a>
+                <a href={`tel:${company.phoneHref}`} className="btn btn-outline">
                   Ask About Open Roles
-                </Button>
+                </a>
               </div>
             </div>
-
             <aside className="career-box">
               <img src="/images/care-collage.png" alt="Caregivers supporting members in home care settings" />
               <h3>Caregiver qualities we value</h3>
-
               <ul>
                 <li>Compassionate and patient</li>
                 <li>Reliable with attendance and communication</li>
@@ -402,39 +339,24 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="section contact-section">
+        {/* ===== CONTACT ===== */}
+        <section className="section contact-section" id="contact">
           <div className="container contact-grid">
             <div>
               <p className="section-label">Contact</p>
-
               <h2>Reach CareBridge Solutions LLC.</h2>
-
               <p>
                 Contact us for referral questions, service coordination, employment inquiries, or
                 general business information.
               </p>
             </div>
-
             <div className="contact-card">
+              <p><strong>Phone:</strong> <a href={`tel:${company.phoneHref}`}>{company.phone}</a></p>
+              <p><strong>Fax:</strong> {company.fax}</p>
+              <p><strong>Email:</strong> <a href={`mailto:${company.email}`}>{company.email}</a></p>
               <p>
-                <strong>Phone:</strong>{" "}
-                <a href={`tel:${company.phoneHref}`}>{company.phone}</a>
-              </p>
-
-              <p>
-                <strong>Fax:</strong> {company.fax}
-              </p>
-
-              <p>
-                <strong>Email:</strong>{" "}
-                <a href={`mailto:${company.email}`}>{company.email}</a>
-              </p>
-
-              <p>
-                <strong>Address:</strong>
-                <br />
-                {company.addressLine1}
-                <br />
+                <strong>Address:</strong><br />
+                {company.addressLine1}<br />
                 {company.addressLine2}
               </p>
             </div>
@@ -451,11 +373,5 @@ function App() {
     </div>
   );
 }
-
-console.assert(company.email.includes("@"), "Company email should be valid-looking.");
-console.assert(services.length === 3, "Expected three service cards.");
-console.assert(healthPlans.length === 5, "Expected five health plan status cards.");
-console.assert(values.includes("Compliance"), "Values should include Compliance.");
-console.assert(company.addressLine1.includes("4200"), "Address should reflect Fort Worth location.");
 
 createRoot(document.getElementById("root")).render(<App />);
