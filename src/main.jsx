@@ -31,9 +31,9 @@ const services = [
 ];
 
 const healthPlans = [
-  { name: "UnitedHealthcare Community Plan", short: "UHC", status: "Active Agreement" },
-  { name: "Cook Children's Health Plan", short: "CCHP", status: "Active Agreement" },
-  { name: "Aetna Better Health", short: "Aetna", status: "Active Agreement" },
+  { name: "UnitedHealthcare Community Plan of Texas", short: "UHC", status: "Credentialing in Progress" },
+  { name: "Cook Children's Health Plan", short: "CCHP", status: "Credentialing in Progress" },
+  { name: "Aetna Better Health of Texas", short: "Aetna", status: "Active Agreement" },
   { name: "Superior HealthPlan", short: "Superior", status: "Active Agreement" },
   { name: "Texas Children's Health Plan", short: "TCHP", status: "Active Agreement" },
 ];
@@ -88,7 +88,9 @@ function App() {
       <main>
         {/* ===== HERO ===== */}
         <section className="hero" id="home">
-          <div className="hero-bg" aria-hidden="true"></div>
+          <div className="hero-bg">
+            <img src="/images/hero-care.png" alt="Caregiver helping a senior in a home setting" />
+          </div>
           <div className="container hero-content">
             <div className="hero-panel">
               <div className="badge">Texas Medicaid Personal Assistance Services</div>
@@ -279,8 +281,13 @@ function App() {
               protected health information.
             </div>
             <div className="stories-layout">
-              <div className="story-image">
-                <img src="/images/community-care.png" alt="Community care gathering with members, family, and caregivers" />
+              <div className="story-images-wrapper">
+                <div className="story-img-container">
+                  <img src="/images/community-care.png" alt="Community care gathering" className="uncropped-img" />
+                </div>
+                <div className="story-img-container">
+                  <img src="/images/community-all-care.png" alt="Community all-care gathering" className="uncropped-img" />
+                </div>
               </div>
               <div className="story-list">
                 {careStories.map((story) => (
