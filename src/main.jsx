@@ -31,9 +31,9 @@ const services = [
 ];
 
 const healthPlans = [
-  { name: "UnitedHealthcare Community Plan of Texas", short: "UHC", status: "Credentialing in Progress" },
-  { name: "Cook Children's Health Plan", short: "CCHP", status: "Credentialing in Progress" },
-  { name: "Aetna Better Health of Texas", short: "Aetna", status: "Active Agreement" },
+  { name: "UnitedHealthcare Community Plan", short: "UHC", status: "Active Agreement" },
+  { name: "Cook Children's Health Plan", short: "CCHP", status: "Active Agreement" },
+  { name: "Aetna Better Health", short: "Aetna", status: "Active Agreement" },
   { name: "Superior HealthPlan", short: "Superior", status: "Active Agreement" },
   { name: "Texas Children's Health Plan", short: "TCHP", status: "Active Agreement" },
 ];
