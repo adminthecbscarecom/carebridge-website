@@ -32,17 +32,17 @@ const services = [
 
 const healthPlans = [
   {
-    name: "UnitedHealthcare Community Plan of Texas",
+    name: "UnitedHealthcare",
     short: "UHC",
-    status: "Credentialing in Progress",
+    status: "Active Agreement",
   },
   {
-    name: "Cook Children’s Health Plan",
+    name: "Cook Children’s",
     short: "CCHP",
-    status: "Credentialing in Progress",
+    status: "Active Agreement",
   },
   {
-    name: "Aetna Better Health of Texas",
+    name: "Aetna Better Health",
     short: "Aetna",
     status: "Active Agreement",
   },
