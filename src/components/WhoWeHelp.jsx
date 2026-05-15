@@ -6,7 +6,7 @@ export function WhoWeHelp() {
   return (
     <section className="section section-cream" id="who-we-help" aria-labelledby="who-heading">
       <div className="container">
-        <AnimatedSection className="section-header">
+        <AnimatedSection className="section-header prose">
           <h2 id="who-heading">Helping Families Find Reliable Support at Home</h2>
           <p>
             CareBridge supports eligible Medicaid members who need help with daily living activities,

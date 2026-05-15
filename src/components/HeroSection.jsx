@@ -11,11 +11,12 @@ export function HeroSection() {
           <p className="hero-eyebrow">Texas Medicaid · Personal Assistance Services</p>
           <h1 id="hero-heading">Reliable Texas Medicaid Personal Assistance Services at Home</h1>
           <p className="hero-lead">
-            CareBridge Solutions helps eligible Medicaid members receive dependable, non-medical in-home
-            support with daily living, personal care, and attendant services.
+            CareBridge Solutions helps eligible Medicaid members receive dependable, non-medical
+            in-home support with daily living, personal care, and attendant services.
           </p>
           <p className="hero-trust">
-            Licensed Texas Personal Assistance Services provider supporting eligible Medicaid members.
+            Licensed Texas Personal Assistance Services provider supporting eligible Medicaid
+            members.
           </p>
           <div className="btn-row">
             <a href="#contact" className="btn btn-primary">

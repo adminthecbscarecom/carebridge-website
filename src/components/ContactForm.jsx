@@ -131,10 +131,14 @@ export function ContactForm() {
           <address className="contact-info">
             <p>
               <span className="contact-label">Address</span>
-              <a href={company.mapHref} target="_blank" rel="noopener noreferrer">
-                {company.addressLine1}
-                <br />
-                {company.addressLine2}
+              <a
+                href={company.mapHref}
+                className="address-block"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="address-line">4200 SOUTH FWY STE 2350</span>
+                <span className="address-line">FORT WORTH, TX 76115-1427</span>
               </a>
             </p>
             <p>

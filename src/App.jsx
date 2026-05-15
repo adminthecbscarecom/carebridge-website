@@ -8,6 +8,7 @@ import { ServicesGrid } from "./components/ServicesGrid.jsx";
 import { MedicaidSupport } from "./components/MedicaidSupport.jsx";
 import { HowItWorks } from "./components/HowItWorks.jsx";
 import { WhyChooseCareBridge } from "./components/WhyChooseCareBridge.jsx";
+import { HealthPlanStatus } from "./components/HealthPlanStatus.jsx";
 import { ReferralSection } from "./components/ReferralSection.jsx";
 import { AboutSection } from "./components/AboutSection.jsx";
 import { ContactForm } from "./components/ContactForm.jsx";
@@ -41,6 +42,7 @@ export default function App() {
         <MedicaidSupport />
         <HowItWorks />
         <WhyChooseCareBridge />
+        <HealthPlanStatus />
         <ReferralSection />
         <AboutSection />
         <ContactForm />

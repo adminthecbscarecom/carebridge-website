@@ -17,13 +17,27 @@ const footerPrograms = [
   "EVV-Supported Services",
 ];
 
+function AddressBlock({ className = "" }) {
+  return (
+    <a
+      href={company.mapHref}
+      className={`address-block ${className}`.trim()}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span className="address-line">4200 SOUTH FWY STE 2350</span>
+      <span className="address-line">FORT WORTH, TX 76115-1427</span>
+    </a>
+  );
+}
+
 export function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-col">
           <p className="footer-brand-name">{company.name}</p>
-          <p>{company.tagline}</p>
+          <p className="footer-tagline">{company.tagline}</p>
         </div>
         <div className="footer-col">
           <p className="footer-heading">Services</p>
@@ -43,6 +57,9 @@ export function Footer() {
                 <a href="#medicaid-support">{item}</a>
               </li>
             ))}
+            <li>
+              <a href="#health-plans">Health Plan Status</a>
+            </li>
           </ul>
         </div>
         <div className="footer-col footer-col--contact">
@@ -54,11 +71,9 @@ export function Footer() {
           <p>
             Email: <a href={`mailto:${company.email}`}>{company.email}</a>
           </p>
-          <p>
-            Address:{" "}
-            <a href={company.mapHref} target="_blank" rel="noopener noreferrer">
-              {company.addressLine1}, {company.addressLine2}
-            </a>
+          <p className="footer-address-wrap">
+            <span className="footer-address-label">Address</span>
+            <AddressBlock />
           </p>
         </div>
       </div>
@@ -74,22 +89,24 @@ export function Footer() {
           <a href="#nondiscrimination">Non-Discrimination Notice</a>
           <a href="#contact">Contact</a>
         </nav>
-        <div id="accessibility" className="footer-legal-detail">
-          <h3>Accessibility</h3>
-          <p>
-            CareBridge is committed to providing a website that is accessible to the widest possible
-            audience. If you experience difficulty accessing content, please contact us at{" "}
-            <a href={`mailto:${company.email}`}>{company.email}</a> or{" "}
-            <a href={`tel:${company.phoneHref}`}>{company.phone}</a>.
-          </p>
-        </div>
-        <div id="nondiscrimination" className="footer-legal-detail">
-          <h3>Non-Discrimination Notice</h3>
-          <p>
-            CareBridge Solutions LLC does not discriminate on the basis of race, color, national
-            origin, sex, age, or disability. We provide respectful, non-discriminatory service in
-            accordance with applicable requirements.
-          </p>
+        <div id="accessibility" className="footer-legal-details">
+          <div className="footer-legal-detail">
+            <h3>Accessibility</h3>
+            <p>
+              CareBridge is committed to providing a website that is accessible to the widest possible
+              audience. If you experience difficulty accessing content, please contact us at{" "}
+              <a href={`mailto:${company.email}`}>{company.email}</a> or{" "}
+              <a href={`tel:${company.phoneHref}`}>{company.phone}</a>.
+            </p>
+          </div>
+          <div id="nondiscrimination" className="footer-legal-detail">
+            <h3>Non-Discrimination Notice</h3>
+            <p>
+              CareBridge Solutions LLC does not discriminate on the basis of race, color, national
+              origin, sex, age, or disability. We provide respectful, non-discriminatory service in
+              accordance with applicable requirements.
+            </p>
+          </div>
         </div>
       </div>
 
