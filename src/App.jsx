@@ -89,7 +89,7 @@ const services = [
   },
   {
     title: "Light Housekeeping",
-    icon: "/images/mobility-transfer-support.png",
+    image: "/images/mobility-transfer-support.png",
     imageAlt: "Clean home icon for light housekeeping support",
     text: "Help with approved household tasks related to the member’s health, safety, and daily living needs.",
   },
