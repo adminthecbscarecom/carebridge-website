@@ -677,7 +677,7 @@ function AboutSection() {
     <AnimatedSection className="section section-white" id="about">
       <div className="container about-layout">
         <div className="about-layout__media">
-          <img src="/images/about-care.png" alt="Caregiver and older adult receiving warm in-home support" loading="lazy" />
+          <img src="/images/community-care.png" alt="Caregiver and older adult receiving warm in-home support" loading="lazy" />
         </div>
 
         <div className="copy-block about-copy">
