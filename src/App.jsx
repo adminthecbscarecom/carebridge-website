@@ -173,7 +173,7 @@ const healthPlanIntro =
 const healthPlans = [
   {
     name: "Aetna Better Health of Texas",
-    status: "Participation Status Applies",
+    status: "Active Agreement",
     text: "CareBridge supports eligible members according to plan requirements, service area rules, member eligibility, authorization, claims rules, and ongoing credentialing requirements.",
   },
   {
@@ -183,17 +183,17 @@ const healthPlans = [
   },
   {
     name: "Superior HealthPlan",
-    status: "Participation Status Applies",
+    status: "Active Agreement",
     text: "CareBridge support is subject to member eligibility verification, prior authorization when required, credentialing status, system activation, and EVV-supported service documentation.",
   },
   {
     name: "UnitedHealthcare Community Plan of Texas",
-    status: "Effective Date Applies",
+    status: "Active Agreement",
     text: "CareBridge participation is governed by applicable agreement terms, effective date, eligibility verification, authorization requirements, and plan-specific administrative rules.",
   },
   {
     name: "Texas Children’s Health Plan",
-    status: "Effective Date Applies",
+    status: "Active Agreement",
     text: "CareBridge may support eligible members in accordance with applicable agreement terms, service authorization requirements, member eligibility verification, and ongoing compliance obligations.",
   },
 ];
