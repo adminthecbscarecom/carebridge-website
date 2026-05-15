@@ -42,7 +42,7 @@ export function ContactForm() {
   return (
     <section className="section section-white" id="contact" aria-labelledby="contact-heading">
       <div className="container contact-layout">
-        <AnimatedSection className="contact-layout__form-wrap">
+        <AnimatedSection className="contact-layout__form-wrap copy-block">
           <h2 id="contact-heading">Request Care Services</h2>
           <p>
             Complete the form below and a CareBridge team member will contact you about next steps.

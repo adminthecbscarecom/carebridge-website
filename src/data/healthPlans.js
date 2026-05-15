@@ -1,43 +1,33 @@
 export const healthPlanIntro =
-  "CareBridge Solutions works with Texas Medicaid programs and health plan processes for eligible members. Program availability, eligibility, authorization, and effective dates may vary by plan and service area.";
+  "CareBridge Solutions works with participating Texas Medicaid health plans for eligible members receiving personal assistance services. Participation, eligibility, authorization, and effective dates may vary by plan, service area, and credentialing status.";
 
 export const healthPlans = [
   {
-    name: "Texas Medicaid / TMHP",
-    status: "Medicaid participation approved",
-    text: "CareBridge supports eligible Medicaid members through applicable Texas Medicaid personal assistance service pathways.",
-  },
-  {
-    name: "PHC / FC / CAS",
-    status: "Active service pathway",
-    text: "Support for eligible Primary Home Care, Family Care, and Community Attendant Services members, subject to program rules and authorization.",
-  },
-  {
     name: "Aetna Better Health of Texas",
-    status: "Agreement active",
-    text: "Personal Assistance Services participation is handled according to plan requirements, credentialing, eligibility, authorization, and documentation rules.",
+    status: "Agreement Active",
+    text: "CareBridge participates as a personal assistance services provider subject to plan requirements, member eligibility, prior authorization when applicable, claims rules, and ongoing credentialing requirements.",
   },
   {
     name: "Cook Children's Health Plan",
-    status: "Network participation listed",
-    text: "CareBridge may support eligible STAR, CHIP, CHIP Perinatal, and STAR Kids members according to plan requirements and effective dates.",
+    status: "Network Participation Listed",
+    text: "CareBridge supports eligible members under applicable Cook Children's Health Plan lines of business based on plan participation, service area, member eligibility, authorization, and operational readiness.",
   },
   {
     name: "Superior HealthPlan",
-    status: "Contract active / credentialing go-live applies",
-    text: "Services may be provided only when credentialing, system loading, eligibility, authorization, and EVV requirements are satisfied.",
+    status: "Contract Active",
+    text: "CareBridge participates with Superior HealthPlan for applicable personal assistance services, subject to credentialing completion, system activation, member eligibility verification, prior authorization requirements, and EVV-supported service documentation.",
   },
   {
     name: "UnitedHealthcare Community Plan of Texas",
-    status: "Effective date applies",
-    text: "Participation is subject to the applicable agreement effective date, plan rules, eligibility, authorization, and documentation requirements.",
+    status: "Effective Date Applies",
+    text: "CareBridge participation with UnitedHealthcare Community Plan of Texas is governed by the applicable agreement terms, effective date, eligibility verification, authorization requirements, and plan-specific administrative rules.",
   },
   {
     name: "Texas Children's Health Plan",
-    status: "Agreement effective date applies",
-    text: "Participation is subject to applicable plan terms, eligibility verification, authorization, and compliance requirements.",
+    status: "Agreement Effective Date Applies",
+    text: "CareBridge may support eligible Texas Children's Health Plan members in accordance with applicable agreement terms, service authorization requirements, member eligibility verification, and ongoing compliance obligations.",
   },
 ];
 
 export const healthPlanDisclaimer =
-  "Health plan participation and member eligibility must be verified before services begin. Listing a plan does not guarantee eligibility, authorization, covered services, or service hours.";
+  "Health plan participation, member eligibility, authorization, covered services, and credentialing status must be verified before services begin. Listing a health plan does not guarantee eligibility, approval, service availability, or service hours. Participation and credentialing status may change.";

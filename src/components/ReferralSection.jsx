@@ -6,7 +6,7 @@ export function ReferralSection() {
   return (
     <section className="section section-teal-soft" id="referrals" aria-labelledby="referrals-heading">
       <div className="container referral-layout">
-        <AnimatedSection className="prose">
+        <AnimatedSection className="copy-block">
           <h2 id="referrals-heading">For Referral Partners and Care Coordinators</h2>
           <p>
             CareBridge welcomes referrals from case managers, service coordinators, health plans,

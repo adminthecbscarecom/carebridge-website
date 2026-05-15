@@ -7,7 +7,7 @@ export function WhyChooseCareBridge() {
   return (
     <section className="section section-white" id="why-carebridge" aria-labelledby="why-heading">
       <div className="container why-grid">
-        <AnimatedSection className="why-grid__copy">
+        <AnimatedSection className="why-grid__copy copy-block">
           <h2 id="why-heading">Why Families Choose CareBridge</h2>
           <p>
             Families need more than a caregiver. They need a provider that communicates clearly,

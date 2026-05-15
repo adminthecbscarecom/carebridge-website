@@ -37,7 +37,7 @@ export function Footer() {
       <div className="container footer-grid">
         <div className="footer-col">
           <p className="footer-brand-name">{company.name}</p>
-          <p className="footer-tagline">{company.tagline}</p>
+          <p className="footer-tagline copy-block">{company.tagline}</p>
         </div>
         <div className="footer-col">
           <p className="footer-heading">Services</p>
@@ -79,7 +79,7 @@ export function Footer() {
       </div>
 
       <div className="container footer-legal-block" id="privacy">
-        <p className="footer-legal-main">
+        <p className="footer-legal-main copy-block copy-block--wide">
           {company.name} provides non-medical personal assistance services subject to eligibility,
           authorization, and applicable Medicaid program requirements.
         </p>

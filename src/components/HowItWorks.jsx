@@ -9,7 +9,7 @@ export function HowItWorks() {
   return (
     <section className="section section-cream" id="how-it-works" aria-labelledby="how-heading">
       <div className="container">
-        <AnimatedSection className="section-header section-header--center">
+        <AnimatedSection className="section-header section-header--center copy-block">
           <h2 id="how-heading">Getting Started Is Simple</h2>
           <p>
             We help families understand the next step and coordinate services with care, clarity, and

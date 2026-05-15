@@ -15,7 +15,7 @@ export function AboutSection() {
             }}
           />
         </div>
-        <AnimatedSection className="about-layout__copy">
+        <AnimatedSection className="about-layout__copy copy-block">
           <h2 id="about-heading">About CareBridge Solutions</h2>
           <p>
             CareBridge Solutions LLC is a Texas-based personal assistance services provider focused on

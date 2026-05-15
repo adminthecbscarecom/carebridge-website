@@ -6,7 +6,7 @@ export function MedicaidSupport() {
   return (
     <section className="section section-navy" id="medicaid-support" aria-labelledby="medicaid-heading">
       <div className="container">
-        <AnimatedSection className="section-header">
+        <AnimatedSection className="section-header copy-block">
           <h2 id="medicaid-heading">Support for Eligible Texas Medicaid Services</h2>
           <p>
             CareBridge helps eligible members and families understand personal assistance service

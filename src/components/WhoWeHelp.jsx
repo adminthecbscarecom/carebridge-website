@@ -6,17 +6,14 @@ export function WhoWeHelp() {
   return (
     <section className="section section-cream" id="who-we-help" aria-labelledby="who-heading">
       <div className="container">
-        <AnimatedSection className="section-header prose">
+        <AnimatedSection className="section-header copy-block">
           <h2 id="who-heading">Helping Families Find Reliable Support at Home</h2>
           <p>
             CareBridge supports eligible Medicaid members who need help with daily living activities,
             personal care routines, and safe support at home. We work with members, families,
             representatives, and referral partners to make the next step clear.
           </p>
-          <p className="section-local">
-            Serving families across Fort Worth, Arlington, Tarrant County, and the Dallas-Fort Worth
-            area.
-          </p>
+          <p className="section-local">Serving families across Texas.</p>
         </AnimatedSection>
         <AnimatedSection className="card-grid card-grid--four reveal--stagger" stagger>
           {whoWeHelp.map((item, index) => (

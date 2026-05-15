@@ -1,13 +1,22 @@
 # Image assets
 
-Recommended files for the redesigned site:
+## Service cards (unique file per card)
 
-- `carebridge-caregiver-home-support.jpg` (hero fallback / about)
-- `personal-care-support.jpg`
-- `meal-preparation-support.jpg`
-- `mobility-support.jpg`
-- `light-housekeeping-support.jpg`
-- `family-care-coordination.jpg`
-- `logo-full.png`, `logo-icon.png`
+- `personal-care-assistance.jpg`
+- `mobility-transfer-support.jpg`
+- `meal-preparation.jpg`
+- `light-housekeeping.jpg`
+- `laundry-linens.jpg`
+- `attendant-support.jpg`
 
-Existing filenames in this folder are used as fallbacks if the new images are not yet added.
+If a file is missing, the site shows a matching icon instead of repeating another photo.
+
+## Branding
+
+- `logo-full.png` (displayed inside the header logo shell)
+- `logo-icon.png`
+
+## Hero / about
+
+- `carebridge-caregiver-home-support.jpg`
+- `hero-care.png` (fallback)

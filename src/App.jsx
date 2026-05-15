@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Header } from "./components/Header.jsx";
 import { MobileStickyCTA } from "./components/MobileStickyCTA.jsx";
 import { HeroSection } from "./components/HeroSection.jsx";
@@ -16,24 +16,9 @@ import { FAQSection } from "./components/FAQSection.jsx";
 import { Footer } from "./components/Footer.jsx";
 
 export default function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    document.body.classList.toggle("nav-open", menuOpen);
-    return () => document.body.classList.remove("nav-open");
-  }, [menuOpen]);
-
-  useEffect(() => {
-    const onKey = (event) => {
-      if (event.key === "Escape") setMenuOpen(false);
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
-
   return (
     <>
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Header />
       <main id="main-content">
         <HeroSection />
         <TrustBadges />
