@@ -26,10 +26,10 @@ export function ContactForm() {
       `I am a: ${data.get("role")}`,
       `Member ZIP: ${data.get("zip")}`,
       `Medicaid plan/program: ${data.get("program") || "Not provided"}`,
-      `Support requested: ${data.get("supportType")}`,
+      `Support needed: ${data.get("supportType")}`,
       `Best time to contact: ${data.get("contactTime") || "Not provided"}`,
       "",
-      "Message:",
+      `Message:`,
       `${data.get("message") || "—"}`,
     ];
 
@@ -45,8 +45,7 @@ export function ContactForm() {
         <AnimatedSection className="contact-layout__form-wrap copy-block">
           <h2 id="contact-heading">Request Care Services</h2>
           <p>
-            Complete the form below and a CareBridge team member will contact you about eligibility,
-            authorization, health plan participation, and next steps.
+            Complete the form below and a CareBridge team member will contact you about next steps.
           </p>
 
           {submitted ? (
@@ -60,7 +59,6 @@ export function ContactForm() {
                 <label htmlFor="fullName">Full name</label>
                 <input id="fullName" name="fullName" type="text" required autoComplete="name" />
               </div>
-
               <div className="form-field">
                 <label htmlFor="phone">Phone number</label>
                 <input
@@ -72,12 +70,10 @@ export function ContactForm() {
                   inputMode="tel"
                 />
               </div>
-
               <div className="form-field">
                 <label htmlFor="email">Email address</label>
                 <input id="email" name="email" type="email" required autoComplete="email" />
               </div>
-
               <div className="form-field">
                 <label htmlFor="role">I am a</label>
                 <select id="role" name="role" required defaultValue="">
@@ -91,58 +87,38 @@ export function ContactForm() {
                   ))}
                 </select>
               </div>
-
               <div className="form-field">
                 <label htmlFor="zip">Member ZIP code</label>
                 <input id="zip" name="zip" type="text" inputMode="numeric" required />
               </div>
-
               <div className="form-field">
                 <label htmlFor="program">Medicaid plan or program, if known</label>
                 <input id="program" name="program" type="text" />
               </div>
-
               <div className="form-field">
-                <label htmlFor="supportType">Type of support requested</label>
-                <textarea
-                  id="supportType"
-                  name="supportType"
-                  rows={3}
-                  required
-                  placeholder="Example: personal care, mobility support, meal preparation, attendant support"
-                />
+                <label htmlFor="supportType">Type of support needed</label>
+                <textarea id="supportType" name="supportType" rows={3} required />
               </div>
-
               <div className="form-field">
                 <label htmlFor="contactTime">Best time to contact</label>
                 <input id="contactTime" name="contactTime" type="text" />
               </div>
-
               <div className="form-field">
                 <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  placeholder="Please do not include Medicaid ID numbers, Social Security numbers, diagnoses, dates of birth, or urgent medical details."
-                />
+                <textarea id="message" name="message" rows={4} />
               </div>
-
               <div className="form-field form-field--checkbox">
                 <input id="consent" name="consent" type="checkbox" required />
                 <label htmlFor="consent">
                   By submitting this form, I agree that CareBridge Solutions LLC may contact me using
-                  the information provided. I understand this form should not be used for emergencies,
-                  urgent medical needs, or sensitive member identifiers.
+                  the information provided. I understand this form should not be used for emergencies
+                  or urgent medical needs.
                 </label>
               </div>
-
               <p className="form-privacy">
-                Please do not include Medicaid ID numbers, Social Security numbers, diagnoses, dates
-                of birth, or other sensitive medical information in this general website form. For
-                emergencies, call 911.
+                Please do not include sensitive medical information in this form. For emergencies,
+                call 911.
               </p>
-
               <button type="submit" className="btn btn-primary btn--full">
                 Submit Request
               </button>
@@ -161,34 +137,25 @@ export function ContactForm() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="address-line">{company.addressLine1}</span>
-                <span className="address-line">{company.addressLine2}</span>
+                <span className="address-line">4200 SOUTH FWY STE 2350</span>
+                <span className="address-line">FORT WORTH, TX 76115-1427</span>
               </a>
             </p>
-
             <p>
               <span className="contact-label">Phone</span>
               <a href={`tel:${company.phoneHref}`}>{company.phone}</a>
             </p>
-
             <p>
               <span className="contact-label">Fax</span>
               {company.fax}
             </p>
-
             <p>
               <span className="contact-label">Email</span>
               <a href={`mailto:${company.email}`}>{company.email}</a>
             </p>
-
             <p>
               <span className="contact-label">Office hours</span>
               {company.hours}
-            </p>
-
-            <p>
-              <span className="contact-label">Service area</span>
-              {company.serviceArea}
             </p>
           </address>
         </aside>

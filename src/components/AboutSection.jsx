@@ -7,9 +7,12 @@ export function AboutSection() {
       <div className="container about-layout">
         <div className="about-layout__media">
           <img
-            src="/images/about-care.png"
-            alt="Caregiver providing warm non-medical support at home"
+            src="/images/carebridge-caregiver-home-support.jpg"
+            alt="Caregiver helping an older adult walk safely at home"
             loading="lazy"
+            onError={(e) => {
+              e.currentTarget.src = "/images/about-care.png";
+            }}
           />
         </div>
         <AnimatedSection className="about-layout__copy copy-block">

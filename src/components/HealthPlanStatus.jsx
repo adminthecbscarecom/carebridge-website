@@ -8,10 +8,10 @@ export function HealthPlanStatus() {
     <section className="section section-white" id="health-plans" aria-labelledby="health-plans-heading">
       <div className="container">
         <AnimatedSection className="section-header copy-block copy-block--wide">
-          <h2 id="health-plans-heading">Health Plan Participation Status</h2>
+          <h2 id="health-plans-heading">Health Plan &amp; Medicaid Program Status</h2>
           <p>{healthPlanIntro}</p>
         </AnimatedSection>
-        <AnimatedSection className="plan-status-grid reveal--stagger" stagger>
+        <AnimatedSection className="plan-status-grid plan-status-grid--five reveal--stagger" stagger>
           {healthPlans.map((plan, index) => (
             <HealthPlanCard key={plan.name} plan={plan} index={index} />
           ))}

@@ -116,7 +116,7 @@ h3 {
 p {
   color: var(--muted);
   font-size: 1.0625rem;
-  line-height: 1.65;
+  line-height: 1.6;
   text-wrap: pretty;
 }
 
@@ -211,9 +211,9 @@ p {
   position: sticky;
   top: 0;
   z-index: 300;
-  background: rgba(250, 249, 247, 0.86);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(7, 26, 61, 0.08);
   transition:
     background 0.2s var(--ease-out),
@@ -230,7 +230,7 @@ p {
 .header-inner {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
+  gap: 0.5rem;
   min-height: var(--header-h);
   flex-wrap: nowrap;
 }
@@ -245,19 +245,16 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
+  padding: 6px 10px;
+  border-radius: 14px;
+  background: #ffffff;
   line-height: 0;
 }
 
 .logo img {
-  width: min(174px, 42vw);
-  max-height: 52px;
+  width: min(152px, 38vw);
   height: auto;
   display: block;
-  object-fit: contain;
 }
 
 .logo-text {
@@ -631,11 +628,8 @@ p {
 
 .service-card__visual {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  height: auto;
-  min-height: 196px;
+  height: 200px;
   object-fit: cover;
-  object-position: center;
 }
 
 .service-card__visual--icon {
@@ -781,7 +775,7 @@ p {
 /* Health plan status */
 .plan-status-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.15rem;
   align-items: stretch;
 }
@@ -842,8 +836,7 @@ p {
 
 /* Address blocks */
 .address-block {
-  display: inline-grid;
-  gap: 0.05rem;
+  display: block;
   text-align: left;
   font-style: normal;
   font-weight: 600;
@@ -1084,9 +1077,8 @@ p {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: minmax(240px, 1.25fr) minmax(150px, 0.85fr) minmax(150px, 0.85fr) minmax(240px, 1.1fr);
+  grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
   gap: 2rem;
-  align-items: start;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1103,13 +1095,6 @@ p {
   font-size: 0.98rem;
   line-height: 1.6;
   max-width: 28rem;
-}
-
-.footer-service-area {
-  margin-top: 0.65rem;
-  color: #e2e8f0;
-  font-size: 0.95rem;
-  font-weight: 600;
 }
 
 .footer-tagline.copy-block {
@@ -1141,22 +1126,6 @@ p {
 .footer-col a:active {
   color: var(--white);
 }
-
-.footer-col--contact p {
-  display: grid;
-  gap: 0.15rem;
-  margin: 0 0 0.75rem;
-}
-
-.footer-contact-label {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #94a3b8;
-}
-
 
 .footer-legal-block {
   padding-top: 1.5rem;
@@ -1217,54 +1186,6 @@ p {
   text-align: center;
   font-size: 0.875rem;
   color: #94a3b8;
-}
-
-
-/* Long-form paragraph alignment
-   Use justification only on tablet/desktop body copy. Cards, buttons, nav, badges,
-   footer links, and mobile paragraphs stay left-aligned for readability. */
-@media (min-width: 768px) {
-  .section-header.copy-block:not(.section-header--center) > p:not(.section-local),
-  .section-header.copy-block--wide:not(.section-header--center) > p:not(.section-local),
-  .about-layout__copy > p,
-  .referral-layout .copy-block > p:not(.referral-note),
-  .contact-layout__form-wrap > p,
-  .footer-legal-main,
-  .footer-legal-detail p {
-    text-align: justify;
-    text-align-last: left;
-    hyphens: auto;
-  }
-
-  .section-header--center p,
-  .hero-lead,
-  .hero-trust,
-  .hero-disclaimer,
-  .section-local,
-  .section-footnote,
-  .referral-note,
-  .form-privacy,
-  .form-success,
-  .trust-card p,
-  .info-card p,
-  .service-card__body p,
-  .program-card p,
-  .step-card p,
-  .plan-status-card p,
-  .faq-answer p,
-  .footer-tagline,
-  .footer-service-area,
-  .footer-col p,
-  .footer-bottom p {
-    text-align: left;
-  }
-}
-
-@media (max-width: 767px) {
-  p {
-    text-align: left;
-    hyphens: none;
-  }
 }
 
 /* Mobile sticky CTA */
@@ -1364,21 +1285,6 @@ p {
     width: min(1180px, calc(100% - 1.25rem));
   }
 
-  .header-inner {
-    min-height: 64px;
-  }
-
-  .logo img {
-    width: min(150px, 47vw);
-    max-height: 44px;
-  }
-
-  .header-cta {
-    min-height: 40px;
-    padding: 0 0.8rem;
-    font-size: 0.82rem;
-  }
-
   .trust-grid,
   .card-grid--four,
   .service-grid,
@@ -1399,14 +1305,6 @@ p {
 
   .hero-content {
     padding: 2.75rem 0 3rem;
-  }
-
-  .service-card__visual {
-    min-height: 190px;
-  }
-
-  .footer-col--contact p {
-    margin-bottom: 0.9rem;
   }
 }
 
