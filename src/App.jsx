@@ -77,7 +77,7 @@ const services = [
   },
   {
     title: "Mobility and Transfer Support",
-    image: "/images/mobility-transfer-support.png",
+    image: "/images/mobility-support.png",
     imageAlt: "Caregiver supporting an older adult using a walker at home",
     text: "Assistance with safe movement around the home, transfers, and positioning support within the approved care plan.",
   },
@@ -89,7 +89,7 @@ const services = [
   },
   {
     title: "Light Housekeeping",
-    icon: "home",
+    icon: "/images/mobility-transfer-support.png",
     imageAlt: "Clean home icon for light housekeeping support",
     text: "Help with approved household tasks related to the member’s health, safety, and daily living needs.",
   },
