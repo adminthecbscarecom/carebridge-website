@@ -6,15 +6,6 @@ export function IconCheck({ className = "" }) {
   );
 }
 
-export function IconLock({ className = "" }) {
-  return (
-    <svg className={className} width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-      <rect x="4" y="8" width="10" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.5" />
-      <path d="M6 8V6a3 3 0 116 0v2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 export function IconShield({ className = "" }) {
   return (
     <svg className={className} width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">

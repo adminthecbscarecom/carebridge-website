@@ -46,26 +46,3 @@ export function useInView({ once = true, threshold = 0.12 } = {}) {
 
   return [ref, inView || reducedMotion];
 }
-
-export function useIsDesktopVideo() {
-  const [enabled, setEnabled] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(min-width: 1180px)");
-    const motionMq = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-    const update = () => {
-      setEnabled(mq.matches && !motionMq.matches);
-    };
-
-    update();
-    mq.addEventListener("change", update);
-    motionMq.addEventListener("change", update);
-    return () => {
-      mq.removeEventListener("change", update);
-      motionMq.removeEventListener("change", update);
-    };
-  }, []);
-
-  return enabled;
-}

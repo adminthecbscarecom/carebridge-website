@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ServiceIcon } from "./ServiceIcons.jsx";
 
 export function ServiceVisual({ image, icon, alt }) {
-  const [useIcon, setUseIcon] = useState(false);
+  const [useIcon, setUseIcon] = useState(!image);
 
   if (useIcon) {
     return (

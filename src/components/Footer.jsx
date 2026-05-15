@@ -25,8 +25,8 @@ function AddressBlock({ className = "" }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span className="address-line">4200 SOUTH FWY STE 2350</span>
-      <span className="address-line">FORT WORTH, TX 76115-1427</span>
+      <span className="address-line">{company.addressLine1}</span>
+      <span className="address-line">{company.addressLine2}</span>
     </a>
   );
 }
@@ -35,11 +35,13 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
-        <div className="footer-col">
+        <div className="footer-col footer-col--brand">
           <p className="footer-brand-name">{company.name}</p>
-          <p className="footer-tagline copy-block">{company.tagline}</p>
+          <p className="footer-tagline">{company.tagline}</p>
+          <p className="footer-service-area">{company.serviceArea}</p>
         </div>
-        <div className="footer-col">
+
+        <nav className="footer-col" aria-label="Footer services">
           <p className="footer-heading">Services</p>
           <ul>
             {footerServices.map((item) => (
@@ -48,8 +50,9 @@ export function Footer() {
               </li>
             ))}
           </ul>
-        </div>
-        <div className="footer-col">
+        </nav>
+
+        <nav className="footer-col" aria-label="Footer programs">
           <p className="footer-heading">Programs</p>
           <ul>
             {footerPrograms.map((item) => (
@@ -61,15 +64,21 @@ export function Footer() {
               <a href="#health-plans">Health Plan Status</a>
             </li>
           </ul>
-        </div>
+        </nav>
+
         <div className="footer-col footer-col--contact">
           <p className="footer-heading">Contact</p>
           <p>
-            Phone: <a href={`tel:${company.phoneHref}`}>{company.phone}</a>
+            <span className="footer-contact-label">Phone</span>
+            <a href={`tel:${company.phoneHref}`}>{company.phone}</a>
           </p>
-          <p>Fax: {company.fax}</p>
           <p>
-            Email: <a href={`mailto:${company.email}`}>{company.email}</a>
+            <span className="footer-contact-label">Fax</span>
+            <span>{company.fax}</span>
+          </p>
+          <p>
+            <span className="footer-contact-label">Email</span>
+            <a href={`mailto:${company.email}`}>{company.email}</a>
           </p>
           <p className="footer-address-wrap">
             <span className="footer-address-label">Address</span>
@@ -79,16 +88,19 @@ export function Footer() {
       </div>
 
       <div className="container footer-legal-block" id="privacy">
-        <p className="footer-legal-main copy-block copy-block--wide">
+        <p className="footer-legal-main copy-block--wide">
           {company.name} provides non-medical personal assistance services subject to eligibility,
-          authorization, and applicable Medicaid program requirements.
+          authorization, health plan participation, credentialing status, and applicable Medicaid
+          program requirements.
         </p>
+
         <nav className="footer-legal-nav" aria-label="Legal">
-          <a href="#privacy">Privacy Policy</a>
+          <a href="#privacy">Privacy Notice</a>
           <a href="#accessibility">Accessibility</a>
           <a href="#nondiscrimination">Non-Discrimination Notice</a>
           <a href="#contact">Contact</a>
         </nav>
+
         <div id="accessibility" className="footer-legal-details">
           <div className="footer-legal-detail">
             <h3>Accessibility</h3>
@@ -99,6 +111,7 @@ export function Footer() {
               <a href={`tel:${company.phoneHref}`}>{company.phone}</a>.
             </p>
           </div>
+
           <div id="nondiscrimination" className="footer-legal-detail">
             <h3>Non-Discrimination Notice</h3>
             <p>
@@ -112,7 +125,7 @@ export function Footer() {
 
       <div className="container footer-bottom">
         <p>
-          &copy; {new Date().getFullYear()} {company.name}
+          &copy; {new Date().getFullYear()} {company.name}. All rights reserved.
         </p>
       </div>
     </footer>

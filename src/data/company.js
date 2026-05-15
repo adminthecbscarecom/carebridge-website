@@ -2,6 +2,7 @@ export const company = {
   name: "CareBridge Solutions LLC",
   shortName: "CareBridge Solutions",
   tagline: "Reliable Texas Medicaid personal assistance services at home.",
+  serviceArea: "Serving families across Texas.",
   website: "https://www.thecbscare.com/",
   phone: "(214) 400-8755",
   phoneHref: "+12144008755",

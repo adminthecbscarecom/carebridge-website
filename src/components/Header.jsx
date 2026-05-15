@@ -22,13 +22,13 @@ export function Header() {
         <a href="#home" className="logo" aria-label="CareBridge Solutions Home">
           <span className="logo-shell">
             <img
-              src="/images/logo-full.png"
+              src="/images/logo-header.png"
               alt="CareBridge Solutions"
-              width="160"
-              height="38"
-              onError={(e) => {
-                e.currentTarget.style.display = "none";
-                e.currentTarget.nextElementSibling?.classList.remove("logo-text--hidden");
+              width="220"
+              height="70"
+              onError={(event) => {
+                event.currentTarget.style.display = "none";
+                event.currentTarget.nextElementSibling?.classList.remove("logo-text--hidden");
               }}
             />
             <span className="logo-text logo-text--hidden">{company.shortName}</span>
