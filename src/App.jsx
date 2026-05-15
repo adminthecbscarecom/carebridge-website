@@ -178,7 +178,7 @@ const healthPlans = [
   },
   {
     name: "Cook Children’s Health Plan",
-    status: "Network Status Applies",
+    status: "Active Agreement",
     text: "CareBridge support depends on applicable lines of business, member eligibility, authorization, service area, plan participation, and operational readiness.",
   },
   {
