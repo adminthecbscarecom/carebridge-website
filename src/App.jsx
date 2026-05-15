@@ -691,7 +691,7 @@ function AboutSection() {
           </p>
 
           <blockquote className="mission-quote">
-            <p>“Care should feel personal, dependable, and clear from the first conversation.”</p>
+            <p>“Care should feel personal, dependable, and clear from the first conversation”</p>
           </blockquote>
         </div>
       </div>
@@ -857,7 +857,7 @@ function FAQSection() {
       <div className="container faq-container">
         <div className="section-header section-header--center copy-block">
           <span className="section-kicker">FAQ</span>
-          <h2>Common questions</h2>
+          <h2>Common Questions</h2>
         </div>
 
         <div className="faq-list">
