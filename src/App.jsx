@@ -196,6 +196,11 @@ const healthPlans = [
     status: "Active Agreement",
     text: "CareBridge may support eligible members in accordance with applicable agreement terms, service authorization requirements, member eligibility verification, and ongoing compliance obligations.",
   },
+  {
+    name: "Molina Healthcare",
+    status: "In Progress",
+    text: "CareBridge is monitoring Molina network panel and contracting availability. Support is not active until contracting, credentialing, system activation, member eligibility, authorization, service area, and EVV documentation requirements are complete.",
+  },
 ];
 
 const healthPlanDisclaimer =
