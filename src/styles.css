@@ -716,6 +716,24 @@ p {
   flex-shrink: 0;
 }
 
+
+.why-copy__image {
+  overflow: hidden;
+  margin-top: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+}
+
+.why-copy__image img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* Health plans */
 .plan-status-card {
   display: flex;
@@ -809,7 +827,7 @@ p {
   display: grid;
   grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr);
   gap: clamp(2rem, 5vw, 3.5rem);
-  align-items: stretch;
+  align-items: start;
 }
 
 .intake-form {
@@ -849,12 +867,6 @@ p {
   resize: vertical;
 }
 
-@media (min-width: 1100px) {
-  .form-field textarea {
-    min-height: 230px;
-  }
-}
-
 .form-field--checkbox {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -889,10 +901,8 @@ p {
 
 .contact-side {
   display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr);
   gap: 1rem;
-  align-self: stretch;
-  height: 100%;
+  align-self: start;
 }
 
 .contact-info {
@@ -947,7 +957,6 @@ p {
 }
 
 .contact-image-card {
-  overflow: hidden;
   padding: 1rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
@@ -962,9 +971,6 @@ p {
 }
 
 .contact-next-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 1.35rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
@@ -1013,6 +1019,14 @@ p {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.55;
+}
+
+
+
+@media (min-width: 1100px) {
+  #contact .form-field textarea {
+    min-height: 220px;
+  }
 }
 
 
@@ -1415,14 +1429,15 @@ p {
     min-height: 260px;
   }
 
+
+  .why-copy__image img {
+    height: 230px;
+  }
+
   .contact-info,
   .contact-image-card,
   .contact-next-card {
     padding: 1.25rem;
-  }
-
-  .contact-side {
-    grid-template-rows: auto;
   }
 
   .footer-grid {
