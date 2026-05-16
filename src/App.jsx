@@ -14,7 +14,7 @@ const company = {
   addressLine2: "Fort Worth, TX 76115",
   mapHref:
     "https://www.google.com/maps/search/?api=1&query=4200+South+Freeway+Suite+2350+Fort+Worth+TX+76115",
-  hours: "Monday – Friday, 8:00 AM – 5:00\u00A0PM",
+  hours: "Monday – Friday, 8:00 AM – 5:00 PM",
 };
 
 const navLinks = [
