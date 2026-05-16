@@ -14,7 +14,7 @@ const company = {
   addressLine2: "Fort Worth, TX 76115",
   mapHref:
     "https://www.google.com/maps/search/?api=1&query=4200+South+Freeway+Suite+2350+Fort+Worth+TX+76115",
-  hours: "Monday – Friday, 8:00 AM – 5:00 PM",
+  hours: "Monday – Friday, 8:00 AM – 5:00\u00A0PM",
 };
 
 const navLinks = [
@@ -818,48 +818,47 @@ function ContactForm() {
           </form>
         </div>
 
-<div className="contact-side">
-  <address className="contact-info">
-    <h3 className="contact-info__title">CareBridge Solutions LLC</h3>
+        <div className="contact-side">
+          <address className="contact-info">
+            <h3 className="contact-info__title">CareBridge Solutions LLC</h3>
 
-    <p>
-      <span className="contact-label">Phone</span>
-      <a href={`tel:${company.phoneHref}`}>{company.phone}</a>
-    </p>
+            <p>
+              <span className="contact-label">Phone</span>
+              <a href={`tel:${company.phoneHref}`}>{company.phone}</a>
+            </p>
 
-    <p>
-      <span className="contact-label">Fax</span>
-      {company.fax}
-    </p>
+            <p>
+              <span className="contact-label">Fax</span>
+              {company.fax}
+            </p>
 
-    <p>
-      <span className="contact-label">Email</span>
-      <a href={`mailto:${company.email}`}>{company.email}</a>
-    </p>
+            <p>
+              <span className="contact-label">Email</span>
+              <a href={`mailto:${company.email}`}>{company.email}</a>
+            </p>
 
-    <p>
-      <span className="contact-label">Hours</span>
-      <span className="contact-hours">{company.hours}</span>
-    </p>
+            <p>
+              <span className="contact-label">Hours</span>
+              <span className="contact-hours">{company.hours}</span>
+            </p>
 
-    <p>
-      <span className="contact-label">Office</span>
-      <a className="address-block" href={company.mapHref} target="_blank" rel="noreferrer">
-        <span className="address-line">{company.addressLine1}</span>
-        <span className="address-line">{company.addressLine2}</span>
-      </a>
-    </p>
-  </address>
+            <p>
+              <span className="contact-label">Office</span>
+              <a className="address-block" href={company.mapHref} target="_blank" rel="noreferrer">
+                <span className="address-line">{company.addressLine1}</span>
+                <span className="address-line">{company.addressLine2}</span>
+              </a>
+            </p>
+          </address>
 
-  <div className="contact-image-card">
-    <img
-      src="/images/contact-card.png"
-      alt="CareBridge Solutions Personal Assistance Services"
-    />
-  </div>
-</div>
-
-        
+          <div className="contact-image-card">
+            <img
+              src="/images/contact-card.png"
+              alt="CareBridge Solutions Personal Assistance Services"
+            />
+          </div>
+        </div>
+      </div>
     </AnimatedSection>
   );
 }
