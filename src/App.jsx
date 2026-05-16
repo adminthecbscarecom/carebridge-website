@@ -934,7 +934,10 @@ function Footer() {
               <li>
                 <a href={`mailto:${company.email}`}>{company.email}</a>
               </li>
-              <li className="footer-hours">{company.hours}</li>
+              <li className="footer-hours">
+                <span>Monday – Friday</span>
+                <span>8:00 AM – 5:00 PM</span>
+              </li>
             </ul>
           </div>
 
