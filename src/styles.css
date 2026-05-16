@@ -690,6 +690,12 @@ p {
   align-items: start;
 }
 
+@media (min-width: 1100px) {
+  .why-grid .feature-list {
+    margin-top: 2.25rem;
+  }
+}
+
 .feature-list {
   display: grid;
   gap: 0.75rem;
