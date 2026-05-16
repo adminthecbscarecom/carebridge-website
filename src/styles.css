@@ -892,13 +892,6 @@ p {
   font-style: normal;
 }
 
-.contact-info__image {
-  width: 100%;
-  margin-top: 0.75rem;
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-sm);
-}
-
 .contact-info__title {
   margin-bottom: 0.2rem;
 }
@@ -931,6 +924,28 @@ p {
 
 .address-line {
   display: block;
+}
+
+.contact-side {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-hours {
+  white-space: nowrap;
+}
+
+.contact-image-card {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-image-card img {
+  width: 100%;
+  border-radius: var(--radius-sm);
 }
 
 /* FAQ */
