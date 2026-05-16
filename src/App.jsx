@@ -861,22 +861,23 @@ function ContactForm() {
           <div className="contact-next-card">
             <h3>What happens next?</h3>
 
-          <div className="contact-next-item">
-            <span>1</span>
-            <p>CareBridge reviews your general request and contact information.</p>
-          </div>
-            
-          <div className="contact-next-item">
-            <span>2</span>
-            <p>A team member contacts you to discuss eligibility, authorization, and health plan verification.</p>
-          </div>
-            
-          <div className="contact-next-item">
-            <span>3</span>
-            <p>Services begin only after eligibility, authorization, and applicable plan requirements are confirmed.</p>
+            <div className="contact-next-item">
+              <span>1</span>
+              <p>CareBridge reviews your general request and contact information.</p>
+            </div>
+
+            <div className="contact-next-item">
+              <span>2</span>
+              <p>A team member contacts you to discuss eligibility, authorization, and health plan verification.</p>
+            </div>
+
+            <div className="contact-next-item">
+              <span>3</span>
+              <p>Services begin only after eligibility, authorization, and applicable plan requirements are confirmed.</p>
             </div>
           </div>
         </div>
+      </div>
     </AnimatedSection>
   );
 }
