@@ -71,7 +71,7 @@ const whoWeHelp = [
 const services = [
   {
     title: "Personal Care Assistance",
-    image: "/images/personal-care-assistance_1.png",
+    image: "/images/personal-care-assistance.png",
     imageAlt: "Caregiver assisting an older adult with safe daily support at home",
     text: "Help with bathing, dressing, grooming, toileting, and other approved personal care tasks.",
   },
@@ -95,7 +95,7 @@ const services = [
   },
   {
     title: "Laundry and Linens",
-    image: "/images/laundry-linens_1.png",
+    image: "/images/laundry-linens.png",
     imageAlt: "Caregiver and older adult folding laundry and linens at home",
     text: "Assistance with member-related laundry and basic home routines when included in the service plan.",
   },
