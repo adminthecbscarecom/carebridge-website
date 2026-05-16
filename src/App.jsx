@@ -609,6 +609,14 @@ function WhyChooseCareBridge() {
           <p className="long-copy">
             Our approach is steady, documentation-focused, and designed to support members at home while helping families understand what must be verified before services begin.
           </p>
+
+          <div className="why-copy__image">
+            <img
+              src="/images/why-carebridge.png"
+              alt="CareBridge team member reviewing care information with a family at home"
+              loading="lazy"
+            />
+          </div>
         </div>
 
         <ul className="feature-list reveal--stagger" aria-label="CareBridge service strengths">
