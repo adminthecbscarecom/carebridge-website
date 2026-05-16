@@ -1062,9 +1062,15 @@ p {
 }
 
 .footer-hours {
-  white-space: nowrap;
-  font-size: 0.9rem;
+  display: grid;
+  gap: 0.1rem;
+  white-space: normal;
+  font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.footer-hours span {
+  display: block;
 }
 
 .site-footer .address-block {
@@ -1348,11 +1354,6 @@ p {
   .contact-info,
   .contact-image-card {
     padding: 1.25rem;
-  }
-
-  .contact-hours,
-  .footer-hours {
-    white-space: nowrap;
   }
 
   .footer-grid {
