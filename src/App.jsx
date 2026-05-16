@@ -874,6 +874,7 @@ function ContactForm() {
           <div className="contact-next-item">
             <span>3</span>
             <p>Services begin only after eligibility, authorization, and applicable plan requirements are confirmed.</p>
+            </div>
           </div>
         </div>
     </AnimatedSection>
