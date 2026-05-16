@@ -848,6 +848,12 @@ function ContactForm() {
               <span className="address-line">{company.addressLine2}</span>
             </a>
           </p>
+
+          <img
+            className="contact-info__image"
+            src="/images/contact-card.png"
+            alt="CareBridge Solutions Personal Assistance Services"
+          />
         </address>
       </div>
     </AnimatedSection>
@@ -925,7 +931,7 @@ function Footer() {
               <li>
                 <a href={`mailto:${company.email}`}>{company.email}</a>
               </li>
-              <li>{company.hours}</li>
+              <li className="footer-hours">{company.hours}</li>
             </ul>
           </div>
 
