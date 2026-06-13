@@ -1459,3 +1459,121 @@ p {
     grid-template-columns: 1fr 1.1fr;
   }
 }
+
+
+/* Language toggle */
+.language-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.18rem;
+  border: 1px solid rgba(7, 26, 61, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 4px 12px rgba(7, 26, 61, 0.06);
+}
+
+.language-toggle__button {
+  min-height: 34px;
+  padding: 0 0.7rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--deep-navy);
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.language-toggle__button.is-active {
+  background: var(--deep-navy);
+  color: var(--white);
+}
+
+.header-mobile-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: auto;
+}
+
+.language-toggle--compact .language-toggle__button {
+  min-height: 32px;
+  padding: 0 0.55rem;
+  font-size: 0.78rem;
+}
+
+/* Arabic / RTL support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .site-nav--desktop,
+[dir="rtl"] .header-actions--desktop,
+[dir="rtl"] .btn,
+[dir="rtl"] .header-cta,
+[dir="rtl"] .language-toggle,
+[dir="rtl"] .mobile-sticky-cta__btn,
+[dir="rtl"] .contact-next-item,
+[dir="rtl"] .form-field--checkbox,
+[dir="rtl"] .feature-list li {
+  direction: rtl;
+}
+
+[dir="rtl"] .section-kicker::before {
+  order: 2;
+}
+
+[dir="rtl"] .contact-next-item,
+[dir="rtl"] .form-field--checkbox {
+  grid-template-columns: auto 1fr;
+}
+
+[dir="rtl"] .contact-next-item span,
+[dir="rtl"] .form-field--checkbox input {
+  grid-column: 1;
+}
+
+[dir="rtl"] .contact-next-item p,
+[dir="rtl"] .form-field--checkbox label {
+  grid-column: 2;
+}
+
+[dir="rtl"] .address-block,
+[dir="rtl"] .long-copy {
+  text-align: right;
+}
+
+[dir="rtl"] .mission-quote {
+  border-left: none;
+  border-right: 4px solid var(--gold);
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+@media (min-width: 1100px) {
+  .header-mobile-actions {
+    display: none;
+  }
+}
+
+@media (max-width: 1099px) {
+  .header-mobile-actions {
+    display: inline-flex;
+  }
+
+  .header-cta--mobile {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .language-toggle--compact .language-toggle__button {
+    padding: 0 0.42rem;
+    font-size: 0.72rem;
+  }
+
+  .header-mobile-actions {
+    gap: 0.32rem;
+  }
+}
