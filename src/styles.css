@@ -1459,3 +1459,119 @@ p {
     grid-template-columns: 1fr 1.1fr;
   }
 }
+
+
+/* Enhanced referral and careers sections */
+.referral-card {
+  margin-top: 1.35rem;
+  padding: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-sm);
+}
+
+.referral-card__intro {
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-weight: 750;
+}
+
+.referral-details {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.referral-details__row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.75fr) minmax(0, 1.25fr);
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.referral-details__row:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.referral-details dt {
+  color: #a7f3f0;
+  font-size: 0.82rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.referral-details dd {
+  color: var(--white);
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.careers-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(300px, 1.05fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.career-pay,
+.career-disclaimer {
+  margin-top: 1.1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(7, 26, 61, 0.1);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--deep-navy);
+  font-weight: 750;
+}
+
+.career-card {
+  padding: 1.45rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.career-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+  list-style: none;
+}
+
+.career-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.career-disclaimer {
+  margin-top: 1rem;
+  background: var(--cream-2);
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 650;
+}
+
+@media (max-width: 1099px) {
+  .careers-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .referral-details__row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .referral-card,
+  .career-card {
+    padding: 1.2rem;
+  }
+}
