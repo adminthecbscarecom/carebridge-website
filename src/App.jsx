@@ -4,8 +4,12 @@ import "./styles.css";
 const company = {
   name: "CareBridge Solutions LLC",
   shortName: "CareBridge Solutions",
-  tagline: "Reliable Texas Medicaid personal assistance services at home.",
+  tagline: "Texas Medicaid Personal Assistance Services in Fort Worth.",
   website: "https://www.thecbscare.com/",
+  serviceType: "Non-medical Personal Assistance Services",
+  license: "Texas HCSSA License #024033 — Personal Assistance Services",
+  npi: "1144015751",
+  evvVendor: "HHAeXchange",
   phone: "(214) 400-8755",
   phoneHref: "+12144008755",
   fax: "(817) 305-8994",
@@ -19,32 +23,33 @@ const company = {
 
 const navLinks = [
   { href: "#services", label: "Services" },
+  { href: "#referrals", label: "Referrals" },
+  { href: "#careers", label: "Careers" },
   { href: "#medicaid-support", label: "Medicaid Support" },
   { href: "#how-it-works", label: "How It Works" },
   { href: "#about", label: "About" },
-  { href: "#referrals", label: "Referrals" },
   { href: "#contact", label: "Contact" },
 ];
 
 const trustBadges = [
   {
-    title: "Licensed Care Provider",
-    text: "Non-medical personal assistance services for eligible Texas Medicaid members.",
+    title: "Licensed Texas HCSSA",
+    text: "CareBridge is licensed for Personal Assistance Services under Texas HCSSA License #024033.",
     icon: "shield",
   },
   {
-    title: "Medicaid-Focused Support",
-    text: "Guidance for families navigating Medicaid-based personal assistance services.",
-    icon: "heart",
-  },
-  {
-    title: "EVV-Supported Documentation",
-    text: "Covered visits are documented through applicable Electronic Visit Verification workflows.",
+    title: "Medicaid-Certified PAS Provider",
+    text: "NPI 1144015751. Non-medical support is coordinated only after eligibility, authorization, and plan requirements are verified.",
     icon: "check",
   },
   {
-    title: "Texas Communication",
-    text: "Responsive support for members, family representatives, case managers, and referral partners.",
+    title: "EVV Documentation",
+    text: "CareBridge uses HHAeXchange for Electronic Visit Verification workflows required for covered services.",
+    icon: "check",
+  },
+  {
+    title: "Fort Worth Based",
+    text: "Responsive communication for Texas Medicaid members, families, service coordinators, case managers, and caregivers.",
     icon: "location",
   },
 ];
@@ -73,7 +78,7 @@ const services = [
     title: "Personal Care Assistance",
     image: "/images/personal-care-assistance.png",
     imageAlt: "Caregiver assisting an older adult with safe daily support at home",
-    text: "Help with bathing, dressing, grooming, toileting, and other approved personal care tasks.",
+    text: "Help with bathing, dressing, grooming, toileting, and other approved personal care tasks within the authorized service plan.",
   },
   {
     title: "Mobility and Transfer Support",
@@ -85,7 +90,7 @@ const services = [
     title: "Meal Preparation",
     image: "/images/meal-preparation.png",
     imageAlt: "Caregiver helping an older adult prepare a meal at home",
-    text: "Support with preparing simple meals and maintaining daily nutrition routines.",
+    text: "Support with preparing simple meals and daily nutrition routines when included in the member’s authorized plan.",
   },
   {
     title: "Light Housekeeping",
@@ -103,12 +108,12 @@ const services = [
     title: "Attendant Support",
     image: "/images/attendant-support.png",
     imageAlt: "Caregiver and older adult sharing a warm moment at home",
-    text: "Reliable non-medical support from trained staff following applicable Medicaid and agency requirements.",
+    text: "Reliable attendant support from trained W-2 employees following applicable Medicaid, agency, and service-plan requirements.",
   },
 ];
 
 const servicesFootnote =
-  "Services must be authorized and delivered within the member’s approved plan of care and applicable Medicaid program rules.";
+  "CareBridge provides non-medical Personal Assistance Services. Services do not include skilled nursing, therapy, medical treatment, or emergency response unless separately authorized by an appropriate program and provider type.";
 
 const medicaidPrograms = [
   {
@@ -151,7 +156,7 @@ const howItWorksSteps = [
   },
   {
     step: "4",
-    title: "Begin In-Home Support",
+    title: "Start Authorized Support",
     text: "Approved services begin with trained staff, clear scheduling, and EVV-supported visit documentation.",
   },
 ];
@@ -205,6 +210,44 @@ const healthPlans = [
 
 const healthPlanDisclaimer =
   "Health plan participation, member eligibility, authorization, covered services, and credentialing status must be verified before services begin. Listing a health plan does not guarantee eligibility, approval, service availability, or service hours. Participation and credentialing status may change.";
+
+const referralDetails = [
+  ["Company Name", company.name],
+  ["NPI", company.npi],
+  ["Texas HCSSA License", "#024033 — Personal Assistance Services"],
+  ["Phone", company.phone],
+  ["Fax", company.fax],
+  ["Email", company.email],
+];
+
+const complianceHighlights = [
+  {
+    title: "Licensed for PAS",
+    text: "CareBridge Solutions LLC is licensed as a Texas HCSSA Personal Assistance Services provider.",
+  },
+  {
+    title: "Non-medical scope",
+    text: "Services are limited to approved personal assistance and daily living support. CareBridge does not advertise skilled nursing, therapy, or emergency medical care.",
+  },
+  {
+    title: "Eligibility and authorization checks",
+    text: "Services begin only after applicable Medicaid eligibility, health plan participation, authorization, service area, and program requirements are confirmed.",
+  },
+  {
+    title: "EVV-supported records",
+    text: "Covered visits are documented through required Electronic Visit Verification workflows using HHAeXchange.",
+  },
+];
+
+const careerHighlights = [
+  "W-2 caregiver positions supporting members with approved non-medical daily living needs.",
+  "Clear scheduling expectations and documentation-focused workflows.",
+  "Respectful service standards for members, families, and representatives.",
+  "Training and onboarding based on applicable program, agency, and EVV requirements.",
+];
+
+const caregiverPayStatement =
+  "Caregiver pay starts at $13.00 per hour. Final pay may vary based on role, schedule, experience, location, and program requirements.";
 
 const faqItems = [
   {
@@ -431,19 +474,22 @@ function HeroSection() {
       <div className="container hero-content">
         <div className="hero-copy hero-copy--animate">
           <span className="hero-eyebrow">Texas Medicaid Personal Assistance Services</span>
-          <h1>Warm, dependable in-home support for eligible Texas Medicaid members.</h1>
+          <h1>Texas Medicaid Personal Assistance Services you can request with confidence.</h1>
           <p className="hero-lead">
-            CareBridge Solutions LLC provides non-medical personal assistance services that help members with approved daily living needs while supporting family communication, documentation, and Medicaid program requirements.
+            CareBridge Solutions LLC provides licensed, non-medical Personal Assistance Services for eligible Texas Medicaid members in Fort Worth and surrounding Texas service areas. We help families, service coordinators, and case managers take the next step without promising eligibility, authorization, benefits, or payment.
           </p>
           <p className="hero-trust">
-            Licensed Texas Personal Assistance Services provider · Medicaid-focused support · EVV-supported documentation
+            {company.license} · NPI {company.npi} · EVV: {company.evvVendor}
           </p>
           <div className="btn-row">
-            <a className="btn btn-primary" href={`tel:${company.phoneHref}`}>
+            <a className="btn btn-primary" href="#referrals">
+              Request CareBridge Through Your Health Plan
+            </a>
+            <a className="btn btn-secondary-light" href={`tel:${company.phoneHref}`}>
               Call {company.phone}
             </a>
-            <a className="btn btn-secondary-light" href="#contact">
-              Request Services
+            <a className="btn btn-secondary-light" href="#careers">
+              Apply as a Caregiver
             </a>
           </div>
           <p className="hero-disclaimer">
@@ -576,7 +622,7 @@ function HowItWorks() {
       <div className="container">
         <div className="section-header section-header--center copy-block">
           <span className="section-kicker">How It Works</span>
-          <h2>A clear path from first call to approved in-home support.</h2>
+          <h2>A clear path from first call to verified next steps.</h2>
           <p className="long-copy">
             CareBridge helps members, families, representatives, and referral partners understand the next step without overpromising eligibility, approval, or service hours.
           </p>
@@ -664,21 +710,105 @@ function ReferralSection() {
   return (
     <AnimatedSection className="section section-navy" id="referrals">
       <div className="container referral-layout">
-        <span className="section-kicker section-kicker--light">Referrals</span>
-        <h2>Referral partners can contact CareBridge for next-step coordination.</h2>
+        <span className="section-kicker section-kicker--light">Referrals / How to Choose CareBridge</span>
+        <h2>Ready to request CareBridge through your health plan?</h2>
         <p className="long-copy">
-          Case managers, discharge planners, community organizations, and family representatives may contact CareBridge to discuss possible personal assistance services for eligible Medicaid members.
+          CareBridge welcomes calls from Texas Medicaid members, family representatives, service coordinators, case managers, and referral partners. Services remain subject to eligibility, authorization, covered benefits, service area, health plan participation, and applicable program requirements.
         </p>
+
+        <div className="referral-card">
+          <p className="referral-card__intro">
+            Ready to request CareBridge through your health plan? Please share the following information with your health plan service coordinator or case manager:
+          </p>
+          <dl className="referral-details">
+            {referralDetails.map(([label, value]) => (
+              <div className="referral-details__row" key={label}>
+                <dt>{label}</dt>
+                <dd>{value}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+
         <p className="referral-note long-copy">
           Please do not submit protected health information through a general website form. CareBridge can provide appropriate instructions for next steps.
         </p>
         <div className="btn-row">
-          <a className="btn btn-secondary-light" href={`mailto:${company.email}`}>
-            Email CareBridge
-          </a>
           <a className="btn btn-secondary-light" href={`tel:${company.phoneHref}`}>
             Call {company.phone}
           </a>
+          <a className="btn btn-secondary-light" href={`mailto:${company.email}`}>
+            Email CareBridge
+          </a>
+          <a className="btn btn-secondary-light" href="#contact">
+            Send General Request
+          </a>
+        </div>
+      </div>
+    </AnimatedSection>
+  );
+}
+
+
+function ComplianceSection() {
+  return (
+    <AnimatedSection className="section section-white" id="compliance">
+      <div className="container">
+        <div className="section-header copy-block--wide">
+          <span className="section-kicker">Trust / Compliance</span>
+          <h2>Licensed, non-medical support with clear Medicaid boundaries.</h2>
+          <p className="long-copy">
+            CareBridge communicates clearly about what Personal Assistance Services can and cannot include. We avoid promises about approval, hours, payment, or benefits because those items must be determined through the member’s health plan, program rules, eligibility, and authorization process.
+          </p>
+        </div>
+
+        <div className="card-grid card-grid--four reveal--stagger">
+          {complianceHighlights.map((item, index) => (
+            <article className="info-card" style={{ "--i": index }} key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </AnimatedSection>
+  );
+}
+
+function CareersSection() {
+  return (
+    <AnimatedSection className="section section-teal-soft" id="careers">
+      <div className="container careers-layout">
+        <div className="copy-block">
+          <span className="section-kicker">Careers</span>
+          <h2>Caregiver jobs with clear expectations and meaningful daily support.</h2>
+          <p className="long-copy">
+            CareBridge hires caregivers to provide non-medical Personal Assistance Services for eligible members under applicable program, service-plan, EVV, and agency requirements.
+          </p>
+          <p className="career-pay">{caregiverPayStatement}</p>
+          <div className="btn-row">
+            <a className="btn btn-primary" href={`mailto:${company.email}?subject=Caregiver%20Application%20Inquiry`}>
+              Apply by Email
+            </a>
+            <a className="btn btn-outline-dark" href={`tel:${company.phoneHref}`}>
+              Call About Careers
+            </a>
+          </div>
+        </div>
+
+        <div className="career-card">
+          <h3>Caregiver role may include</h3>
+          <ul className="career-list">
+            {careerHighlights.map((item) => (
+              <li key={item}>
+                <Icon name="check" className="feature-list__icon" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="career-disclaimer">
+            Employment, assignments, schedules, and pay depend on hiring needs, qualifications, service location, member authorization, and program requirements.
+          </p>
         </div>
       </div>
     </AnimatedSection>
@@ -747,9 +877,9 @@ function ContactForm() {
         <div>
           <div className="section-header copy-block contact-copy">
             <span className="section-kicker">Contact</span>
-            <h2>Talk with CareBridge about possible services.</h2>
+            <h2>Request a call about Personal Assistance Services.</h2>
             <p className="long-copy">
-              Call CareBridge or send a general request. A team member can explain next steps for eligibility, authorization, and health plan verification.
+              Call CareBridge or send a general request. A team member can explain general next steps for eligibility, authorization, health plan verification, referrals, or caregiver applications.
             </p>
           </div>
 
@@ -799,7 +929,7 @@ function ContactForm() {
             </div>
 
             <div className="form-field">
-              <label htmlFor="message">General message</label>
+              <label htmlFor="message">General message — do not include private identifiers</label>
               <textarea
                 id="message"
                 name="message"
@@ -815,7 +945,7 @@ function ContactForm() {
             </div>
 
             <button className="btn btn-primary btn--full" type="submit">
-              Request Contact
+              Send General Request
             </button>
 
             <p className="form-privacy long-copy">
@@ -881,7 +1011,7 @@ function ContactForm() {
 
             <div className="contact-next-item">
               <span>3</span>
-              <p>Services begin only after eligibility, authorization, and applicable plan requirements are confirmed.</p>
+              <p>Services begin only after eligibility, authorization, service-plan details, and applicable plan requirements are confirmed.</p>
             </div>
           </div>
         </div>
@@ -937,7 +1067,7 @@ function Footer() {
           <div className="footer-col footer-brand">
             <p className="footer-brand-name">{company.name}</p>
             <p className="footer-tagline long-copy">
-              {company.tagline} CareBridge provides non-medical Texas Medicaid-focused personal assistance services for eligible members.
+              {company.tagline} CareBridge provides licensed, non-medical Texas Medicaid-focused Personal Assistance Services for eligible members.
             </p>
           </div>
 
@@ -979,7 +1109,7 @@ function Footer() {
 
         <div className="footer-legal-block">
           <p className="footer-legal-main long-copy">
-            CareBridge Solutions LLC provides non-medical personal assistance services. Eligibility, authorization, covered services, service hours, health plan participation, credentialing status, and service availability must be verified before services begin. This website does not guarantee Medicaid eligibility, approval, or authorization.
+            CareBridge Solutions LLC provides non-medical Personal Assistance Services under Texas HCSSA License #024033 — Personal Assistance Services. NPI: 1144015751. Eligibility, authorization, covered services, service hours, health plan participation, credentialing status, and service availability must be verified before services begin. This website does not guarantee Medicaid eligibility, approval, authorization, benefits, payment, or service hours.
           </p>
 
           <div className="footer-legal-details">
@@ -1013,13 +1143,28 @@ function MobileStickyCTA() {
         Call
       </a>
       <a className="mobile-sticky-cta__btn mobile-sticky-cta__btn--request" href="#contact">
-        Request Services
+        Request Contact
       </a>
     </div>
   );
 }
 
 export default function App() {
+  useEffect(() => {
+    document.title = "Texas Medicaid Personal Assistance Services | CareBridge Solutions LLC";
+
+    const description =
+      "CareBridge Solutions LLC provides licensed, non-medical Texas Medicaid Personal Assistance Services in Fort Worth. Request CareBridge through your health plan or contact us about caregiver roles.";
+
+    let meta = document.querySelector('meta[name="description"]');
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.setAttribute("name", "description");
+      document.head.appendChild(meta);
+    }
+    meta.setAttribute("content", description);
+  }, []);
+
   return (
     <>
       <a className="skip-link" href="#main">
@@ -1035,8 +1180,10 @@ export default function App() {
         <MedicaidSupport />
         <HowItWorks />
         <WhyChooseCareBridge />
+        <ComplianceSection />
         <HealthPlanStatus />
         <ReferralSection />
+        <CareersSection />
         <AboutSection />
         <ContactForm />
         <FAQSection />
