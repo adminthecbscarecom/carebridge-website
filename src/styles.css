@@ -1577,3 +1577,49 @@ p {
     gap: 0.32rem;
   }
 }
+
+
+/* Bilingual display fixes */
+.ltr-value {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+  text-align: left;
+}
+
+[dir="rtl"] .section-header--center,
+[dir="rtl"] .section-header--center p,
+[dir="rtl"] .hero-copy,
+[dir="rtl"] .referral-layout,
+[dir="rtl"] .careers-layout,
+[dir="rtl"] .contact-copy,
+[dir="rtl"] .contact-info,
+[dir="rtl"] .contact-next-card,
+[dir="rtl"] .footer-col,
+[dir="rtl"] .footer-legal-main,
+[dir="rtl"] .footer-legal-detail,
+[dir="rtl"] .footer-bottom,
+[dir="rtl"] .faq-question,
+[dir="rtl"] .faq-answer p,
+[dir="rtl"] .form-field label,
+[dir="rtl"] .form-privacy,
+[dir="rtl"] input,
+[dir="rtl"] select,
+[dir="rtl"] textarea {
+  text-align: right;
+}
+
+[dir="rtl"] .section-header--center p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+[dir="rtl"] .btn-row {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .footer-hours,
+[dir="rtl"] .contact-hours,
+[dir="rtl"] .address-line {
+  text-align: right;
+}
