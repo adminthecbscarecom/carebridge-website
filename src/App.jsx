@@ -296,6 +296,8 @@ const content = {
       companyName: "Company Name",
       npi: "NPI",
       license: "Texas HCSSA License",
+      licenseNumber: "#024033",
+      licenseCategory: "Personal Assistance Services",
       phone: "Phone",
       fax: "Fax",
       email: "Email",
@@ -681,7 +683,9 @@ const content = {
       detailsLabel: "معلومات إحالة CareBridge",
       companyName: "اسم الشركة",
       npi: "NPI",
-      license: "ترخيص Texas HCSSA",
+      license: "ترخيص HCSSA في تكساس",
+      licenseNumber: "#024033",
+      licenseCategory: "خدمات المساعدة الشخصية",
       phone: "الهاتف",
       fax: "الفاكس",
       email: "البريد الإلكتروني",
@@ -1265,7 +1269,7 @@ function ReferralSection({ t }) {
         <div className="referral-note" aria-label={t.referrals.detailsLabel}>
           <p><strong>{t.referrals.companyName}:</strong> <LtrValue>{company.name}</LtrValue></p>
           <p><strong>{t.referrals.npi}:</strong> <LtrValue>{company.npi}</LtrValue></p>
-          <p><strong>{t.referrals.license}:</strong> <LtrValue>{company.license}</LtrValue></p>
+          <p><strong>{t.referrals.license}:</strong> <LtrValue>{t.referrals.licenseNumber}</LtrValue> — {t.referrals.licenseCategory}</p>
           <p><strong>{t.referrals.phone}:</strong> <a href={`tel:${company.phoneHref}`}><LtrValue>{company.phone}</LtrValue></a></p>
           <p><strong>{t.referrals.fax}:</strong> <LtrValue>{company.fax}</LtrValue></p>
           <p><strong>{t.referrals.email}:</strong> <a href={`mailto:${company.email}`}><LtrValue>{company.email}</LtrValue></a></p>
