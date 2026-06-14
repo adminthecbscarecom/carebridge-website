@@ -26,6 +26,12 @@ const languageOptions = {
     shortLabel: "EN",
     dir: "ltr",
   },
+  es: {
+    code: "es",
+    label: "Español",
+    shortLabel: "ES",
+    dir: "ltr",
+  },
   ar: {
     code: "ar",
     label: "العربية",
@@ -35,206 +41,216 @@ const languageOptions = {
 };
 
 const content = {
-  en: {
-    company: {
-      tagline: "Reliable Texas Medicaid personal assistance services at home.",
-      hours: "Monday – Friday, 8:00 AM – 5:00 PM",
-      hoursLine1: "Monday – Friday",
-      hoursLine2: "8:00 AM – 5:00 PM",
+  "en": {
+    "company": {
+      "tagline": "Reliable Texas Medicaid personal assistance services at home.",
+      "hours": "Monday – Friday, 8:00 AM – 5:00 PM",
+      "hoursLine1": "Monday – Friday",
+      "hoursLine2": "8:00 AM – 5:00 PM"
     },
-    skipLink: "Skip to content",
-    languageToggleLabel: "Website language",
-    switchToEnglish: "English",
-    switchToArabic: "العربية",
-    navLinks: [
-      { href: "#services", label: "Services" },
-      { href: "#medicaid-support", label: "Medicaid Support" },
-      { href: "#how-it-works", label: "How It Works" },
-      { href: "#about", label: "About" },
-      { href: "#referrals", label: "Referrals" },
-      { href: "#careers", label: "Careers" },
-      { href: "#contact", label: "Contact" },
+    "skipLink": "Skip to content",
+    "languageToggleLabel": "Website language",
+    "switchToEnglish": "English",
+    "switchToArabic": "العربية",
+    "navLinks": [
+      {
+        "href": "#services",
+        "label": "Services"
+      },
+      {
+        "href": "#medicaid-support",
+        "label": "Medicaid Support"
+      },
+      {
+        "href": "#how-it-works",
+        "label": "How It Works"
+      },
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#referrals",
+        "label": "Referrals"
+      },
+      {
+        "href": "#careers",
+        "label": "Careers"
+      },
+      {
+        "href": "#contact",
+        "label": "Contact"
+      }
     ],
-    buttons: {
-      requestCareServices: "Request Care Services",
-      callNow: "Call Now",
-      call: "Call",
-      requestServices: "Request Services",
-      emailCareBridge: "Email CareBridge",
-      applyByEmail: "Apply by Email",
-      requestContact: "Request Contact",
+    "buttons": {
+      "requestCareServices": "Request Care Services",
+      "callNow": "Call Now",
+      "call": "Call",
+      "requestServices": "Request Services",
+      "emailCareBridge": "Email CareBridge",
+      "applyByEmail": "Apply by Email",
+      "requestContact": "Request Contact"
     },
-    hero: {
-      eyebrow: "Texas Medicaid Personal Assistance Services",
-      headline: "Warm, dependable in-home support for eligible Texas Medicaid members.",
-      lead:
-        "CareBridge Solutions LLC provides non-medical personal assistance services that help members with approved daily living needs while supporting family communication, documentation, and Medicaid program requirements.",
-      trust:
-        "Licensed Texas Personal Assistance Services provider · Medicaid-focused support · EVV-supported documentation",
-      disclaimer:
-        "Eligibility, authorization, health plan participation, credentialing status, and service availability must be verified before services begin.",
+    "hero": {
+      "eyebrow": "Texas Medicaid Personal Assistance Services",
+      "headline": "Warm, dependable in-home support for eligible Texas Medicaid members.",
+      "lead": "CareBridge Solutions LLC provides non-medical Personal Assistance Services to help with approved daily living needs at home.",
+      "trust": "Licensed Texas HCSSA Personal Assistance Services · Medicaid-focused support · EVV-supported documentation",
+      "disclaimer": "Eligibility, authorization, health plan participation, credentialing status, and service availability must be verified before services begin."
     },
-    trustBadges: [
+    "trustBadges": [
       {
-        title: "Licensed Care Provider",
-        text: "Non-medical personal assistance services for eligible Texas Medicaid members.",
-        icon: "shield",
+        "title": "Licensed Care Provider",
+        "text": "Non-medical personal assistance services for eligible Texas Medicaid members.",
+        "icon": "shield"
       },
       {
-        title: "Medicaid-Focused Support",
-        text: "Guidance for families navigating Medicaid-based personal assistance services.",
-        icon: "heart",
+        "title": "Medicaid-Focused Support",
+        "text": "Guidance for families navigating Medicaid-based personal assistance services.",
+        "icon": "heart"
       },
       {
-        title: "EVV-Supported Documentation",
-        text: "Covered visits are documented through applicable Electronic Visit Verification workflows.",
-        icon: "check",
+        "title": "EVV-Supported Documentation",
+        "text": "Covered visits are documented through applicable Electronic Visit Verification workflows.",
+        "icon": "check"
       },
       {
-        title: "Texas Communication",
-        text: "Responsive support for members, family representatives, case managers, and referral partners.",
-        icon: "location",
-      },
+        "title": "Texas Communication",
+        "text": "Responsive support for members, family representatives, case managers, and referral partners.",
+        "icon": "location"
+      }
     ],
-    whoWeHelp: {
-      kicker: "Who We Help",
-      heading: "Support built around dignity, safety, and daily life at home.",
-      intro:
-        "CareBridge supports eligible members and families who need reliable help with approved non-medical daily living needs. Our role is to coordinate clearly, document carefully, and provide respectful assistance in the home.",
-      local: "Serving families across Texas.",
-      cards: [
+    "whoWeHelp": {
+      "kicker": "Who We Help",
+      "heading": "Support built around dignity, safety, and daily life at home.",
+      "intro": "CareBridge supports eligible members and families who need reliable help with approved non-medical daily living needs. Our role is to coordinate clearly, document carefully, and provide respectful assistance in the home.",
+      "local": "Serving families across Texas.",
+      "cards": [
         {
-          title: "Older Adults",
-          text: "Support for daily routines, personal care, meals, and safe movement at home.",
+          "title": "Older Adults",
+          "text": "Support for daily routines, personal care, meals, and safe movement at home."
         },
         {
-          title: "Adults with Disabilities",
-          text: "Dependable attendant support that helps members maintain comfort, dignity, and independence.",
+          "title": "Adults with Disabilities",
+          "text": "Dependable attendant support that helps members maintain comfort, dignity, and independence."
         },
         {
-          title: "Children and Young Adults",
-          text: "Support for eligible members under applicable Medicaid programs and authorization requirements.",
+          "title": "Children and Young Adults",
+          "text": "Support for eligible members under applicable Medicaid programs and authorization requirements."
         },
         {
-          title: "Family Caregivers",
-          text: "Clear communication and reliable scheduling to help families feel supported.",
-        },
-      ],
+          "title": "Family Caregivers",
+          "text": "Clear communication and reliable scheduling to help families feel supported."
+        }
+      ]
     },
-    services: {
-      kicker: "Services",
-      heading: "Personal assistance services for approved daily living needs.",
-      intro:
-        "Our services are non-medical and must match the member’s approved plan of care, eligibility, authorization, and applicable Texas Medicaid program requirements.",
-      footnote:
-        "Services must be authorized and delivered within the member’s approved plan of care and applicable Medicaid program rules.",
-      items: [
+    "services": {
+      "kicker": "Services",
+      "heading": "Personal assistance services for approved daily living needs.",
+      "intro": "CareBridge provides non-medical support with approved daily living needs at home. Services are coordinated according to the member’s service plan and applicable program requirements.",
+      "footnote": "CareBridge does not provide skilled nursing, therapy, medical treatment, or emergency services.",
+      "items": [
         {
-          title: "Personal Care Assistance",
-          image: "/images/personal-care-assistance.png",
-          imageAlt: "Caregiver assisting an older adult with safe daily support at home",
-          text: "Help with bathing, dressing, grooming, toileting, and other approved personal care tasks.",
+          "title": "Personal Care Assistance",
+          "image": "/images/personal-care-assistance.png",
+          "imageAlt": "Caregiver assisting an older adult with safe daily support at home",
+          "text": "Help with bathing, dressing, grooming, toileting, and other approved personal care tasks."
         },
         {
-          title: "Mobility and Transfer Support",
-          image: "/images/mobility-support.png",
-          imageAlt: "Caregiver supporting an older adult using a walker at home",
-          text: "Assistance with safe movement around the home, transfers, and positioning support within the approved care plan.",
+          "title": "Mobility and Transfer Support",
+          "image": "/images/mobility-support.png",
+          "imageAlt": "Caregiver supporting an older adult using a walker at home",
+          "text": "Assistance with safe movement around the home, transfers, and positioning support within the approved care plan."
         },
         {
-          title: "Meal Preparation",
-          image: "/images/meal-preparation.png",
-          imageAlt: "Caregiver helping an older adult prepare a meal at home",
-          text: "Support with preparing simple meals and maintaining daily nutrition routines.",
+          "title": "Meal Preparation",
+          "image": "/images/meal-preparation.png",
+          "imageAlt": "Caregiver helping an older adult prepare a meal at home",
+          "text": "Support with preparing simple meals and maintaining daily nutrition routines."
         },
         {
-          title: "Light Housekeeping",
-          image: "/images/light-housekeeping.png",
-          imageAlt: "Clean home icon for light housekeeping support",
-          text: "Help with approved household tasks related to the member’s health, safety, and daily living needs.",
+          "title": "Light Housekeeping",
+          "image": "/images/light-housekeeping.png",
+          "imageAlt": "Clean home icon for light housekeeping support",
+          "text": "Help with approved household tasks related to the member’s health, safety, and daily living needs."
         },
         {
-          title: "Laundry and Linens",
-          image: "/images/laundry-linens.png",
-          imageAlt: "Caregiver and older adult folding laundry and linens at home",
-          text: "Assistance with member-related laundry and basic home routines when included in the service plan.",
+          "title": "Laundry and Linens",
+          "image": "/images/laundry-linens.png",
+          "imageAlt": "Caregiver and older adult folding laundry and linens at home",
+          "text": "Assistance with member-related laundry and basic home routines when included in the service plan."
         },
         {
-          title: "Attendant Support",
-          image: "/images/attendant-support.png",
-          imageAlt: "Caregiver and older adult sharing a warm moment at home",
-          text: "Reliable non-medical support from trained staff following applicable Medicaid and agency requirements.",
-        },
-      ],
+          "title": "Attendant Support",
+          "image": "/images/attendant-support.png",
+          "imageAlt": "Caregiver and older adult sharing a warm moment at home",
+          "text": "Reliable non-medical support from trained staff following applicable Medicaid and agency requirements."
+        }
+      ]
     },
-    medicaidSupport: {
-      kicker: "Medicaid Support",
-      heading: "Focused on Texas Medicaid personal assistance programs.",
-      intro:
-        "CareBridge coordinates non-medical personal assistance services for eligible members when program requirements, eligibility, authorization, service area, and health plan participation are verified.",
-      footnote:
-        "Program availability, eligibility, authorization, and plan participation may vary. Contact CareBridge to discuss next steps.",
-      programs: [
+    "medicaidSupport": {
+      "kicker": "Medicaid Support",
+      "heading": "Focused on Texas Medicaid personal assistance programs.",
+      "intro": "CareBridge coordinates non-medical personal assistance services for eligible members after required program, health plan, service area, and authorization details are reviewed.",
+      "footnote": "Program availability and plan participation may vary. Contact CareBridge to discuss next steps.",
+      "programs": [
         {
-          title: "Personal Assistance Services",
-          text: "Non-medical support for approved daily living and attendant care needs.",
+          "title": "Personal Assistance Services",
+          "text": "Non-medical support for approved daily living and attendant care needs."
         },
         {
-          title: "PHC / FC / CAS",
-          text: "Support for eligible Primary Home Care, Family Care, and Community Attendant Services members.",
+          "title": "PHC / FC / CAS",
+          "text": "Support for eligible Primary Home Care, Family Care, and Community Attendant Services members."
         },
         {
-          title: "STAR+PLUS",
-          text: "Support for eligible adults receiving long-term services and supports through Medicaid managed care.",
+          "title": "STAR+PLUS",
+          "text": "Support for eligible adults receiving long-term services and supports through Medicaid managed care."
         },
         {
-          title: "STAR Kids",
-          text: "Support for eligible children and young adults when services are authorized through applicable Medicaid programs.",
+          "title": "STAR Kids",
+          "text": "Support for eligible children and young adults when services are authorized through applicable Medicaid programs."
         },
         {
-          title: "EVV-Supported Services",
-          text: "CareBridge follows applicable Electronic Visit Verification requirements for covered services.",
-        },
-      ],
+          "title": "EVV-Supported Services",
+          "text": "CareBridge follows applicable Electronic Visit Verification requirements for covered services."
+        }
+      ]
     },
-    howItWorks: {
-      kicker: "How It Works",
-      heading: "A clear path from first call to approved in-home support.",
-      intro:
-        "CareBridge helps members, families, representatives, and referral partners understand the next step without overpromising eligibility, approval, or service hours.",
-      steps: [
+    "howItWorks": {
+      "kicker": "How It Works",
+      "heading": "A clear path from first call to in-home support.",
+      "intro": "CareBridge helps members, families, representatives, and referral partners understand the next step clearly.",
+      "steps": [
         {
-          step: "1",
-          title: "Contact CareBridge",
-          text: "Call us or submit a request so we can understand the support needed.",
+          "step": "1",
+          "title": "Contact CareBridge",
+          "text": "Call us or submit a request so we can understand the support needed."
         },
         {
-          step: "2",
-          title: "Review Eligibility and Authorization",
-          text: "We review basic program information and explain what documentation or authorization may be required.",
+          "step": "2",
+          "title": "Review Eligibility and Authorization",
+          "text": "We review basic program information and explain what may be needed before services can begin."
         },
         {
-          step: "3",
-          title: "Coordinate the Care Plan",
-          text: "CareBridge works with the member, family, representative, and applicable program requirements to prepare for service.",
+          "step": "3",
+          "title": "Coordinate the Care Plan",
+          "text": "CareBridge works with the member, family, representative, and program requirements to prepare for service."
         },
         {
-          step: "4",
-          title: "Begin In-Home Support",
-          text: "Approved services begin with trained staff, clear scheduling, and EVV-supported visit documentation.",
-        },
-      ],
+          "step": "4",
+          "title": "Begin In-Home Support",
+          "text": "Services begin with trained staff, clear scheduling, and EVV-supported visit documentation after required approvals are in place."
+        }
+      ]
     },
-    whyCareBridge: {
-      kicker: "Why CareBridge",
-      heading: "Premium communication with practical Medicaid discipline.",
-      paragraph1:
-        "Families deserve warm, reliable support. Medicaid programs also require accurate eligibility checks, authorization awareness, visit documentation, and respectful coordination. CareBridge is built around both needs.",
-      paragraph2:
-        "Our approach is steady, documentation-focused, and designed to support members at home while helping families understand what must be verified before services begin.",
-      imageAlt: "CareBridge team member reviewing care information with a family at home",
-      featureListLabel: "CareBridge service strengths",
-      features: [
+    "whyCareBridge": {
+      "kicker": "Why CareBridge",
+      "heading": "Premium communication with practical Medicaid discipline.",
+      "paragraph1": "Families deserve warm, reliable support. Medicaid programs also require accurate eligibility checks, authorization awareness, visit documentation, and respectful coordination. CareBridge is built around both needs.",
+      "paragraph2": "Our approach is steady, documentation-focused, and designed to support members at home while helping families understand what must be verified before services begin.",
+      "imageAlt": "CareBridge team member reviewing care information with a family at home",
+      "featureListLabel": "CareBridge service strengths",
+      "features": [
         "Licensed Texas personal assistance services provider",
         "Medicaid-focused service coordination",
         "EVV-supported visit documentation",
@@ -242,387 +258,771 @@ const content = {
         "Trained W-2 staff",
         "Respectful, non-discriminatory service",
         "Texas care coordination",
-        "Documentation-focused operations",
-      ],
+        "Documentation-focused operations"
+      ]
     },
-    healthPlans: {
-      kicker: "Health Plan Status",
-      heading: "Health Plan Participation Status",
-      intro:
-        "CareBridge Solutions works with participating Texas Medicaid health plans for eligible members receiving personal assistance services. Participation, eligibility, authorization, covered services, and credentialing status may vary by plan, service area, and member circumstances.",
-      disclaimer:
-        "Health plan participation, member eligibility, authorization, covered services, and credentialing status must be verified before services begin. Listing a health plan does not guarantee eligibility, approval, service availability, or service hours. Participation and credentialing status may change.",
-      plans: [
+    "healthPlans": {
+      "kicker": "Health Plan Status",
+      "heading": "Health Plan Participation Status",
+      "intro": "CareBridge Solutions works with participating Texas Medicaid health plans for eligible members receiving personal assistance services. Active Agreement means CareBridge has an agreement or participation status with the listed health plan.",
+      "disclaimer": "Member eligibility, service area, authorization, covered services, credentialing status, and plan-specific requirements must still be verified before services begin. Listing a health plan does not guarantee eligibility, approval, service availability, payment, or service hours.",
+      "plans": [
         {
-          name: "Aetna Better Health of Texas",
-          status: "Active Agreement",
-          text: "CareBridge supports eligible members according to plan requirements, service area rules, member eligibility, authorization, claims rules, and ongoing credentialing requirements.",
+          "name": "Aetna Better Health of Texas",
+          "status": "Active Agreement",
+          "text": "CareBridge supports eligible members according to plan requirements, service area rules, member eligibility, authorization, claims rules, and ongoing credentialing requirements."
         },
         {
-          name: "Cook Children’s Health Plan",
-          status: "Active Agreement",
-          text: "CareBridge support depends on applicable lines of business, member eligibility, authorization, service area, plan participation, and operational readiness.",
+          "name": "Cook Children’s Health Plan",
+          "status": "Active Agreement",
+          "text": "CareBridge support depends on applicable lines of business, member eligibility, authorization, service area, plan participation, and operational readiness."
         },
         {
-          name: "Superior HealthPlan",
-          status: "Active Agreement",
-          text: "CareBridge support is subject to member eligibility verification, prior authorization when required, credentialing status, system activation, and EVV-supported service documentation.",
+          "name": "Superior HealthPlan",
+          "status": "Active Agreement",
+          "text": "CareBridge support is subject to member eligibility verification, prior authorization when required, credentialing status, system activation, and EVV-supported service documentation."
         },
         {
-          name: "UnitedHealthcare Community Plan of Texas",
-          status: "Active Agreement",
-          text: "CareBridge participation is governed by applicable agreement terms, effective date, eligibility verification, authorization requirements, and plan-specific administrative rules.",
+          "name": "UnitedHealthcare Community Plan of Texas",
+          "status": "Active Agreement",
+          "text": "CareBridge participation is governed by applicable agreement terms, effective date, eligibility verification, authorization requirements, and plan-specific administrative rules."
         },
         {
-          name: "Texas Children’s Health Plan",
-          status: "Active Agreement",
-          text: "CareBridge may support eligible members in accordance with applicable agreement terms, service authorization requirements, member eligibility verification, and ongoing compliance obligations.",
+          "name": "Texas Children’s Health Plan",
+          "status": "Active Agreement",
+          "text": "CareBridge may support eligible members in accordance with applicable agreement terms, service authorization requirements, member eligibility verification, and ongoing compliance obligations."
         },
         {
-          name: "Molina Healthcare",
-          status: "In Progress",
-          text: "CareBridge is monitoring Molina network panel and contracting availability. Support is not active until contracting, credentialing, system activation, member eligibility, authorization, service area, and EVV documentation requirements are complete.",
-        },
-      ],
+          "name": "Molina Healthcare",
+          "status": "In Progress",
+          "text": "CareBridge is monitoring Molina network panel and contracting availability. Support is not active until contracting, credentialing, system activation, member eligibility, authorization, service area, and EVV documentation requirements are complete."
+        }
+      ]
     },
-    referrals: {
-      kicker: "Referrals",
-      heading: "How to request CareBridge through your health plan.",
-      intro:
-        "Case managers, service coordinators, discharge planners, community organizations, and family representatives may contact CareBridge to discuss possible personal assistance services for eligible Medicaid members.",
-      requestText:
-        "Ready to request CareBridge through your health plan? Please share the following information with your health plan service coordinator or case manager:",
-      detailsLabel: "CareBridge referral details",
-      companyName: "Company Name",
-      npi: "NPI",
-      license: "Texas HCSSA License",
-      licenseNumber: "#024033",
-      licenseCategory: "Personal Assistance Services",
-      phone: "Phone",
-      fax: "Fax",
-      email: "Email",
-      privacyNote:
-        "Please do not submit protected health information through a general website form. CareBridge can provide appropriate instructions for next steps.",
+    "referrals": {
+      "kicker": "Referrals",
+      "heading": "How to request CareBridge through your health plan.",
+      "intro": "CareBridge can coordinate with Medicaid members, families, service coordinators, case managers, and referral partners for possible Personal Assistance Services.",
+      "requestText": "Ready to request CareBridge through your health plan? Please share the following information with your health plan service coordinator or case manager:",
+      "detailsLabel": "CareBridge referral details",
+      "companyName": "Company Name",
+      "npi": "NPI",
+      "license": "Texas HCSSA License",
+      "licenseNumber": "#024033",
+      "licenseCategory": "Personal Assistance Services",
+      "phone": "Phone",
+      "fax": "Fax",
+      "email": "Email",
+      "privacyNote": "Please do not submit protected health information through the general website form. CareBridge can provide appropriate instructions for next steps.",
+      "familyCardTitle": "For Medicaid members and families",
+      "familyCardText": "Call CareBridge or share the referral details below with your health plan service coordinator or case manager. They can review whether CareBridge may be requested through your plan.",
+      "coordinatorCardTitle": "For service coordinators and case managers",
+      "coordinatorCardText": "Use the NPI, HCSSA license, phone, fax, and email below to contact CareBridge for referral coordination and next-step verification."
     },
-    careers: {
-      kicker: "Careers",
-      heading: "Apply to work as a CareBridge caregiver.",
-      intro:
-        "CareBridge Solutions LLC hires dependable caregivers to provide non-medical personal assistance services for eligible members. Caregivers support approved daily living tasks while following agency policies, documentation expectations, and applicable Medicaid program requirements.",
-      pay:
-        "Caregiver pay starts at $13.00 per hour. Final pay may vary based on role, schedule, experience, location, and program requirements.",
-      disclaimer:
-        "Employment, assignments, schedules, and service availability depend on hiring requirements, member needs, authorization, and operational fit.",
-      emailSubject: "Caregiver Application Inquiry",
+    "careers": {
+      "kicker": "Careers",
+      "heading": "Apply to work as a CareBridge caregiver.",
+      "intro": "CareBridge Solutions LLC hires dependable caregivers to provide non-medical personal assistance services for eligible members. Caregivers support approved daily living tasks while following agency policies, documentation expectations, and applicable Medicaid program requirements.",
+      "pay": "Caregiver pay starts at $13.00 per hour. Final pay may vary based on role, schedule, experience, location, and program requirements.",
+      "disclaimer": "Employment, assignments, schedules, and service availability depend on hiring requirements, member needs, authorization, and operational fit.",
+      "emailSubject": "Caregiver Application Inquiry"
     },
-    about: {
-      kicker: "About CareBridge",
-      heading: "Built to bridge families, care needs, and Medicaid requirements.",
-      paragraph1:
-        "CareBridge Solutions LLC provides non-medical personal assistance services for eligible Texas Medicaid members. Our work centers on respectful in-home support, clear communication, and documentation-conscious operations.",
-      paragraph2:
-        "We serve members and families with a calm, professional approach that keeps expectations clear. Eligibility, authorization, health plan participation, and service availability are verified before services begin.",
-      quote: "“Care should feel personal, dependable, and clear from the first conversation”",
-      imageAlt: "Caregiver and older adult receiving warm in-home support",
+    "about": {
+      "kicker": "About CareBridge",
+      "heading": "Built to bridge families, care needs, and Medicaid requirements.",
+      "paragraph1": "CareBridge Solutions LLC provides non-medical personal assistance services for eligible Texas Medicaid members. Our work centers on respectful in-home support, clear communication, and documentation-conscious operations.",
+      "paragraph2": "We serve members and families with a calm, professional approach that keeps expectations clear. Eligibility, authorization, health plan participation, and service availability are verified before services begin.",
+      "quote": "“Care should feel personal, dependable, and clear from the first conversation”",
+      "imageAlt": "Caregiver and older adult receiving warm in-home support"
     },
-    contact: {
-      kicker: "Contact",
-      heading: "Talk with CareBridge about possible services.",
-      intro:
-        "Call CareBridge or send a general request. A team member can explain next steps for eligibility, authorization, and health plan verification.",
-      formSubject: "CareBridge Website Service Request",
-      mailHeader: "CareBridge Solutions website request",
-      name: "Name",
-      phone: "Phone",
-      email: "Email",
-      bestTime: "Best time to contact",
-      selectOne: "Select one",
-      morning: "Morning",
-      afternoon: "Afternoon",
-      evening: "Evening",
-      relationship: "I am a",
-      medicaidMember: "Medicaid member",
-      familyRep: "Family member or representative",
-      caseManager: "Case manager or referral partner",
-      other: "Other",
-      generalMessage: "General message",
-      messagePlaceholder:
-        "Please keep this general. Do not include detailed medical information, Medicaid IDs, Social Security numbers, or other sensitive information.",
-      privacyAcknowledgement:
-        "I understand this general website form should not be used to send sensitive medical information or private identifiers.",
-      privacyMailLine:
-        "Privacy acknowledgement: The sender was instructed not to include sensitive medical information in this general website form.",
-      urgentNotice:
-        "For urgent or emergency needs, call 911 or seek immediate medical assistance. CareBridge does not provide emergency services.",
-      success:
-        "A draft email should open on your device. Please review it before sending and avoid including sensitive medical information.",
-      labels: {
-        phone: "Phone",
-        fax: "Fax",
-        email: "Email",
-        hours: "Hours",
-        office: "Office",
+    "contact": {
+      "kicker": "Contact",
+      "heading": "Talk with CareBridge about possible services.",
+      "intro": "Call CareBridge or send a general request. A team member can explain next steps for eligibility, authorization, and health plan verification.",
+      "formSubject": "CareBridge Website Service Request",
+      "mailHeader": "CareBridge Solutions website request",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "bestTime": "Best time to contact",
+      "selectOne": "Select one",
+      "morning": "Morning",
+      "afternoon": "Afternoon",
+      "evening": "Evening",
+      "relationship": "I am a",
+      "medicaidMember": "Medicaid member",
+      "familyRep": "Family member or representative",
+      "caseManager": "Case manager or referral partner",
+      "other": "Other",
+      "generalMessage": "General message",
+      "messagePlaceholder": "Please keep this general. Do not include detailed medical information, Medicaid IDs, Social Security numbers, or other sensitive information.",
+      "privacyAcknowledgement": "I understand this general website form should not be used to send sensitive medical information or private identifiers.",
+      "privacyMailLine": "Privacy acknowledgement: The sender was instructed not to include sensitive medical information in this general website form.",
+      "urgentNotice": "For urgent or emergency needs, call 911 or seek immediate medical assistance. CareBridge does not provide emergency services.",
+      "success": "Thank you. Your general request was submitted to CareBridge.",
+      "labels": {
+        "phone": "Phone",
+        "fax": "Fax",
+        "email": "Email",
+        "hours": "Hours",
+        "office": "Office"
       },
-      imageAlt: "CareBridge Solutions Personal Assistance Services",
-      nextHeading: "What happens next?",
-      nextSteps: [
+      "imageAlt": "CareBridge Solutions Personal Assistance Services",
+      "nextHeading": "What happens next?",
+      "nextSteps": [
         "CareBridge reviews your general request and contact information.",
         "A team member contacts you to discuss eligibility, authorization, and health plan verification.",
-        "Services begin only after eligibility, authorization, and applicable plan requirements are confirmed.",
+        "Services begin only after eligibility, authorization, and applicable plan requirements are confirmed."
       ],
+      "sending": "Submitting your request…",
+      "error": "We could not submit the form. Please call CareBridge at (214) 400-8755 or email admin@thecbscare.com.",
+      "formEndpointMissing": "The website form endpoint is not configured yet. Please add VITE_FORM_ENDPOINT in your site environment, or call CareBridge at (214) 400-8755.",
+      "formSecurityNote": "This form is for general inquiries only and is not intended for detailed medical information or private identifiers.",
+      "honeypotLabel": "Leave this field blank"
     },
-    faq: {
-      kicker: "FAQ",
-      heading: "Common Questions",
-      items: [
+    "faq": {
+      "kicker": "FAQ",
+      "heading": "Common Questions",
+      "items": [
         {
-          question: "What does CareBridge Solutions provide?",
-          answer:
-            "CareBridge provides non-medical personal assistance services for eligible Medicaid members who need help with approved daily living and attendant care needs.",
+          "question": "What does CareBridge Solutions provide?",
+          "answer": "CareBridge provides non-medical personal assistance services for eligible Medicaid members who need help with approved daily living and attendant care needs."
         },
         {
-          question: "Is CareBridge a medical home health agency?",
-          answer:
-            "CareBridge provides Personal Assistance Services. We are not skilled nursing, emergency care, or hospital-level medical care.",
+          "question": "Is CareBridge a medical home health agency?",
+          "answer": "CareBridge provides Personal Assistance Services. We are not skilled nursing, emergency care, or hospital-level medical care."
         },
         {
-          question: "Do I need Medicaid authorization?",
-          answer:
-            "Many services require eligibility verification, authorization, and an approved service plan. CareBridge can help explain next steps.",
+          "question": "Do I need Medicaid authorization?",
+          "answer": "Many services require eligibility verification, authorization, and an approved service plan. CareBridge can help explain next steps."
         },
         {
-          question: "Can family members contact CareBridge?",
-          answer:
-            "Yes. Members, family representatives, case managers, and referral partners may contact CareBridge to discuss possible services.",
+          "question": "Can family members contact CareBridge?",
+          "answer": "Yes. Members, family representatives, case managers, and referral partners may contact CareBridge to discuss possible services."
         },
         {
-          question: "Does CareBridge use EVV?",
-          answer:
-            "CareBridge follows applicable Electronic Visit Verification requirements for covered services.",
+          "question": "Does CareBridge use EVV?",
+          "answer": "CareBridge follows applicable Electronic Visit Verification requirements for covered services."
         },
         {
-          question: "Can I send private medical information through the website?",
-          answer:
-            "Please avoid sending sensitive medical information through the general website form. A CareBridge team member can provide instructions for appropriate next steps.",
-        },
-      ],
+          "question": "Can I send private medical information through the website?",
+          "answer": "Please avoid sending sensitive medical information through the general website form. A CareBridge team member can provide instructions for appropriate next steps."
+        }
+      ]
     },
-    footer: {
-      explore: "Explore",
-      contact: "Contact",
-      office: "Office",
-      description: "Reliable Texas Medicaid personal assistance services at home. CareBridge provides non-medical Texas Medicaid-focused personal assistance services for eligible members.",
-      legal:
-        "CareBridge Solutions LLC provides non-medical personal assistance services. Eligibility, authorization, covered services, service hours, health plan participation, credentialing status, and service availability must be verified before services begin. This website does not guarantee Medicaid eligibility, approval, or authorization.",
-      privacyHeading: "Privacy Notice",
-      privacyText:
-        "Please do not submit sensitive medical information, Medicaid IDs, Social Security numbers, banking information, or private identifiers through general website forms.",
-      emergencyHeading: "Emergency Notice",
-      emergencyText:
-        "CareBridge does not provide emergency medical services. For urgent or life-threatening emergencies, call 911.",
-      rights: "All rights reserved.",
+    "footer": {
+      "explore": "Explore",
+      "contact": "Contact",
+      "office": "Office",
+      "description": "Reliable Texas Medicaid Personal Assistance Services at home. CareBridge provides non-medical, Medicaid-focused support for eligible members.",
+      "legal": "CareBridge Solutions LLC provides non-medical personal assistance services. Eligibility, authorization, covered services, service hours, health plan participation, credentialing status, and service availability must be verified before services begin. This website does not guarantee Medicaid eligibility, approval, or authorization.",
+      "privacyHeading": "Privacy Notice",
+      "privacyText": "Please do not submit sensitive medical information, Medicaid IDs, Social Security numbers, banking information, or private identifiers through general website forms.",
+      "emergencyHeading": "Emergency Notice",
+      "emergencyText": "CareBridge does not provide emergency medical services. For urgent or life-threatening emergencies, call 911.",
+      "rights": "All rights reserved."
     },
+    "mobileMenuLabel": "Mobile navigation",
+    "openMenu": "Menu",
+    "closeMenu": "Close menu",
+    "switchToSpanish": "Español"
   },
-  ar: {
-    company: {
-      tagline: "خدمات مساعدة شخصية موثوقة في المنزل لأعضاء Texas Medicaid.",
-      hours: "الاثنين – الجمعة، 8:00 صباحًا – 5:00 مساءً",
-      hoursLine1: "الاثنين – الجمعة",
-      hoursLine2: "8:00 صباحًا – 5:00 مساءً",
+  "es": {
+    "company": {
+      "tagline": "Servicios confiables de asistencia personal de Texas Medicaid en el hogar.",
+      "hours": "Lunes – viernes, 8:00 AM – 5:00 PM",
+      "hoursLine1": "Lunes – viernes",
+      "hoursLine2": "8:00 AM – 5:00 PM"
     },
-    skipLink: "تخطي إلى المحتوى",
-    languageToggleLabel: "لغة الموقع",
-    switchToEnglish: "English",
-    switchToArabic: "العربية",
-    navLinks: [
-      { href: "#services", label: "الخدمات" },
-      { href: "#medicaid-support", label: "دعم Medicaid" },
-      { href: "#how-it-works", label: "كيف تعمل الخدمة" },
-      { href: "#about", label: "من نحن" },
-      { href: "#referrals", label: "الإحالات" },
-      { href: "#careers", label: "الوظائف" },
-      { href: "#contact", label: "اتصل بنا" },
+    "skipLink": "Saltar al contenido",
+    "languageToggleLabel": "Idioma del sitio web",
+    "switchToEnglish": "English",
+    "switchToArabic": "العربية",
+    "navLinks": [
+      {
+        "href": "#services",
+        "label": "Servicios"
+      },
+      {
+        "href": "#medicaid-support",
+        "label": "Apoyo de Medicaid"
+      },
+      {
+        "href": "#how-it-works",
+        "label": "Cómo funciona"
+      },
+      {
+        "href": "#about",
+        "label": "Acerca de"
+      },
+      {
+        "href": "#referrals",
+        "label": "Referencias"
+      },
+      {
+        "href": "#careers",
+        "label": "Empleos"
+      },
+      {
+        "href": "#contact",
+        "label": "Contacto"
+      }
     ],
-    buttons: {
-      requestCareServices: "طلب خدمات الرعاية",
-      callNow: "اتصل الآن",
-      call: "اتصال",
-      requestServices: "طلب الخدمات",
-      emailCareBridge: "إرسال بريد إلى CareBridge",
-      applyByEmail: "التقديم عبر البريد الإلكتروني",
-      requestContact: "طلب التواصل",
+    "buttons": {
+      "requestCareServices": "Solicitar servicios",
+      "callNow": "Llamar ahora",
+      "call": "Llamar",
+      "requestServices": "Solicitar servicios",
+      "emailCareBridge": "Enviar correo a CareBridge",
+      "applyByEmail": "Aplicar por correo",
+      "requestContact": "Solicitar contacto"
     },
-    hero: {
-      eyebrow: "خدمات المساعدة الشخصية ضمن Texas Medicaid",
-      headline: "دعم منزلي دافئ وموثوق لأعضاء Texas Medicaid المؤهلين.",
-      lead:
-        "تقدم CareBridge Solutions LLC خدمات مساعدة شخصية غير طبية تساعد الأعضاء في احتياجات الحياة اليومية المعتمدة، مع دعم التواصل مع العائلة والتوثيق ومتطلبات برامج Medicaid.",
-      trust:
-        "مزود مرخّص لخدمات المساعدة الشخصية في تكساس · دعم يركز على Medicaid · توثيق مدعوم بنظام EVV",
-      disclaimer:
-        "يجب التحقق من الأهلية والتفويض ومشاركة الخطة الصحية وحالة الاعتماد وتوفر الخدمة قبل بدء الخدمات.",
+    "hero": {
+      "eyebrow": "Servicios de Asistencia Personal de Texas Medicaid",
+      "headline": "Apoyo en el hogar cálido y confiable para miembros elegibles de Texas Medicaid.",
+      "lead": "CareBridge Solutions LLC brinda Servicios de Asistencia Personal no médicos para ayudar con necesidades diarias aprobadas en el hogar.",
+      "trust": "Proveedor HCSSA autorizado en Texas para Servicios de Asistencia Personal · Apoyo enfocado en Medicaid · Documentación apoyada por EVV",
+      "disclaimer": "La elegibilidad, autorización, participación del plan de salud, estado de credencialización y disponibilidad del servicio deben verificarse antes de iniciar servicios."
     },
-    trustBadges: [
+    "trustBadges": [
       {
-        title: "مزود رعاية مرخّص",
-        text: "خدمات مساعدة شخصية غير طبية لأعضاء Texas Medicaid المؤهلين.",
-        icon: "shield",
+        "title": "Proveedor autorizado",
+        "text": "Servicios de asistencia personal no médicos para miembros elegibles de Texas Medicaid.",
+        "icon": "shield"
       },
       {
-        title: "دعم يركز على Medicaid",
-        text: "إرشاد للعائلات أثناء التعامل مع خدمات المساعدة الشخصية المعتمدة على Medicaid.",
-        icon: "heart",
+        "title": "Apoyo enfocado en Medicaid",
+        "text": "Orientación para familias que navegan servicios de asistencia personal basados en Medicaid.",
+        "icon": "heart"
       },
       {
-        title: "توثيق مدعوم بنظام EVV",
-        text: "يتم توثيق الزيارات المغطاة من خلال إجراءات التحقق الإلكتروني من الزيارة عند انطباقها.",
-        icon: "check",
+        "title": "Documentación con EVV",
+        "text": "Las visitas cubiertas se documentan mediante los flujos de verificación electrónica de visitas aplicables.",
+        "icon": "check"
       },
       {
-        title: "تواصل داخل تكساس",
-        text: "دعم سريع للأعضاء وممثلي العائلة ومديري الحالات وشركاء الإحالة.",
-        icon: "location",
-      },
+        "title": "Comunicación en Texas",
+        "text": "Apoyo receptivo para miembros, representantes familiares, administradores de casos y socios de referencia.",
+        "icon": "location"
+      }
     ],
-    whoWeHelp: {
-      kicker: "من نخدم",
-      heading: "دعم يراعي الكرامة والسلامة والحياة اليومية في المنزل.",
-      intro:
-        "تدعم CareBridge الأعضاء والعائلات المؤهلين الذين يحتاجون إلى مساعدة موثوقة في احتياجات الحياة اليومية غير الطبية المعتمدة. دورنا هو التنسيق بوضوح والتوثيق بعناية وتقديم مساعدة محترمة في المنزل.",
-      local: "نخدم العائلات في تكساس.",
-      cards: [
+    "whoWeHelp": {
+      "kicker": "A quién ayudamos",
+      "heading": "Apoyo basado en dignidad, seguridad y vida diaria en el hogar.",
+      "intro": "CareBridge apoya a miembros elegibles y familias que necesitan ayuda confiable con necesidades diarias no médicas aprobadas. Nuestro rol es coordinar con claridad, documentar cuidadosamente y brindar asistencia respetuosa en el hogar.",
+      "local": "Sirviendo a familias en Texas.",
+      "cards": [
         {
-          title: "كبار السن",
-          text: "دعم للروتين اليومي والعناية الشخصية والوجبات والحركة الآمنة داخل المنزل.",
+          "title": "Adultos mayores",
+          "text": "Apoyo con rutinas diarias, cuidado personal, comidas y movimiento seguro en el hogar."
         },
         {
-          title: "البالغون من ذوي الإعاقة",
-          text: "دعم موثوق من مقدمي رعاية يساعد الأعضاء على الحفاظ على الراحة والكرامة والاستقلالية.",
+          "title": "Adultos con discapacidades",
+          "text": "Apoyo confiable de asistentes para ayudar a mantener comodidad, dignidad e independencia."
         },
         {
-          title: "الأطفال والشباب",
-          text: "دعم للأعضاء المؤهلين حسب برامج Medicaid ومتطلبات التفويض المعمول بها.",
+          "title": "Niños y jóvenes",
+          "text": "Apoyo para miembros elegibles bajo programas de Medicaid aplicables y requisitos de autorización."
         },
         {
-          title: "مقدمو الرعاية من العائلة",
-          text: "تواصل واضح وجدولة موثوقة لمساعدة العائلات على الشعور بالدعم.",
-        },
-      ],
+          "title": "Cuidadores familiares",
+          "text": "Comunicación clara y programación confiable para ayudar a las familias a sentirse apoyadas."
+        }
+      ]
     },
-    services: {
-      kicker: "الخدمات",
-      heading: "خدمات مساعدة شخصية لاحتياجات الحياة اليومية المعتمدة.",
-      intro:
-        "خدماتنا غير طبية ويجب أن تتوافق مع خطة الرعاية المعتمدة للعضو والأهلية والتفويض ومتطلبات برامج Texas Medicaid المعمول بها.",
-      footnote:
-        "يجب أن تكون الخدمات مفوضة وأن تُقدَّم ضمن خطة الرعاية المعتمدة للعضو وقواعد برنامج Medicaid المعمول بها.",
-      items: [
+    "services": {
+      "kicker": "Servicios",
+      "heading": "Servicios de asistencia personal para necesidades diarias aprobadas.",
+      "intro": "CareBridge brinda apoyo no médico con necesidades diarias aprobadas en el hogar. Los servicios se coordinan de acuerdo con el plan de servicio del miembro y los requisitos aplicables del programa.",
+      "footnote": "CareBridge no brinda enfermería especializada, terapia, tratamiento médico ni servicios de emergencia.",
+      "items": [
         {
-          title: "المساعدة في العناية الشخصية",
-          image: "/images/personal-care-assistance.png",
-          imageAlt: "مقدم رعاية يساعد أحد كبار السن في دعم يومي آمن في المنزل",
-          text: "المساعدة في الاستحمام وارتداء الملابس والعناية بالمظهر واستخدام الحمام وغيرها من مهام العناية الشخصية المعتمدة.",
+          "title": "Asistencia de cuidado personal",
+          "image": "/images/personal-care-assistance.png",
+          "imageAlt": "Cuidador ayudando a un adulto mayor con apoyo diario seguro en el hogar",
+          "text": "Ayuda con baño, vestido, arreglo personal, uso del baño y otras tareas de cuidado personal aprobadas."
         },
         {
-          title: "دعم الحركة والانتقال",
-          image: "/images/mobility-support.png",
-          imageAlt: "مقدم رعاية يدعم أحد كبار السن أثناء استخدام المشاية في المنزل",
-          text: "المساعدة في الحركة الآمنة داخل المنزل والانتقال وتغيير الوضعية ضمن خطة الرعاية المعتمدة.",
+          "title": "Apoyo de movilidad y traslados",
+          "image": "/images/mobility-support.png",
+          "imageAlt": "Cuidador apoyando a un adulto mayor que usa andador en casa",
+          "text": "Asistencia con movimiento seguro dentro del hogar, traslados y apoyo de posicionamiento dentro del plan de cuidado aprobado."
         },
         {
-          title: "تحضير الوجبات",
-          image: "/images/meal-preparation.png",
-          imageAlt: "مقدم رعاية يساعد أحد كبار السن في تحضير وجبة في المنزل",
-          text: "دعم في تحضير وجبات بسيطة والحفاظ على روتين التغذية اليومية.",
+          "title": "Preparación de comidas",
+          "image": "/images/meal-preparation.png",
+          "imageAlt": "Cuidador ayudando a un adulto mayor a preparar una comida en casa",
+          "text": "Apoyo para preparar comidas sencillas y mantener rutinas diarias de nutrición."
         },
         {
-          title: "الأعمال المنزلية الخفيفة",
-          image: "/images/light-housekeeping.png",
-          imageAlt: "أيقونة منزل نظيف لدعم الأعمال المنزلية الخفيفة",
-          text: "المساعدة في المهام المنزلية المعتمدة المرتبطة بصحة العضو وسلامته واحتياجاته اليومية.",
+          "title": "Limpieza ligera",
+          "image": "/images/light-housekeeping.png",
+          "imageAlt": "Ícono de hogar limpio para apoyo de limpieza ligera",
+          "text": "Ayuda con tareas del hogar aprobadas relacionadas con la salud, seguridad y necesidades diarias del miembro."
         },
         {
-          title: "الغسيل والبياضات",
-          image: "/images/laundry-linens.png",
-          imageAlt: "مقدم رعاية وأحد كبار السن يطويان الغسيل والبياضات في المنزل",
-          text: "المساعدة في غسيل ملابس العضو والروتين المنزلي الأساسي عندما يكون ذلك ضمن خطة الخدمة.",
+          "title": "Lavandería y ropa de cama",
+          "image": "/images/laundry-linens.png",
+          "imageAlt": "Cuidador y adulto mayor doblando ropa y sábanas en casa",
+          "text": "Asistencia con lavandería relacionada con el miembro y rutinas básicas del hogar cuando se incluyen en el plan de servicio."
         },
         {
-          title: "دعم مقدم الرعاية",
-          image: "/images/attendant-support.png",
-          imageAlt: "مقدم رعاية وأحد كبار السن في لحظة ودية في المنزل",
-          text: "دعم غير طبي موثوق من موظفين مدربين يتبعون متطلبات Medicaid والوكالة المعمول بها.",
-        },
-      ],
+          "title": "Apoyo de asistente",
+          "image": "/images/attendant-support.png",
+          "imageAlt": "Cuidador y adulto mayor compartiendo un momento cálido en casa",
+          "text": "Apoyo no médico confiable de personal capacitado siguiendo los requisitos aplicables de Medicaid y de la agencia."
+        }
+      ]
     },
-    medicaidSupport: {
-      kicker: "دعم Medicaid",
-      heading: "تركيز على برامج المساعدة الشخصية في Texas Medicaid.",
-      intro:
-        "تنسق CareBridge خدمات المساعدة الشخصية غير الطبية للأعضاء المؤهلين عند التحقق من متطلبات البرنامج والأهلية والتفويض ومنطقة الخدمة ومشاركة الخطة الصحية.",
-      footnote:
-        "قد يختلف توفر البرامج والأهلية والتفويض ومشاركة الخطة. تواصل مع CareBridge لمناقشة الخطوات التالية.",
-      programs: [
+    "medicaidSupport": {
+      "kicker": "Apoyo de Medicaid",
+      "heading": "Enfocados en programas de asistencia personal de Texas Medicaid.",
+      "intro": "CareBridge coordina servicios de asistencia personal no médicos para miembros elegibles después de revisar los detalles requeridos del programa, plan de salud, área de servicio y autorización.",
+      "footnote": "La disponibilidad del programa y la participación del plan pueden variar. Contacte a CareBridge para hablar sobre los próximos pasos.",
+      "programs": [
         {
-          title: "خدمات المساعدة الشخصية",
-          text: "دعم غير طبي لاحتياجات الحياة اليومية ورعاية المرافق المعتمدة.",
+          "title": "Servicios de Asistencia Personal",
+          "text": "Apoyo no médico para necesidades aprobadas de vida diaria y cuidado de asistente."
         },
         {
-          title: "PHC / FC / CAS",
-          text: "دعم للأعضاء المؤهلين في Primary Home Care وFamily Care وCommunity Attendant Services.",
+          "title": "PHC / FC / CAS",
+          "text": "Apoyo para miembros elegibles de Primary Home Care, Family Care y Community Attendant Services."
         },
         {
-          title: "STAR+PLUS",
-          text: "دعم للبالغين المؤهلين الذين يحصلون على خدمات ودعم طويلة الأمد من خلال الرعاية المدارة في Medicaid.",
+          "title": "STAR+PLUS",
+          "text": "Apoyo para adultos elegibles que reciben servicios y apoyos a largo plazo a través de atención administrada de Medicaid."
         },
         {
-          title: "STAR Kids",
-          text: "دعم للأطفال والشباب المؤهلين عندما تكون الخدمات مفوضة من خلال برامج Medicaid المعمول بها.",
+          "title": "STAR Kids",
+          "text": "Apoyo para niños y jóvenes elegibles cuando los servicios están autorizados a través de programas de Medicaid aplicables."
         },
         {
-          title: "خدمات مدعومة بنظام EVV",
-          text: "تتبع CareBridge متطلبات التحقق الإلكتروني من الزيارة للخدمات المغطاة عند انطباقها.",
-        },
-      ],
+          "title": "Servicios apoyados por EVV",
+          "text": "CareBridge sigue los requisitos aplicables de Verificación Electrónica de Visitas para servicios cubiertos."
+        }
+      ]
     },
-    howItWorks: {
-      kicker: "كيف تعمل الخدمة",
-      heading: "مسار واضح من أول اتصال إلى الدعم المنزلي المعتمد.",
-      intro:
-        "تساعد CareBridge الأعضاء والعائلات والممثلين وشركاء الإحالة على فهم الخطوة التالية دون تقديم وعود بشأن الأهلية أو الموافقة أو ساعات الخدمة.",
-      steps: [
+    "howItWorks": {
+      "kicker": "Cómo funciona",
+      "heading": "Un camino claro desde la primera llamada hasta el apoyo en el hogar.",
+      "intro": "CareBridge ayuda a miembros, familias, representantes y socios de referencia a entender claramente el siguiente paso.",
+      "steps": [
         {
-          step: "1",
-          title: "تواصل مع CareBridge",
-          text: "اتصل بنا أو أرسل طلبًا حتى نفهم نوع الدعم المطلوب.",
+          "step": "1",
+          "title": "Contacte a CareBridge",
+          "text": "Llámenos o envíe una solicitud para que podamos entender el apoyo necesario."
         },
         {
-          step: "2",
-          title: "مراجعة الأهلية والتفويض",
-          text: "نراجع معلومات البرنامج الأساسية ونوضح ما قد يكون مطلوبًا من وثائق أو تفويض.",
+          "step": "2",
+          "title": "Revisar elegibilidad y autorización",
+          "text": "Revisamos información básica del programa y explicamos qué puede necesitarse antes de que los servicios puedan comenzar."
         },
         {
-          step: "3",
-          title: "تنسيق خطة الرعاية",
-          text: "تعمل CareBridge مع العضو والعائلة والممثل ومتطلبات البرنامج المعمول بها للتحضير للخدمة.",
+          "step": "3",
+          "title": "Coordinar el plan de cuidado",
+          "text": "CareBridge trabaja con el miembro, la familia, el representante y los requisitos del programa para prepararse para el servicio."
         },
         {
-          step: "4",
-          title: "بدء الدعم داخل المنزل",
-          text: "تبدأ الخدمات المعتمدة مع موظفين مدربين وجدولة واضحة وتوثيق للزيارات مدعوم بنظام EVV.",
-        },
-      ],
+          "step": "4",
+          "title": "Iniciar apoyo en el hogar",
+          "text": "Los servicios comienzan con personal capacitado, programación clara y documentación de visitas apoyada por EVV después de completar los requisitos necesarios."
+        }
+      ]
     },
-    whyCareBridge: {
-      kicker: "لماذا CareBridge",
-      heading: "تواصل مميز مع انضباط عملي في متطلبات Medicaid.",
-      paragraph1:
-        "تستحق العائلات دعمًا دافئًا وموثوقًا. كما تتطلب برامج Medicaid التحقق الدقيق من الأهلية والانتباه للتفويض وتوثيق الزيارات والتنسيق باحترام. CareBridge مبنية حول هذين الاحتياجين.",
-      paragraph2:
-        "نهجنا ثابت ويركز على التوثيق، ومصمم لدعم الأعضاء في المنزل مع مساعدة العائلات على فهم ما يجب التحقق منه قبل بدء الخدمات.",
-      imageAlt: "عضو من فريق CareBridge يراجع معلومات الرعاية مع عائلة في المنزل",
-      featureListLabel: "نقاط قوة خدمة CareBridge",
-      features: [
+    "whyCareBridge": {
+      "kicker": "Por qué CareBridge",
+      "heading": "Comunicación de alta calidad con disciplina práctica de Medicaid.",
+      "paragraph1": "Las familias merecen apoyo cálido y confiable. Los programas de Medicaid también requieren revisión de elegibilidad, atención a autorizaciones, documentación de visitas y coordinación respetuosa. CareBridge está diseñado para ambas necesidades.",
+      "paragraph2": "Nuestro enfoque es constante, centrado en documentación y diseñado para apoyar a los miembros en casa mientras ayuda a las familias a entender lo que debe verificarse antes de iniciar servicios.",
+      "imageAlt": "Miembro del equipo de CareBridge revisando información de cuidado con una familia en casa",
+      "featureListLabel": "Fortalezas del servicio de CareBridge",
+      "features": [
+        "Proveedor autorizado de servicios de asistencia personal en Texas",
+        "Coordinación de servicios enfocada en Medicaid",
+        "Documentación de visitas apoyada por EVV",
+        "Comunicación clara con familias y representantes",
+        "Personal W-2 capacitado",
+        "Servicio respetuoso y no discriminatorio",
+        "Coordinación de cuidado en Texas",
+        "Operaciones enfocadas en documentación"
+      ]
+    },
+    "healthPlans": {
+      "kicker": "Estado de planes de salud",
+      "heading": "Estado de participación con planes de salud",
+      "intro": "CareBridge Solutions trabaja con planes de salud participantes de Texas Medicaid para miembros elegibles que reciben servicios de asistencia personal. Active Agreement significa que CareBridge tiene un acuerdo o estado de participación con el plan de salud listado.",
+      "disclaimer": "La elegibilidad del miembro, área de servicio, autorización, servicios cubiertos, estado de credencialización y requisitos específicos del plan aún deben verificarse antes de iniciar servicios. Listar un plan de salud no garantiza elegibilidad, aprobación, disponibilidad del servicio, pago ni horas de servicio.",
+      "plans": [
+        {
+          "name": "Aetna Better Health of Texas",
+          "status": "Active Agreement",
+          "text": "CareBridge apoya a miembros elegibles de acuerdo con los requisitos del plan, reglas del área de servicio, elegibilidad del miembro, autorización, reglas de reclamos y requisitos continuos de credencialización."
+        },
+        {
+          "name": "Cook Children’s Health Plan",
+          "status": "Active Agreement",
+          "text": "El apoyo de CareBridge depende de las líneas de negocio aplicables, elegibilidad del miembro, autorización, área de servicio, participación del plan y preparación operativa."
+        },
+        {
+          "name": "Superior HealthPlan",
+          "status": "Active Agreement",
+          "text": "El apoyo de CareBridge está sujeto a verificación de elegibilidad del miembro, autorización previa cuando se requiera, estado de credencialización, activación del sistema y documentación de servicios apoyada por EVV."
+        },
+        {
+          "name": "UnitedHealthcare Community Plan of Texas",
+          "status": "Active Agreement",
+          "text": "La participación de CareBridge se rige por los términos aplicables del acuerdo, fecha efectiva, verificación de elegibilidad, requisitos de autorización y reglas administrativas específicas del plan."
+        },
+        {
+          "name": "Texas Children’s Health Plan",
+          "status": "Active Agreement",
+          "text": "CareBridge puede apoyar a miembros elegibles de acuerdo con los términos aplicables del acuerdo, requisitos de autorización de servicios, verificación de elegibilidad del miembro y obligaciones continuas de cumplimiento."
+        },
+        {
+          "name": "Molina Healthcare",
+          "status": "En progreso",
+          "text": "CareBridge está monitoreando la disponibilidad de paneles de red y contratación de Molina. El apoyo no está activo hasta que se completen los requisitos de contratación, credencialización, activación del sistema, elegibilidad del miembro, autorización, área de servicio y documentación EVV."
+        }
+      ]
+    },
+    "referrals": {
+      "kicker": "Referencias",
+      "heading": "Cómo solicitar CareBridge a través de su plan de salud.",
+      "intro": "CareBridge puede coordinar con miembros de Medicaid, familias, coordinadores de servicios, administradores de casos y socios de referencia para posibles Servicios de Asistencia Personal.",
+      "familyCardTitle": "Para miembros de Medicaid y familias",
+      "familyCardText": "Llame a CareBridge o comparta los detalles de referencia abajo con el coordinador de servicios o administrador de casos de su plan de salud. Ellos pueden revisar si CareBridge puede solicitarse a través de su plan.",
+      "coordinatorCardTitle": "Para coordinadores de servicios y administradores de casos",
+      "coordinatorCardText": "Use el NPI, la licencia HCSSA, el teléfono, fax y correo electrónico abajo para contactar a CareBridge para coordinación de referencia y verificación de próximos pasos.",
+      "requestText": "¿Listo para solicitar CareBridge a través de su plan de salud? Comparta la siguiente información con el coordinador de servicios o administrador de casos de su plan de salud:",
+      "detailsLabel": "Detalles de referencia de CareBridge",
+      "companyName": "Nombre de la compañía",
+      "npi": "NPI",
+      "license": "Licencia HCSSA de Texas",
+      "licenseNumber": "#024033",
+      "licenseCategory": "Servicios de Asistencia Personal",
+      "phone": "Teléfono",
+      "fax": "Fax",
+      "email": "Correo electrónico",
+      "privacyNote": "No envíe información médica protegida a través del formulario general del sitio web. CareBridge puede proporcionar instrucciones apropiadas para los próximos pasos."
+    },
+    "careers": {
+      "kicker": "Empleos",
+      "heading": "Aplique para trabajar como cuidador de CareBridge.",
+      "intro": "CareBridge Solutions LLC contrata cuidadores confiables para brindar servicios de asistencia personal no médicos a miembros elegibles. Los cuidadores apoyan tareas diarias aprobadas siguiendo políticas de la agencia, expectativas de documentación y requisitos aplicables del programa Medicaid.",
+      "pay": "El pago para cuidadores comienza en $13.00 por hora. El pago final puede variar según el rol, horario, experiencia, ubicación y requisitos del programa.",
+      "disclaimer": "El empleo, asignaciones, horarios y disponibilidad del servicio dependen de los requisitos de contratación, necesidades del miembro, autorización y ajuste operativo.",
+      "emailSubject": "Consulta de aplicación para cuidador"
+    },
+    "about": {
+      "kicker": "Acerca de CareBridge",
+      "heading": "Diseñado para conectar familias, necesidades de cuidado y requisitos de Medicaid.",
+      "paragraph1": "CareBridge Solutions LLC brinda servicios de asistencia personal no médicos para miembros elegibles de Texas Medicaid. Nuestro trabajo se centra en apoyo respetuoso en el hogar, comunicación clara y operaciones cuidadosas con la documentación.",
+      "paragraph2": "Servimos a miembros y familias con un enfoque tranquilo y profesional que mantiene expectativas claras. La elegibilidad, autorización, participación del plan de salud y disponibilidad del servicio se verifican antes de iniciar servicios.",
+      "quote": "“El cuidado debe sentirse personal, confiable y claro desde la primera conversación”",
+      "imageAlt": "Cuidador y adulto mayor recibiendo apoyo cálido en el hogar"
+    },
+    "contact": {
+      "kicker": "Contacto",
+      "heading": "Hable con CareBridge sobre posibles servicios.",
+      "intro": "Llame a CareBridge o envíe una solicitud general. Un miembro del equipo puede explicar los próximos pasos para verificar elegibilidad, autorización y plan de salud.",
+      "formSubject": "Solicitud del sitio web de CareBridge",
+      "mailHeader": "Solicitud del sitio web de CareBridge Solutions",
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "email": "Correo electrónico",
+      "bestTime": "Mejor horario para contactar",
+      "selectOne": "Seleccione una opción",
+      "morning": "Mañana",
+      "afternoon": "Tarde",
+      "evening": "Noche",
+      "relationship": "Soy",
+      "medicaidMember": "Miembro de Medicaid",
+      "familyRep": "Familiar o representante",
+      "caseManager": "Administrador de casos o socio de referencia",
+      "other": "Otro",
+      "generalMessage": "Mensaje general",
+      "messagePlaceholder": "Mantenga esto general. No incluya información médica detallada, números de Medicaid, números de Seguro Social u otra información sensible.",
+      "privacyAcknowledgement": "Entiendo que este formulario general del sitio web no debe usarse para enviar información médica sensible ni identificadores privados.",
+      "privacyMailLine": "Reconocimiento de privacidad: se indicó al remitente que no incluya información médica sensible en este formulario general del sitio web.",
+      "urgentNotice": "Para necesidades urgentes o de emergencia, llame al 911 o busque asistencia médica inmediata. CareBridge no proporciona servicios de emergencia.",
+      "success": "Gracias. Su solicitud general fue enviada a CareBridge.",
+      "sending": "Enviando su solicitud…",
+      "error": "No pudimos enviar el formulario. Llame a CareBridge al (214) 400-8755 o envíe un correo a admin@thecbscare.com.",
+      "formEndpointMissing": "El endpoint del formulario del sitio web aún no está configurado. Agregue VITE_FORM_ENDPOINT en el entorno del sitio o llame a CareBridge al (214) 400-8755.",
+      "formSecurityNote": "Este formulario es solo para consultas generales y no está destinado a información médica detallada ni identificadores privados.",
+      "honeypotLabel": "Deje este campo en blanco",
+      "labels": {
+        "phone": "Teléfono",
+        "fax": "Fax",
+        "email": "Correo electrónico",
+        "hours": "Horario",
+        "office": "Oficina"
+      },
+      "imageAlt": "Servicios de Asistencia Personal de CareBridge Solutions",
+      "nextHeading": "¿Qué sucede después?",
+      "nextSteps": [
+        "CareBridge revisa su solicitud general e información de contacto.",
+        "Un miembro del equipo se comunica con usted para hablar sobre elegibilidad, autorización y verificación del plan de salud.",
+        "Los servicios comienzan solo después de confirmar la elegibilidad, autorización y requisitos aplicables del plan."
+      ]
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "heading": "Preguntas comunes",
+      "items": [
+        {
+          "question": "¿Qué ofrece CareBridge Solutions?",
+          "answer": "CareBridge ofrece servicios de asistencia personal no médicos para miembros elegibles de Medicaid que necesitan ayuda con necesidades aprobadas de vida diaria y cuidado de asistente."
+        },
+        {
+          "question": "¿CareBridge es una agencia médica de salud en el hogar?",
+          "answer": "CareBridge brinda Servicios de Asistencia Personal. No somos enfermería especializada, atención de emergencia ni atención médica a nivel hospitalario."
+        },
+        {
+          "question": "¿Necesito autorización de Medicaid?",
+          "answer": "Muchos servicios requieren verificación de elegibilidad, autorización y un plan de servicio aprobado. CareBridge puede ayudar a explicar los próximos pasos."
+        },
+        {
+          "question": "¿Pueden los familiares contactar a CareBridge?",
+          "answer": "Sí. Los miembros, representantes familiares, administradores de casos y socios de referencia pueden contactar a CareBridge para hablar sobre posibles servicios."
+        },
+        {
+          "question": "¿CareBridge usa EVV?",
+          "answer": "CareBridge sigue los requisitos aplicables de Verificación Electrónica de Visitas para servicios cubiertos."
+        },
+        {
+          "question": "¿Puedo enviar información médica privada a través del sitio web?",
+          "answer": "Evite enviar información médica sensible a través del formulario general del sitio web. Un miembro del equipo de CareBridge puede proporcionar instrucciones apropiadas para los próximos pasos."
+        }
+      ]
+    },
+    "footer": {
+      "explore": "Explorar",
+      "contact": "Contacto",
+      "office": "Oficina",
+      "description": "Servicios confiables de Asistencia Personal de Texas Medicaid en el hogar. CareBridge brinda apoyo no médico enfocado en Medicaid para miembros elegibles.",
+      "legal": "CareBridge Solutions LLC brinda servicios de asistencia personal no médicos. La elegibilidad, autorización, servicios cubiertos, horas de servicio, participación del plan de salud, estado de credencialización y disponibilidad del servicio deben verificarse antes de iniciar servicios. Este sitio web no garantiza elegibilidad, aprobación ni autorización de Medicaid.",
+      "privacyHeading": "Aviso de privacidad",
+      "privacyText": "No envíe información médica sensible, números de Medicaid, números de Seguro Social, información bancaria ni identificadores privados a través de formularios generales del sitio web.",
+      "emergencyHeading": "Aviso de emergencia",
+      "emergencyText": "CareBridge no proporciona servicios médicos de emergencia. Para emergencias urgentes o potencialmente mortales, llame al 911.",
+      "rights": "Todos los derechos reservados."
+    },
+    "mobileMenuLabel": "Navegación móvil",
+    "openMenu": "Menú",
+    "closeMenu": "Cerrar menú",
+    "switchToSpanish": "Español"
+  },
+  "ar": {
+    "company": {
+      "tagline": "خدمات مساعدة شخصية موثوقة في المنزل لأعضاء Texas Medicaid.",
+      "hours": "الاثنين – الجمعة، 8:00 صباحًا – 5:00 مساءً",
+      "hoursLine1": "الاثنين – الجمعة",
+      "hoursLine2": "8:00 صباحًا – 5:00 مساءً"
+    },
+    "skipLink": "تخطي إلى المحتوى",
+    "languageToggleLabel": "لغة الموقع",
+    "switchToEnglish": "English",
+    "switchToArabic": "العربية",
+    "navLinks": [
+      {
+        "href": "#services",
+        "label": "الخدمات"
+      },
+      {
+        "href": "#medicaid-support",
+        "label": "دعم Medicaid"
+      },
+      {
+        "href": "#how-it-works",
+        "label": "كيف تعمل الخدمة"
+      },
+      {
+        "href": "#about",
+        "label": "من نحن"
+      },
+      {
+        "href": "#referrals",
+        "label": "الإحالات"
+      },
+      {
+        "href": "#careers",
+        "label": "الوظائف"
+      },
+      {
+        "href": "#contact",
+        "label": "اتصل بنا"
+      }
+    ],
+    "buttons": {
+      "requestCareServices": "طلب خدمات الرعاية",
+      "callNow": "اتصل الآن",
+      "call": "اتصال",
+      "requestServices": "طلب الخدمات",
+      "emailCareBridge": "إرسال بريد إلى CareBridge",
+      "applyByEmail": "التقديم عبر البريد الإلكتروني",
+      "requestContact": "طلب التواصل"
+    },
+    "hero": {
+      "eyebrow": "خدمات المساعدة الشخصية ضمن Texas Medicaid",
+      "headline": "دعم منزلي دافئ وموثوق لأعضاء Texas Medicaid المؤهلين.",
+      "lead": "تقدم CareBridge Solutions LLC خدمات مساعدة شخصية غير طبية للمساعدة في الاحتياجات اليومية المعتمدة داخل المنزل.",
+      "trust": "ترخيص HCSSA في تكساس لخدمات المساعدة الشخصية · دعم يركز على Medicaid · توثيق مدعوم بنظام EVV",
+      "disclaimer": "يجب التحقق من الأهلية والتفويض ومشاركة الخطة الصحية وحالة الاعتماد وتوفر الخدمة قبل بدء الخدمات."
+    },
+    "trustBadges": [
+      {
+        "title": "مزود رعاية مرخّص",
+        "text": "خدمات مساعدة شخصية غير طبية لأعضاء Texas Medicaid المؤهلين.",
+        "icon": "shield"
+      },
+      {
+        "title": "دعم يركز على Medicaid",
+        "text": "إرشاد للعائلات أثناء التعامل مع خدمات المساعدة الشخصية المعتمدة على Medicaid.",
+        "icon": "heart"
+      },
+      {
+        "title": "توثيق مدعوم بنظام EVV",
+        "text": "يتم توثيق الزيارات المغطاة من خلال إجراءات التحقق الإلكتروني من الزيارة عند انطباقها.",
+        "icon": "check"
+      },
+      {
+        "title": "تواصل داخل تكساس",
+        "text": "دعم سريع للأعضاء وممثلي العائلة ومديري الحالات وشركاء الإحالة.",
+        "icon": "location"
+      }
+    ],
+    "whoWeHelp": {
+      "kicker": "من نخدم",
+      "heading": "دعم يراعي الكرامة والسلامة والحياة اليومية في المنزل.",
+      "intro": "تدعم CareBridge الأعضاء والعائلات المؤهلين الذين يحتاجون إلى مساعدة موثوقة في احتياجات الحياة اليومية غير الطبية المعتمدة. دورنا هو التنسيق بوضوح والتوثيق بعناية وتقديم مساعدة محترمة في المنزل.",
+      "local": "نخدم العائلات في تكساس.",
+      "cards": [
+        {
+          "title": "كبار السن",
+          "text": "دعم للروتين اليومي والعناية الشخصية والوجبات والحركة الآمنة داخل المنزل."
+        },
+        {
+          "title": "البالغون من ذوي الإعاقة",
+          "text": "دعم موثوق من مقدمي رعاية يساعد الأعضاء على الحفاظ على الراحة والكرامة والاستقلالية."
+        },
+        {
+          "title": "الأطفال والشباب",
+          "text": "دعم للأعضاء المؤهلين حسب برامج Medicaid ومتطلبات التفويض المعمول بها."
+        },
+        {
+          "title": "مقدمو الرعاية من العائلة",
+          "text": "تواصل واضح وجدولة موثوقة لمساعدة العائلات على الشعور بالدعم."
+        }
+      ]
+    },
+    "services": {
+      "kicker": "الخدمات",
+      "heading": "خدمات مساعدة شخصية لاحتياجات الحياة اليومية المعتمدة.",
+      "intro": "تقدم CareBridge دعمًا غير طبي للاحتياجات اليومية المعتمدة داخل المنزل. يتم تنسيق الخدمات وفقًا لخطة خدمة العضو ومتطلبات البرنامج المعمول بها.",
+      "footnote": "لا تقدم CareBridge تمريضًا ماهرًا أو علاجًا طبيًا أو خدمات علاجية أو خدمات طوارئ.",
+      "items": [
+        {
+          "title": "المساعدة في العناية الشخصية",
+          "image": "/images/personal-care-assistance.png",
+          "imageAlt": "مقدم رعاية يساعد أحد كبار السن في دعم يومي آمن في المنزل",
+          "text": "المساعدة في الاستحمام وارتداء الملابس والعناية بالمظهر واستخدام الحمام وغيرها من مهام العناية الشخصية المعتمدة."
+        },
+        {
+          "title": "دعم الحركة والانتقال",
+          "image": "/images/mobility-support.png",
+          "imageAlt": "مقدم رعاية يدعم أحد كبار السن أثناء استخدام المشاية في المنزل",
+          "text": "المساعدة في الحركة الآمنة داخل المنزل والانتقال وتغيير الوضعية ضمن خطة الرعاية المعتمدة."
+        },
+        {
+          "title": "تحضير الوجبات",
+          "image": "/images/meal-preparation.png",
+          "imageAlt": "مقدم رعاية يساعد أحد كبار السن في تحضير وجبة في المنزل",
+          "text": "دعم في تحضير وجبات بسيطة والحفاظ على روتين التغذية اليومية."
+        },
+        {
+          "title": "الأعمال المنزلية الخفيفة",
+          "image": "/images/light-housekeeping.png",
+          "imageAlt": "أيقونة منزل نظيف لدعم الأعمال المنزلية الخفيفة",
+          "text": "المساعدة في المهام المنزلية المعتمدة المرتبطة بصحة العضو وسلامته واحتياجاته اليومية."
+        },
+        {
+          "title": "الغسيل والبياضات",
+          "image": "/images/laundry-linens.png",
+          "imageAlt": "مقدم رعاية وأحد كبار السن يطويان الغسيل والبياضات في المنزل",
+          "text": "المساعدة في غسيل ملابس العضو والروتين المنزلي الأساسي عندما يكون ذلك ضمن خطة الخدمة."
+        },
+        {
+          "title": "دعم مقدم الرعاية",
+          "image": "/images/attendant-support.png",
+          "imageAlt": "مقدم رعاية وأحد كبار السن في لحظة ودية في المنزل",
+          "text": "دعم غير طبي موثوق من موظفين مدربين يتبعون متطلبات Medicaid والوكالة المعمول بها."
+        }
+      ]
+    },
+    "medicaidSupport": {
+      "kicker": "دعم Medicaid",
+      "heading": "تركيز على برامج المساعدة الشخصية في Texas Medicaid.",
+      "intro": "تنسق CareBridge خدمات المساعدة الشخصية غير الطبية للأعضاء المؤهلين بعد مراجعة متطلبات البرنامج والخطة الصحية ومنطقة الخدمة والتفويض.",
+      "footnote": "قد تختلف إتاحة البرامج ومشاركة الخطط. تواصل مع CareBridge لمناقشة الخطوات التالية.",
+      "programs": [
+        {
+          "title": "خدمات المساعدة الشخصية",
+          "text": "دعم غير طبي لاحتياجات الحياة اليومية ورعاية المرافق المعتمدة."
+        },
+        {
+          "title": "PHC / FC / CAS",
+          "text": "دعم للأعضاء المؤهلين في Primary Home Care وFamily Care وCommunity Attendant Services."
+        },
+        {
+          "title": "STAR+PLUS",
+          "text": "دعم للبالغين المؤهلين الذين يحصلون على خدمات ودعم طويلة الأمد من خلال الرعاية المدارة في Medicaid."
+        },
+        {
+          "title": "STAR Kids",
+          "text": "دعم للأطفال والشباب المؤهلين عندما تكون الخدمات مفوضة من خلال برامج Medicaid المعمول بها."
+        },
+        {
+          "title": "خدمات مدعومة بنظام EVV",
+          "text": "تتبع CareBridge متطلبات التحقق الإلكتروني من الزيارة للخدمات المغطاة عند انطباقها."
+        }
+      ]
+    },
+    "howItWorks": {
+      "kicker": "كيف تعمل الخدمة",
+      "heading": "مسار واضح من أول اتصال إلى الدعم داخل المنزل.",
+      "intro": "تساعد CareBridge الأعضاء والعائلات والممثلين وشركاء الإحالة على فهم الخطوة التالية بوضوح.",
+      "steps": [
+        {
+          "step": "1",
+          "title": "تواصل مع CareBridge",
+          "text": "اتصل بنا أو أرسل طلبًا حتى نفهم نوع الدعم المطلوب."
+        },
+        {
+          "step": "2",
+          "title": "مراجعة الأهلية والتفويض",
+          "text": "نراجع معلومات البرنامج الأساسية ونوضح ما قد يكون مطلوبًا قبل بدء الخدمات."
+        },
+        {
+          "step": "3",
+          "title": "تنسيق خطة الرعاية",
+          "text": "تعمل CareBridge مع العضو والعائلة والممثل ومتطلبات البرنامج للتحضير للخدمة."
+        },
+        {
+          "step": "4",
+          "title": "بدء الدعم داخل المنزل",
+          "text": "تبدأ الخدمات مع موظفين مدربين وجدولة واضحة وتوثيق زيارات مدعوم بنظام EVV بعد اكتمال المتطلبات اللازمة."
+        }
+      ]
+    },
+    "whyCareBridge": {
+      "kicker": "لماذا CareBridge",
+      "heading": "تواصل مميز مع انضباط عملي في متطلبات Medicaid.",
+      "paragraph1": "تستحق العائلات دعمًا دافئًا وموثوقًا. كما تتطلب برامج Medicaid التحقق الدقيق من الأهلية والانتباه للتفويض وتوثيق الزيارات والتنسيق باحترام. CareBridge مبنية حول هذين الاحتياجين.",
+      "paragraph2": "نهجنا ثابت ويركز على التوثيق، ومصمم لدعم الأعضاء في المنزل مع مساعدة العائلات على فهم ما يجب التحقق منه قبل بدء الخدمات.",
+      "imageAlt": "عضو من فريق CareBridge يراجع معلومات الرعاية مع عائلة في المنزل",
+      "featureListLabel": "نقاط قوة خدمة CareBridge",
+      "features": [
         "مزود مرخّص لخدمات المساعدة الشخصية في تكساس",
         "تنسيق خدمات يركز على Medicaid",
         "توثيق زيارات مدعوم بنظام EVV",
@@ -630,187 +1030,175 @@ const content = {
         "موظفون مدربون بنظام W-2",
         "خدمة محترمة وغير تمييزية",
         "تنسيق رعاية داخل تكساس",
-        "عمليات تركز على التوثيق",
-      ],
+        "عمليات تركز على التوثيق"
+      ]
     },
-    healthPlans: {
-      kicker: "حالة الخطط الصحية",
-      heading: "حالة المشاركة مع الخطط الصحية",
-      intro:
-        "تعمل CareBridge Solutions مع خطط Texas Medicaid الصحية المشاركة للأعضاء المؤهلين الذين يتلقون خدمات المساعدة الشخصية. قد تختلف المشاركة والأهلية والتفويض والخدمات المغطاة وحالة الاعتماد حسب الخطة ومنطقة الخدمة وظروف العضو.",
-      disclaimer:
-        "يجب التحقق من مشاركة الخطة الصحية وأهلية العضو والتفويض والخدمات المغطاة وحالة الاعتماد قبل بدء الخدمات. إدراج خطة صحية لا يضمن الأهلية أو الموافقة أو توفر الخدمة أو ساعات الخدمة. قد تتغير المشاركة وحالة الاعتماد.",
-      plans: [
+    "healthPlans": {
+      "kicker": "حالة الخطط الصحية",
+      "heading": "حالة المشاركة مع الخطط الصحية",
+      "intro": "تعمل CareBridge Solutions مع خطط Texas Medicaid الصحية المشاركة للأعضاء المؤهلين الذين يتلقون خدمات المساعدة الشخصية. تعني عبارة الاتفاقية النشطة أن لدى CareBridge اتفاقية أو حالة مشاركة مع الخطة الصحية المدرجة.",
+      "disclaimer": "يجب التحقق من أهلية العضو ومنطقة الخدمة والتفويض والخدمات المغطاة وحالة الاعتماد والمتطلبات الخاصة بالخطة قبل بدء الخدمات. إدراج خطة صحية لا يضمن الأهلية أو الموافقة أو توفر الخدمة أو الدفع أو ساعات الخدمة.",
+      "plans": [
         {
-          name: "Aetna Better Health of Texas",
-          status: "اتفاقية نشطة",
-          text: "تدعم CareBridge الأعضاء المؤهلين وفقًا لمتطلبات الخطة وقواعد منطقة الخدمة وأهلية العضو والتفويض وقواعد المطالبات ومتطلبات الاعتماد المستمرة.",
+          "name": "Aetna Better Health of Texas",
+          "status": "اتفاقية نشطة",
+          "text": "تدعم CareBridge الأعضاء المؤهلين وفقًا لمتطلبات الخطة وقواعد منطقة الخدمة وأهلية العضو والتفويض وقواعد المطالبات ومتطلبات الاعتماد المستمرة."
         },
         {
-          name: "Cook Children’s Health Plan",
-          status: "اتفاقية نشطة",
-          text: "يعتمد دعم CareBridge على خطوط العمل المعمول بها وأهلية العضو والتفويض ومنطقة الخدمة ومشاركة الخطة والاستعداد التشغيلي.",
+          "name": "Cook Children’s Health Plan",
+          "status": "اتفاقية نشطة",
+          "text": "يعتمد دعم CareBridge على خطوط العمل المعمول بها وأهلية العضو والتفويض ومنطقة الخدمة ومشاركة الخطة والاستعداد التشغيلي."
         },
         {
-          name: "Superior HealthPlan",
-          status: "اتفاقية نشطة",
-          text: "يخضع دعم CareBridge للتحقق من أهلية العضو والتفويض المسبق عند الحاجة وحالة الاعتماد وتفعيل النظام وتوثيق الخدمة المدعوم بنظام EVV.",
+          "name": "Superior HealthPlan",
+          "status": "اتفاقية نشطة",
+          "text": "يخضع دعم CareBridge للتحقق من أهلية العضو والتفويض المسبق عند الحاجة وحالة الاعتماد وتفعيل النظام وتوثيق الخدمة المدعوم بنظام EVV."
         },
         {
-          name: "UnitedHealthcare Community Plan of Texas",
-          status: "اتفاقية نشطة",
-          text: "تخضع مشاركة CareBridge لشروط الاتفاقية المعمول بها وتاريخ السريان والتحقق من الأهلية ومتطلبات التفويض والقواعد الإدارية الخاصة بالخطة.",
+          "name": "UnitedHealthcare Community Plan of Texas",
+          "status": "اتفاقية نشطة",
+          "text": "تخضع مشاركة CareBridge لشروط الاتفاقية المعمول بها وتاريخ السريان والتحقق من الأهلية ومتطلبات التفويض والقواعد الإدارية الخاصة بالخطة."
         },
         {
-          name: "Texas Children’s Health Plan",
-          status: "اتفاقية نشطة",
-          text: "قد تدعم CareBridge الأعضاء المؤهلين وفقًا لشروط الاتفاقية المعمول بها ومتطلبات تفويض الخدمة والتحقق من أهلية العضو والالتزامات المستمرة للامتثال.",
+          "name": "Texas Children’s Health Plan",
+          "status": "اتفاقية نشطة",
+          "text": "قد تدعم CareBridge الأعضاء المؤهلين وفقًا لشروط الاتفاقية المعمول بها ومتطلبات تفويض الخدمة والتحقق من أهلية العضو والالتزامات المستمرة للامتثال."
         },
         {
-          name: "Molina Healthcare",
-          status: "قيد المتابعة",
-          text: "تتابع CareBridge توفر الشبكة والتعاقد لدى Molina. لا يكون الدعم نشطًا حتى اكتمال التعاقد والاعتماد وتفعيل النظام وأهلية العضو والتفويض ومنطقة الخدمة ومتطلبات توثيق EVV.",
-        },
-      ],
+          "name": "Molina Healthcare",
+          "status": "قيد المتابعة",
+          "text": "تتابع CareBridge توفر الشبكة والتعاقد لدى Molina. لا يكون الدعم نشطًا حتى اكتمال التعاقد والاعتماد وتفعيل النظام وأهلية العضو والتفويض ومنطقة الخدمة ومتطلبات توثيق EVV."
+        }
+      ]
     },
-    referrals: {
-      kicker: "الإحالات",
-      heading: "كيفية طلب CareBridge من خلال خطتك الصحية.",
-      intro:
-        "يمكن لمديري الحالات ومنسقي الخدمات ومخططي الخروج والمنظمات المجتمعية وممثلي العائلات التواصل مع CareBridge لمناقشة خدمات المساعدة الشخصية المحتملة لأعضاء Medicaid المؤهلين.",
-      requestText:
-        "هل أنت مستعد لطلب CareBridge من خلال خطتك الصحية؟ يرجى مشاركة المعلومات التالية مع منسق الخدمات أو مدير الحالة التابع لخطتك الصحية:",
-      detailsLabel: "معلومات إحالة CareBridge",
-      companyName: "اسم الشركة",
-      npi: "NPI",
-      license: "ترخيص HCSSA في تكساس",
-      licenseNumber: "#024033",
-      licenseCategory: "خدمات المساعدة الشخصية",
-      phone: "الهاتف",
-      fax: "الفاكس",
-      email: "البريد الإلكتروني",
-      privacyNote:
-        "يرجى عدم إرسال معلومات صحية محمية من خلال نموذج الموقع العام. يمكن لـ CareBridge تقديم التعليمات المناسبة للخطوات التالية.",
+    "referrals": {
+      "kicker": "الإحالات",
+      "heading": "كيفية طلب CareBridge من خلال خطتك الصحية.",
+      "intro": "يمكن لـ CareBridge التنسيق مع أعضاء Medicaid والعائلات ومنسقي الخدمات ومديري الحالات وشركاء الإحالة بخصوص خدمات المساعدة الشخصية المحتملة.",
+      "requestText": "هل أنت مستعد لطلب خدمات CareBridge من خلال خطتك الصحية؟ يرجى مشاركة المعلومات التالية مع منسق الخدمات أو مدير الحالة التابع لخطتك الصحية:",
+      "detailsLabel": "معلومات إحالة CareBridge",
+      "companyName": "اسم الشركة",
+      "npi": "NPI",
+      "license": "ترخيص HCSSA في تكساس",
+      "licenseNumber": "#024033",
+      "licenseCategory": "خدمات المساعدة الشخصية",
+      "phone": "الهاتف",
+      "fax": "الفاكس",
+      "email": "البريد الإلكتروني",
+      "privacyNote": "يرجى عدم إرسال معلومات صحية محمية من خلال نموذج الموقع العام. يمكن لـ CareBridge تقديم التعليمات المناسبة للخطوات التالية.",
+      "familyCardTitle": "لأعضاء Medicaid والعائلات",
+      "familyCardText": "اتصل بـ CareBridge أو شارك معلومات الإحالة أدناه مع منسق الخدمات أو مدير الحالة في خطتك الصحية. يمكنهم مراجعة ما إذا كان يمكن طلب CareBridge من خلال خطتك.",
+      "coordinatorCardTitle": "لمنسقي الخدمات ومديري الحالات",
+      "coordinatorCardText": "استخدم رقم NPI وترخيص HCSSA ورقم الهاتف والفاكس والبريد الإلكتروني أدناه للتواصل مع CareBridge لتنسيق الإحالة والتحقق من الخطوات التالية."
     },
-    careers: {
-      kicker: "الوظائف",
-      heading: "قدّم للعمل كمقدم رعاية مع CareBridge.",
-      intro:
-        "توظف CareBridge Solutions LLC مقدمي رعاية يمكن الاعتماد عليهم لتقديم خدمات مساعدة شخصية غير طبية للأعضاء المؤهلين. يدعم مقدمو الرعاية مهام الحياة اليومية المعتمدة مع اتباع سياسات الوكالة وتوقعات التوثيق ومتطلبات برامج Medicaid المعمول بها.",
-      pay:
-        "يبدأ أجر مقدم الرعاية من 13.00 دولارًا في الساعة. قد يختلف الأجر النهائي حسب الدور، والجدول، والخبرة، والموقع، ومتطلبات البرنامج.",
-      disclaimer:
-        "يعتمد التوظيف والمهام والجداول وتوفر الخدمة على متطلبات التوظيف واحتياجات العضو والتفويض والملاءمة التشغيلية.",
-      emailSubject: "استفسار عن التقديم لوظيفة مقدم رعاية",
+    "careers": {
+      "kicker": "الوظائف",
+      "heading": "قدّم للعمل كمقدم رعاية مع CareBridge.",
+      "intro": "توظف CareBridge Solutions LLC مقدمي رعاية يمكن الاعتماد عليهم لتقديم خدمات مساعدة شخصية غير طبية للأعضاء المؤهلين. يدعم مقدمو الرعاية مهام الحياة اليومية المعتمدة مع اتباع سياسات الوكالة وتوقعات التوثيق ومتطلبات برامج Medicaid المعمول بها.",
+      "pay": "يبدأ أجر مقدم الرعاية من 13.00 دولارًا في الساعة. قد يختلف الأجر النهائي حسب الدور، والجدول، والخبرة، والموقع، ومتطلبات البرنامج.",
+      "disclaimer": "يعتمد التوظيف والمهام والجداول وتوفر الخدمة على متطلبات التوظيف واحتياجات العضو والتفويض والملاءمة التشغيلية.",
+      "emailSubject": "استفسار عن التقديم لوظيفة مقدم رعاية"
     },
-    about: {
-      kicker: "عن CareBridge",
-      heading: "بُنيت لربط العائلات واحتياجات الرعاية ومتطلبات Medicaid.",
-      paragraph1:
-        "تقدم CareBridge Solutions LLC خدمات مساعدة شخصية غير طبية لأعضاء Texas Medicaid المؤهلين. يتركز عملنا على الدعم المنزلي المحترم والتواصل الواضح والعمليات الواعية بالتوثيق.",
-      paragraph2:
-        "نخدم الأعضاء والعائلات بنهج هادئ ومهني يحافظ على وضوح التوقعات. يتم التحقق من الأهلية والتفويض ومشاركة الخطة الصحية وتوفر الخدمة قبل بدء الخدمات.",
-      quote: "“يجب أن تكون الرعاية شخصية وموثوقة وواضحة من أول محادثة”",
-      imageAlt: "مقدم رعاية وأحد كبار السن يتلقى دعمًا منزليًا دافئًا",
+    "about": {
+      "kicker": "عن CareBridge",
+      "heading": "بُنيت لربط العائلات واحتياجات الرعاية ومتطلبات Medicaid.",
+      "paragraph1": "تقدم CareBridge Solutions LLC خدمات مساعدة شخصية غير طبية لأعضاء Texas Medicaid المؤهلين. يتركز عملنا على الدعم المنزلي المحترم والتواصل الواضح والعمليات الواعية بالتوثيق.",
+      "paragraph2": "نخدم الأعضاء والعائلات بنهج هادئ ومهني يحافظ على وضوح التوقعات. يتم التحقق من الأهلية والتفويض ومشاركة الخطة الصحية وتوفر الخدمة قبل بدء الخدمات.",
+      "quote": "“يجب أن تكون الرعاية شخصية وموثوقة وواضحة من أول محادثة”",
+      "imageAlt": "مقدم رعاية وأحد كبار السن يتلقى دعمًا منزليًا دافئًا"
     },
-    contact: {
-      kicker: "اتصل بنا",
-      heading: "تحدث مع CareBridge عن الخدمات المحتملة.",
-      intro:
-        "اتصل بـ CareBridge أو أرسل طلبًا عامًا. يمكن لأحد أعضاء الفريق توضيح الخطوات التالية للتحقق من الأهلية والتفويض والخطة الصحية.",
-      formSubject: "طلب خدمة من موقع CareBridge",
-      mailHeader: "طلب من موقع CareBridge Solutions",
-      name: "الاسم",
-      phone: "الهاتف",
-      email: "البريد الإلكتروني",
-      bestTime: "أفضل وقت للتواصل",
-      selectOne: "اختر واحدًا",
-      morning: "صباحًا",
-      afternoon: "بعد الظهر",
-      evening: "مساءً",
-      relationship: "أنا",
-      medicaidMember: "عضو في Medicaid",
-      familyRep: "فرد من العائلة أو ممثل",
-      caseManager: "مدير حالة أو شريك إحالة",
-      other: "غير ذلك",
-      generalMessage: "رسالة عامة",
-      messagePlaceholder:
-        "يرجى إبقاء الرسالة عامة. لا تدرج معلومات طبية تفصيلية أو أرقام Medicaid أو أرقام الضمان الاجتماعي أو أي معلومات حساسة أخرى.",
-      privacyAcknowledgement:
-        "أفهم أن هذا النموذج العام على الموقع لا يجب استخدامه لإرسال معلومات طبية حساسة أو معرفات خاصة.",
-      privacyMailLine:
-        "إقرار الخصوصية: تم إرشاد المرسل إلى عدم تضمين معلومات طبية حساسة في هذا النموذج العام للموقع.",
-      urgentNotice:
-        "للاحتياجات العاجلة أو الطارئة، اتصل بـ 911 أو اطلب مساعدة طبية فورية. لا تقدم CareBridge خدمات طوارئ.",
-      success:
-        "يجب أن يتم فتح مسودة بريد إلكتروني على جهازك. يرجى مراجعتها قبل الإرسال وتجنب تضمين معلومات طبية حساسة.",
-      labels: {
-        phone: "الهاتف",
-        fax: "الفاكس",
-        email: "البريد الإلكتروني",
-        hours: "ساعات العمل",
-        office: "المكتب",
+    "contact": {
+      "kicker": "اتصل بنا",
+      "heading": "تحدث مع CareBridge عن الخدمات المحتملة.",
+      "intro": "اتصل بـ CareBridge أو أرسل طلبًا عامًا. يمكن لأحد أعضاء الفريق توضيح الخطوات التالية للتحقق من الأهلية والتفويض والخطة الصحية.",
+      "formSubject": "طلب خدمة من موقع CareBridge",
+      "mailHeader": "طلب من موقع CareBridge Solutions",
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "bestTime": "أفضل وقت للتواصل",
+      "selectOne": "اختر واحدًا",
+      "morning": "صباحًا",
+      "afternoon": "بعد الظهر",
+      "evening": "مساءً",
+      "relationship": "أنا",
+      "medicaidMember": "عضو في Medicaid",
+      "familyRep": "فرد من العائلة أو ممثل",
+      "caseManager": "مدير حالة أو شريك إحالة",
+      "other": "غير ذلك",
+      "generalMessage": "رسالة عامة",
+      "messagePlaceholder": "يرجى إبقاء الرسالة عامة. لا تدرج معلومات طبية تفصيلية أو أرقام Medicaid أو أرقام الضمان الاجتماعي أو أي معلومات حساسة أخرى.",
+      "privacyAcknowledgement": "أفهم أن هذا النموذج العام على الموقع لا يجب استخدامه لإرسال معلومات طبية حساسة أو معرفات خاصة.",
+      "privacyMailLine": "إقرار الخصوصية: تم إرشاد المرسل إلى عدم تضمين معلومات طبية حساسة في هذا النموذج العام للموقع.",
+      "urgentNotice": "للاحتياجات العاجلة أو الطارئة، اتصل بـ 911 أو اطلب مساعدة طبية فورية. لا تقدم CareBridge خدمات طوارئ.",
+      "success": "شكرًا لك. تم إرسال طلبك العام إلى CareBridge.",
+      "labels": {
+        "phone": "الهاتف",
+        "fax": "الفاكس",
+        "email": "البريد الإلكتروني",
+        "hours": "ساعات العمل",
+        "office": "المكتب"
       },
-      imageAlt: "CareBridge Solutions لخدمات المساعدة الشخصية",
-      nextHeading: "ماذا يحدث بعد ذلك؟",
-      nextSteps: [
+      "imageAlt": "CareBridge Solutions لخدمات المساعدة الشخصية",
+      "nextHeading": "ماذا يحدث بعد ذلك؟",
+      "nextSteps": [
         "تراجع CareBridge طلبك العام ومعلومات الاتصال.",
         "يتواصل معك أحد أعضاء الفريق لمناقشة الأهلية والتفويض والتحقق من الخطة الصحية.",
-        "تبدأ الخدمات فقط بعد تأكيد الأهلية والتفويض ومتطلبات الخطة المعمول بها.",
+        "تبدأ الخدمات فقط بعد تأكيد الأهلية والتفويض ومتطلبات الخطة المعمول بها."
       ],
+      "sending": "جارٍ إرسال طلبك…",
+      "error": "تعذر إرسال النموذج. يرجى استخدام معلومات الاتصال أدناه للتواصل مع CareBridge.",
+      "formEndpointMissing": "لم يتم إعداد نقطة إرسال نموذج الموقع بعد. يرجى إضافة VITE_FORM_ENDPOINT في إعدادات الموقع أو استخدام معلومات الاتصال أدناه.",
+      "formSecurityNote": "هذا النموذج مخصص للاستفسارات العامة فقط وليس مخصصًا للمعلومات الطبية التفصيلية أو المعرفات الخاصة.",
+      "honeypotLabel": "اترك هذا الحقل فارغًا"
     },
-    faq: {
-      kicker: "الأسئلة الشائعة",
-      heading: "أسئلة شائعة",
-      items: [
+    "faq": {
+      "kicker": "الأسئلة الشائعة",
+      "heading": "أسئلة شائعة",
+      "items": [
         {
-          question: "ماذا تقدم CareBridge Solutions؟",
-          answer:
-            "تقدم CareBridge خدمات مساعدة شخصية غير طبية لأعضاء Medicaid المؤهلين الذين يحتاجون إلى مساعدة في احتياجات الحياة اليومية ورعاية المرافق المعتمدة.",
+          "question": "ماذا تقدم CareBridge Solutions؟",
+          "answer": "تقدم CareBridge خدمات مساعدة شخصية غير طبية لأعضاء Medicaid المؤهلين الذين يحتاجون إلى مساعدة في احتياجات الحياة اليومية ورعاية المرافق المعتمدة."
         },
         {
-          question: "هل CareBridge وكالة صحة منزلية طبية؟",
-          answer:
-            "تقدم CareBridge خدمات المساعدة الشخصية. نحن لا نقدم تمريضًا ماهرًا أو رعاية طوارئ أو رعاية طبية بمستوى المستشفى.",
+          "question": "هل CareBridge وكالة صحة منزلية طبية؟",
+          "answer": "تقدم CareBridge خدمات المساعدة الشخصية. نحن لا نقدم تمريضًا ماهرًا أو رعاية طوارئ أو رعاية طبية بمستوى المستشفى."
         },
         {
-          question: "هل أحتاج إلى تفويض من Medicaid؟",
-          answer:
-            "تتطلب العديد من الخدمات التحقق من الأهلية والتفويض وخطة خدمة معتمدة. يمكن لـ CareBridge المساعدة في شرح الخطوات التالية.",
+          "question": "هل أحتاج إلى تفويض من Medicaid؟",
+          "answer": "تتطلب العديد من الخدمات التحقق من الأهلية والتفويض وخطة خدمة معتمدة. يمكن لـ CareBridge المساعدة في شرح الخطوات التالية."
         },
         {
-          question: "هل يمكن لأفراد العائلة التواصل مع CareBridge؟",
-          answer:
-            "نعم. يمكن للأعضاء وممثلي العائلة ومديري الحالات وشركاء الإحالة التواصل مع CareBridge لمناقشة الخدمات المحتملة.",
+          "question": "هل يمكن لأفراد العائلة التواصل مع CareBridge؟",
+          "answer": "نعم. يمكن للأعضاء وممثلي العائلة ومديري الحالات وشركاء الإحالة التواصل مع CareBridge لمناقشة الخدمات المحتملة."
         },
         {
-          question: "هل تستخدم CareBridge نظام EVV؟",
-          answer:
-            "تتبع CareBridge متطلبات التحقق الإلكتروني من الزيارة للخدمات المغطاة عند انطباقها.",
+          "question": "هل تستخدم CareBridge نظام EVV؟",
+          "answer": "تتبع CareBridge متطلبات التحقق الإلكتروني من الزيارة للخدمات المغطاة عند انطباقها."
         },
         {
-          question: "هل يمكنني إرسال معلومات طبية خاصة عبر الموقع؟",
-          answer:
-            "يرجى تجنب إرسال معلومات طبية حساسة من خلال نموذج الموقع العام. يمكن لأحد أعضاء فريق CareBridge تقديم تعليمات مناسبة للخطوات التالية.",
-        },
-      ],
+          "question": "هل يمكنني إرسال معلومات طبية خاصة عبر الموقع؟",
+          "answer": "يرجى تجنب إرسال معلومات طبية حساسة من خلال نموذج الموقع العام. يمكن لأحد أعضاء فريق CareBridge تقديم تعليمات مناسبة للخطوات التالية."
+        }
+      ]
     },
-    footer: {
-      explore: "تصفح",
-      contact: "اتصل",
-      office: "المكتب",
-      description: "خدمات مساعدة شخصية موثوقة في المنزل لأعضاء Texas Medicaid. تقدم CareBridge خدمات مساعدة شخصية غير طبية تركز على Texas Medicaid للأعضاء المؤهلين.",
-      legal:
-        "تقدم CareBridge Solutions LLC خدمات مساعدة شخصية غير طبية. يجب التحقق من الأهلية والتفويض والخدمات المغطاة وساعات الخدمة ومشاركة الخطة الصحية وحالة الاعتماد وتوفر الخدمة قبل بدء الخدمات. لا يضمن هذا الموقع أهلية Medicaid أو الموافقة أو التفويض.",
-      privacyHeading: "إشعار الخصوصية",
-      privacyText:
-        "يرجى عدم إرسال معلومات طبية حساسة أو أرقام Medicaid أو أرقام الضمان الاجتماعي أو معلومات مصرفية أو معرفات خاصة من خلال نماذج الموقع العامة.",
-      emergencyHeading: "إشعار الطوارئ",
-      emergencyText:
-        "لا تقدم CareBridge خدمات طبية طارئة. للحالات العاجلة أو المهددة للحياة، اتصل بـ 911.",
-      rights: "جميع الحقوق محفوظة.",
+    "footer": {
+      "explore": "تصفح",
+      "contact": "اتصل",
+      "office": "المكتب",
+      "description": "خدمات مساعدة شخصية موثوقة في المنزل لأعضاء Texas Medicaid. تقدم CareBridge دعمًا غير طبيًا يركز على Medicaid للأعضاء المؤهلين.",
+      "legal": "تقدم CareBridge Solutions LLC خدمات مساعدة شخصية غير طبية. يجب التحقق من الأهلية والتفويض والخدمات المغطاة وساعات الخدمة ومشاركة الخطة الصحية وحالة الاعتماد وتوفر الخدمة قبل بدء الخدمات. لا يضمن هذا الموقع أهلية Medicaid أو الموافقة أو التفويض.",
+      "privacyHeading": "إشعار الخصوصية",
+      "privacyText": "يرجى عدم إرسال معلومات طبية حساسة أو أرقام Medicaid أو أرقام الضمان الاجتماعي أو معلومات مصرفية أو معرفات خاصة من خلال نماذج الموقع العامة.",
+      "emergencyHeading": "إشعار الطوارئ",
+      "emergencyText": "لا تقدم CareBridge خدمات طبية طارئة. للحالات العاجلة أو المهددة للحياة، اتصل بـ 911.",
+      "rights": "جميع الحقوق محفوظة."
     },
-  },
+    "mobileMenuLabel": "قائمة التنقل على الجوال",
+    "openMenu": "القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "switchToSpanish": "Español"
+  }
 };
 
 function getText(language) {
@@ -934,6 +1322,20 @@ function Icon({ name, className = "", decorative = true }) {
         <path {...strokeProps} d="m18 15 .8 2.3 2.2.7-2.2.7L18 22l-.8-2.3-2.2-.7 2.2-.7L18 15Z" />
       </svg>
     ),
+
+    menu: (
+      <svg {...props}>
+        <path {...strokeProps} d="M4 7h16" />
+        <path {...strokeProps} d="M4 12h16" />
+        <path {...strokeProps} d="M4 17h16" />
+      </svg>
+    ),
+    close: (
+      <svg {...props}>
+        <path {...strokeProps} d="M6 6l12 12" />
+        <path {...strokeProps} d="M18 6 6 18" />
+      </svg>
+    ),
     chevron: (
       <svg {...props}>
         <path {...strokeProps} d="m6 9 6 6 6-6" />
@@ -964,33 +1366,37 @@ function AnimatedSection({ children, className = "", id }) {
 }
 
 
-function LanguageToggle({ language, onLanguageChange, compact = false }) {
+function LanguageToggle({ language, onLanguageChange, compact = false, onAfterChange }) {
   const t = getText(language);
+
+  const handleChange = (code) => {
+    onLanguageChange(code);
+    if (typeof onAfterChange === "function") {
+      onAfterChange();
+    }
+  };
 
   return (
     <div className={`language-toggle ${compact ? "language-toggle--compact" : ""}`} aria-label={t.languageToggleLabel}>
-      <button
-        type="button"
-        className={`language-toggle__button ${language === "en" ? "is-active" : ""}`}
-        aria-pressed={language === "en"}
-        onClick={() => onLanguageChange("en")}
-      >
-        {compact ? languageOptions.en.shortLabel : t.switchToEnglish}
-      </button>
-      <button
-        type="button"
-        className={`language-toggle__button ${language === "ar" ? "is-active" : ""}`}
-        aria-pressed={language === "ar"}
-        onClick={() => onLanguageChange("ar")}
-      >
-        {compact ? languageOptions.ar.shortLabel : t.switchToArabic}
-      </button>
+      {Object.values(languageOptions).map((option) => (
+        <button
+          key={option.code}
+          type="button"
+          className={`language-toggle__button ${language === option.code ? "is-active" : ""}`}
+          aria-pressed={language === option.code}
+          onClick={() => handleChange(option.code)}
+        >
+          {compact ? option.shortLabel : option.label}
+        </button>
+      ))}
     </div>
   );
 }
 
+
 function Header({ language, onLanguageChange }) {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = getText(language);
 
   useEffect(() => {
@@ -1000,10 +1406,28 @@ function Header({ language, onLanguageChange }) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    document.body.classList.toggle("mobile-menu-is-open", mobileMenuOpen);
+
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.classList.remove("mobile-menu-is-open");
+    };
+  }, [mobileMenuOpen]);
+
+  const closeMobileMenu = () => setMobileMenuOpen(false);
+
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
       <div className="container header-inner">
-        <a className="logo" href="#top" aria-label={`${company.name} home`}>
+        <a className="logo" href="#top" aria-label={`${company.name} home`} onClick={closeMobileMenu}>
           <img src="/images/logo-header.png" alt={company.name} />
         </a>
 
@@ -1027,16 +1451,69 @@ function Header({ language, onLanguageChange }) {
         </div>
 
         <div className="header-mobile-actions">
-          <LanguageToggle language={language} onLanguageChange={onLanguageChange} compact />
+          <LanguageToggle language={language} onLanguageChange={onLanguageChange} compact onAfterChange={closeMobileMenu} />
           <a className="header-cta header-cta--mobile" href={`tel:${company.phoneHref}`} aria-label={`Call ${company.name}`}>
             <Icon name="phone" className="btn-icon" />
             {t.buttons.callNow}
           </a>
+          <button
+            className="mobile-menu-toggle"
+            type="button"
+            aria-label={mobileMenuOpen ? t.closeMenu : t.openMenu}
+            aria-controls="mobile-menu"
+            aria-expanded={mobileMenuOpen}
+            onClick={() => setMobileMenuOpen((open) => !open)}
+          >
+            <Icon name={mobileMenuOpen ? "close" : "menu"} className="btn-icon" />
+            <span className="mobile-menu-toggle__text">{mobileMenuOpen ? t.closeMenu : t.openMenu}</span>
+          </button>
         </div>
       </div>
+
+      <div
+        className={`mobile-menu-overlay ${mobileMenuOpen ? "is-open" : ""}`}
+        aria-hidden={!mobileMenuOpen}
+        onClick={closeMobileMenu}
+      />
+
+      <nav
+        id="mobile-menu"
+        className={`mobile-menu-drawer ${mobileMenuOpen ? "is-open" : ""}`}
+        aria-label={t.mobileMenuLabel}
+        aria-hidden={!mobileMenuOpen}
+      >
+        <div className="mobile-menu-drawer__header">
+          <p><LtrValue>{company.shortName}</LtrValue></p>
+          <button type="button" className="mobile-menu-drawer__close" onClick={closeMobileMenu} aria-label={t.closeMenu}>
+            <Icon name="close" className="btn-icon" />
+          </button>
+        </div>
+
+        <div className="mobile-menu-drawer__language">
+          <LanguageToggle language={language} onLanguageChange={onLanguageChange} onAfterChange={closeMobileMenu} />
+        </div>
+
+        <div className="mobile-menu-drawer__links">
+          {t.navLinks.map((link) => (
+            <a key={link.href} href={link.href} onClick={closeMobileMenu}>
+              {link.label}
+            </a>
+          ))}
+        </div>
+
+        <div className="mobile-menu-drawer__actions">
+          <a className="btn btn-primary btn--full" href="#contact" onClick={closeMobileMenu}>
+            {t.buttons.requestCareServices}
+          </a>
+          <a className="btn btn-outline-dark btn--full" href={`tel:${company.phoneHref}`} onClick={closeMobileMenu}>
+            {t.buttons.call} <LtrValue>{company.phone}</LtrValue>
+          </a>
+        </div>
+      </nav>
     </header>
   );
 }
+
 
 function HeroSection({ t }) {
   return (
@@ -1231,6 +1708,12 @@ function WhyChooseCareBridge({ t }) {
 }
 
 function HealthPlanStatus({ t }) {
+  const getBadgeClass = (status) => {
+    const normalized = status.toLowerCase();
+    const inProgress = normalized.includes("progress") || normalized.includes("progreso") || status.includes("قيد");
+    return `status-badge ${inProgress ? "status-badge--progress" : "status-badge--active"}`;
+  };
+
   return (
     <AnimatedSection className="section section-teal-soft" id="health-plans">
       <div className="container">
@@ -1244,7 +1727,7 @@ function HealthPlanStatus({ t }) {
           {t.healthPlans.plans.map((plan, index) => (
             <article className="plan-status-card" style={{ "--i": index }} key={plan.name}>
               <div className="plan-status-card__top">
-                <span className="status-badge">{plan.status}</span>
+                <span className={getBadgeClass(plan.status)}>{plan.status}</span>
                 <h3>{plan.name}</h3>
               </div>
               <p>{plan.text}</p>
@@ -1258,6 +1741,7 @@ function HealthPlanStatus({ t }) {
   );
 }
 
+
 function ReferralSection({ t }) {
   return (
     <AnimatedSection className="section section-navy" id="referrals">
@@ -1265,8 +1749,22 @@ function ReferralSection({ t }) {
         <span className="section-kicker section-kicker--light">{t.referrals.kicker}</span>
         <h2>{t.referrals.heading}</h2>
         <p className="long-copy">{t.referrals.intro}</p>
+
+        <div className="referral-audience-grid">
+          <article className="referral-audience-card">
+            <h3>{t.referrals.familyCardTitle}</h3>
+            <p>{t.referrals.familyCardText}</p>
+          </article>
+
+          <article className="referral-audience-card">
+            <h3>{t.referrals.coordinatorCardTitle}</h3>
+            <p>{t.referrals.coordinatorCardText}</p>
+          </article>
+        </div>
+
         <p className="referral-note long-copy">{t.referrals.requestText}</p>
-        <div className="referral-note" aria-label={t.referrals.detailsLabel}>
+
+        <div className="referral-details-card" aria-label={t.referrals.detailsLabel}>
           <p><strong>{t.referrals.companyName}:</strong> <LtrValue>{company.name}</LtrValue></p>
           <p><strong>{t.referrals.npi}:</strong> <LtrValue>{company.npi}</LtrValue></p>
           <p><strong>{t.referrals.license}:</strong> <LtrValue>{t.referrals.licenseNumber}</LtrValue> — {t.referrals.licenseCategory}</p>
@@ -1274,7 +1772,9 @@ function ReferralSection({ t }) {
           <p><strong>{t.referrals.fax}:</strong> <LtrValue>{company.fax}</LtrValue></p>
           <p><strong>{t.referrals.email}:</strong> <a href={`mailto:${company.email}`}><LtrValue>{company.email}</LtrValue></a></p>
         </div>
+
         <p className="referral-note long-copy">{t.referrals.privacyNote}</p>
+
         <div className="btn-row">
           <a className="btn btn-secondary-light" href={`mailto:${company.email}`}>
             {t.buttons.emailCareBridge}
@@ -1287,6 +1787,7 @@ function ReferralSection({ t }) {
     </AnimatedSection>
   );
 }
+
 
 function CareersSection({ t }) {
   const emailSubject = encodeURIComponent(t.careers.emailSubject);
@@ -1336,32 +1837,63 @@ function AboutSection({ t }) {
 }
 
 function ContactForm({ t }) {
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const formEndpoint = import.meta.env?.VITE_FORM_ENDPOINT || "";
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    const formElement = event.currentTarget;
+    const form = new FormData(formElement);
 
-    const form = new FormData(event.currentTarget);
-    const subject = encodeURIComponent(t.contact.formSubject);
-    const message = encodeURIComponent(
-      [
-        t.contact.mailHeader,
-        "",
-        `${t.contact.name}: ${form.get("name") || ""}`,
-        `${t.contact.phone}: ${form.get("phone") || ""}`,
-        `${t.contact.email}: ${form.get("email") || ""}`,
-        `${t.contact.bestTime}: ${form.get("bestTime") || ""}`,
-        `${t.contact.relationship}: ${form.get("relationship") || ""}`,
-        "",
-        `${t.contact.generalMessage}:`,
-        form.get("message") || "",
-        "",
-        t.contact.privacyMailLine,
-      ].join("\n")
-    );
+    if (form.get("companyWebsite")) {
+      return;
+    }
 
-    window.location.href = `mailto:${company.email}?subject=${subject}&body=${message}`;
-    setStatus(t.contact.success);
+    if (!formEndpoint) {
+      setStatus({ type: "error", message: t.contact.formEndpointMissing });
+      return;
+    }
+
+    const payload = {
+      subject: t.contact.formSubject,
+      source: company.website,
+      language: document.documentElement.lang || "en",
+      submittedAt: new Date().toISOString(),
+      name: form.get("name") || "",
+      phone: form.get("phone") || "",
+      email: form.get("email") || "",
+      bestTime: form.get("bestTime") || "",
+      relationship: form.get("relationship") || "",
+      message: form.get("message") || "",
+      privacyAcknowledgement: Boolean(form.get("privacy")),
+      privacyNotice: t.contact.privacyMailLine,
+    };
+
+    setIsSubmitting(true);
+    setStatus(null);
+
+    try {
+      const response = await fetch(formEndpoint, {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      formElement.reset();
+      setStatus({ type: "success", message: t.contact.success });
+    } catch (error) {
+      setStatus({ type: "error", message: t.contact.error });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -1375,6 +1907,11 @@ function ContactForm({ t }) {
           </div>
 
           <form className="intake-form" onSubmit={handleSubmit}>
+            <div className="honeypot-field" aria-hidden="true">
+              <label htmlFor="companyWebsite">{t.contact.honeypotLabel}</label>
+              <input id="companyWebsite" name="companyWebsite" tabIndex="-1" autoComplete="off" />
+            </div>
+
             <div className="form-grid">
               <div className="form-field">
                 <label htmlFor="name">{t.contact.name}</label>
@@ -1429,17 +1966,18 @@ function ContactForm({ t }) {
             </div>
 
             <div className="form-field form-field--checkbox">
-              <input id="privacy" type="checkbox" required />
+              <input id="privacy" name="privacy" type="checkbox" required />
               <label htmlFor="privacy">{t.contact.privacyAcknowledgement}</label>
             </div>
 
-            <button className="btn btn-primary btn--full" type="submit">
-              {t.buttons.requestContact}
+            <button className="btn btn-primary btn--full" type="submit" disabled={isSubmitting}>
+              {isSubmitting ? t.contact.sending : t.buttons.requestContact}
             </button>
 
+            <p className="form-privacy long-copy">{t.contact.formSecurityNote}</p>
             <p className="form-privacy long-copy">{t.contact.urgentNotice}</p>
 
-            {status ? <p className="form-success">{status}</p> : null}
+            {status ? <p className={`form-status form-status--${status.type}`} role="status">{status.message}</p> : null}
           </form>
         </div>
 
@@ -1499,11 +2037,34 @@ function ContactForm({ t }) {
   );
 }
 
+
+function FAQSchema({ t }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": t.faq.items.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer,
+      },
+    })),
+  };
+
+  return (
+    <script type="application/ld+json">
+      {JSON.stringify(schema)}
+    </script>
+  );
+}
+
 function FAQSection({ t }) {
   const [open, setOpen] = useState(0);
 
   return (
     <AnimatedSection className="section section-white" id="faq">
+      <FAQSchema t={t} />
       <div className="container faq-container">
         <div className="section-header section-header--center copy-block">
           <span className="section-kicker">{t.faq.kicker}</span>
@@ -1537,6 +2098,7 @@ function FAQSection({ t }) {
     </AnimatedSection>
   );
 }
+
 
 function Footer({ t }) {
   return (
@@ -1621,13 +2183,18 @@ function MobileStickyCTA({ t }) {
 }
 
 export default function App() {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(() => {
+    const storedLanguage = window.localStorage?.getItem("carebridge-language");
+    return storedLanguage && languageOptions[storedLanguage] ? storedLanguage : "en";
+  });
+
   const t = getText(language);
   const direction = languageOptions[language]?.dir || "ltr";
 
   useEffect(() => {
     document.documentElement.lang = language;
     document.documentElement.dir = direction;
+    window.localStorage?.setItem("carebridge-language", language);
   }, [language, direction]);
 
   return (
