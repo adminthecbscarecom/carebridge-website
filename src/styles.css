@@ -1623,3 +1623,74 @@ p {
 [dir="rtl"] .address-line {
   text-align: right;
 }
+
+/* RTL card alignment fixes */
+[dir="rtl"] .trust-card,
+[dir="rtl"] .info-card,
+[dir="rtl"] .service-card,
+[dir="rtl"] .service-card__body,
+[dir="rtl"] .program-card,
+[dir="rtl"] .step-card,
+[dir="rtl"] .plan-status-card,
+[dir="rtl"] .contact-next-card,
+[dir="rtl"] .contact-info,
+[dir="rtl"] .faq-item,
+[dir="rtl"] .footer-col,
+[dir="rtl"] .footer-legal-detail,
+[dir="rtl"] .referral-layout {
+  text-align: right;
+}
+
+[dir="rtl"] .trust-card h3,
+[dir="rtl"] .trust-card p,
+[dir="rtl"] .info-card h3,
+[dir="rtl"] .info-card p,
+[dir="rtl"] .service-card h3,
+[dir="rtl"] .service-card p,
+[dir="rtl"] .program-card h3,
+[dir="rtl"] .program-card p,
+[dir="rtl"] .step-card h3,
+[dir="rtl"] .step-card p,
+[dir="rtl"] .plan-status-card h3,
+[dir="rtl"] .plan-status-card p,
+[dir="rtl"] .contact-next-card h3,
+[dir="rtl"] .contact-next-item p,
+[dir="rtl"] .contact-info p,
+[dir="rtl"] .faq-question,
+[dir="rtl"] .faq-answer p,
+[dir="rtl"] .footer-col p,
+[dir="rtl"] .footer-col li,
+[dir="rtl"] .footer-col a,
+[dir="rtl"] .footer-legal-detail p,
+[dir="rtl"] .referral-layout p {
+  text-align: right;
+}
+
+[dir="rtl"] .plan-status-card__top {
+  align-items: flex-end;
+}
+
+[dir="rtl"] .status-badge {
+  align-self: flex-end;
+}
+
+[dir="rtl"] .step-card__number {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+[dir="rtl"] .feature-list li {
+  text-align: right;
+  flex-direction: row;
+}
+
+[dir="rtl"] .feature-list__icon {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+[dir="rtl"] .ltr-value {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
