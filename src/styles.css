@@ -1987,3 +1987,129 @@ body.mobile-menu-is-open {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Header overflow fix
+   The desktop header has many items (logo, 7 nav links, 3-language toggle, and 2 CTAs).
+   Use the hamburger header on medium-width screens so the logo never overlaps navigation.
+*/
+.logo {
+  position: relative;
+  z-index: 2;
+}
+
+.header-inner {
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+.site-nav--desktop,
+.header-actions--desktop {
+  min-width: 0;
+}
+
+.site-nav--desktop a,
+.header-actions--desktop .btn,
+.header-actions--desktop .header-cta,
+.language-toggle__button {
+  white-space: nowrap;
+}
+
+/* Medium desktop / laptop: use compact header with hamburger */
+@media (min-width: 1100px) and (max-width: 1449px) {
+  body {
+    padding-bottom: var(--mobile-cta-h);
+  }
+
+  .site-nav--desktop,
+  .header-actions--desktop {
+    display: none !important;
+  }
+
+  .header-mobile-actions {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 0.45rem;
+    margin-left: auto;
+  }
+
+  [dir="rtl"] .header-mobile-actions {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex !important;
+  }
+
+  .mobile-menu-overlay {
+    display: block;
+  }
+
+  .mobile-menu-drawer {
+    display: flex;
+  }
+
+  .mobile-sticky-cta {
+    display: grid;
+  }
+
+  .logo img {
+    width: clamp(150px, 16vw, 190px);
+  }
+}
+
+/* Wide desktop: show full navigation, tuned to fit cleanly */
+@media (min-width: 1450px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .container.header-inner {
+    width: min(1320px, calc(100% - 2rem));
+  }
+
+  .site-nav--desktop,
+  .header-actions--desktop {
+    display: flex !important;
+  }
+
+  .header-mobile-actions,
+  .mobile-sticky-cta,
+  .mobile-menu-toggle,
+  .mobile-menu-overlay,
+  .mobile-menu-drawer {
+    display: none !important;
+  }
+
+  .logo img {
+    width: clamp(150px, 13vw, 190px);
+  }
+
+  .site-nav--desktop {
+    gap: clamp(0.45rem, 0.72vw, 0.8rem);
+    font-size: 0.83rem;
+  }
+
+  .header-actions--desktop {
+    gap: 0.45rem;
+  }
+
+  .btn--header {
+    min-height: 42px;
+    padding: 0 0.88rem;
+    font-size: 0.84rem;
+  }
+
+  .header-cta {
+    min-height: 42px;
+    padding: 0 0.88rem;
+    font-size: 0.84rem;
+  }
+
+  .language-toggle__button {
+    min-height: 32px;
+    padding: 0 0.56rem;
+    font-size: 0.76rem;
+  }
+}
