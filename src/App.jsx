@@ -940,6 +940,15 @@ function Icon({ name, className = "", decorative = true }) {
   return icons[name] || icons.check;
 }
 
+
+function LtrValue({ children, className = "" }) {
+  return (
+    <bdi className={`ltr-value ${className}`.trim()} dir="ltr">
+      {children}
+    </bdi>
+  );
+}
+
 function AnimatedSection({ children, className = "", id }) {
   const [ref, inView] = useInView();
 
@@ -1041,7 +1050,7 @@ function HeroSection({ t }) {
           <p className="hero-trust">{t.hero.trust}</p>
           <div className="btn-row">
             <a className="btn btn-primary" href={`tel:${company.phoneHref}`}>
-              {t.buttons.call} {company.phone}
+              {t.buttons.call} <LtrValue>{company.phone}</LtrValue>
             </a>
             <a className="btn btn-secondary-light" href="#contact">
               {t.buttons.requestServices}
@@ -1254,12 +1263,12 @@ function ReferralSection({ t }) {
         <p className="long-copy">{t.referrals.intro}</p>
         <p className="referral-note long-copy">{t.referrals.requestText}</p>
         <div className="referral-note" aria-label={t.referrals.detailsLabel}>
-          <p><strong>{t.referrals.companyName}:</strong> {company.name}</p>
-          <p><strong>{t.referrals.npi}:</strong> {company.npi}</p>
-          <p><strong>{t.referrals.license}:</strong> {company.license}</p>
-          <p><strong>{t.referrals.phone}:</strong> <a href={`tel:${company.phoneHref}`}>{company.phone}</a></p>
-          <p><strong>{t.referrals.fax}:</strong> {company.fax}</p>
-          <p><strong>{t.referrals.email}:</strong> <a href={`mailto:${company.email}`}>{company.email}</a></p>
+          <p><strong>{t.referrals.companyName}:</strong> <LtrValue>{company.name}</LtrValue></p>
+          <p><strong>{t.referrals.npi}:</strong> <LtrValue>{company.npi}</LtrValue></p>
+          <p><strong>{t.referrals.license}:</strong> <LtrValue>{company.license}</LtrValue></p>
+          <p><strong>{t.referrals.phone}:</strong> <a href={`tel:${company.phoneHref}`}><LtrValue>{company.phone}</LtrValue></a></p>
+          <p><strong>{t.referrals.fax}:</strong> <LtrValue>{company.fax}</LtrValue></p>
+          <p><strong>{t.referrals.email}:</strong> <a href={`mailto:${company.email}`}><LtrValue>{company.email}</LtrValue></a></p>
         </div>
         <p className="referral-note long-copy">{t.referrals.privacyNote}</p>
         <div className="btn-row">
@@ -1267,7 +1276,7 @@ function ReferralSection({ t }) {
             {t.buttons.emailCareBridge}
           </a>
           <a className="btn btn-secondary-light" href={`tel:${company.phoneHref}`}>
-            {t.buttons.call} {company.phone}
+            {t.buttons.call} <LtrValue>{company.phone}</LtrValue>
           </a>
         </div>
       </div>
@@ -1291,7 +1300,7 @@ function CareersSection({ t }) {
             {t.buttons.applyByEmail}
           </a>
           <a className="btn btn-outline-dark" href={`tel:${company.phoneHref}`}>
-            {t.buttons.call} {company.phone}
+            {t.buttons.call} <LtrValue>{company.phone}</LtrValue>
           </a>
         </div>
       </div>
@@ -1436,29 +1445,29 @@ function ContactForm({ t }) {
 
             <p>
               <span className="contact-label">{t.contact.labels.phone}</span>
-              <a href={`tel:${company.phoneHref}`}>{company.phone}</a>
+              <a href={`tel:${company.phoneHref}`}><LtrValue>{company.phone}</LtrValue></a>
             </p>
 
             <p>
               <span className="contact-label">{t.contact.labels.fax}</span>
-              {company.fax}
+              <LtrValue>{company.fax}</LtrValue>
             </p>
 
             <p>
               <span className="contact-label">{t.contact.labels.email}</span>
-              <a href={`mailto:${company.email}`}>{company.email}</a>
+              <a href={`mailto:${company.email}`}><LtrValue>{company.email}</LtrValue></a>
             </p>
 
             <p>
               <span className="contact-label">{t.contact.labels.hours}</span>
-              <span className="contact-hours">{t.company.hours}</span>
+              <span className="contact-hours"><LtrValue>{t.company.hours}</LtrValue></span>
             </p>
 
             <p>
               <span className="contact-label">{t.contact.labels.office}</span>
               <a className="address-block" href={company.mapHref} target="_blank" rel="noreferrer">
-                <span className="address-line">{company.addressLine1}</span>
-                <span className="address-line">{company.addressLine2}</span>
+                <span className="address-line"><LtrValue>{company.addressLine1}</LtrValue></span>
+                <span className="address-line"><LtrValue>{company.addressLine2}</LtrValue></span>
               </a>
             </p>
           </address>
@@ -1531,7 +1540,7 @@ function Footer({ t }) {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-col footer-brand">
-            <p className="footer-brand-name">{company.name}</p>
+            <p className="footer-brand-name"><LtrValue>{company.name}</LtrValue></p>
             <p className="footer-tagline long-copy">{t.footer.description}</p>
           </div>
 
@@ -1550,14 +1559,14 @@ function Footer({ t }) {
             <p className="footer-heading">{t.footer.contact}</p>
             <ul>
               <li>
-                <a href={`tel:${company.phoneHref}`}>{company.phone}</a>
+                <a href={`tel:${company.phoneHref}`}><LtrValue>{company.phone}</LtrValue></a>
               </li>
               <li>
-                <a href={`mailto:${company.email}`}>{company.email}</a>
+                <a href={`mailto:${company.email}`}><LtrValue>{company.email}</LtrValue></a>
               </li>
               <li className="footer-hours">
-                <span>{t.company.hoursLine1}</span>
-                <span>{t.company.hoursLine2}</span>
+                <span><LtrValue>{t.company.hoursLine1}</LtrValue></span>
+                <span><LtrValue>{t.company.hoursLine2}</LtrValue></span>
               </li>
             </ul>
           </div>
@@ -1565,8 +1574,8 @@ function Footer({ t }) {
           <div className="footer-col">
             <p className="footer-heading">{t.footer.office}</p>
             <a className="address-block" href={company.mapHref} target="_blank" rel="noreferrer">
-              <span className="address-line">{company.addressLine1}</span>
-              <span className="address-line">{company.addressLine2}</span>
+              <span className="address-line"><LtrValue>{company.addressLine1}</LtrValue></span>
+              <span className="address-line"><LtrValue>{company.addressLine2}</LtrValue></span>
             </a>
           </div>
         </div>
@@ -1587,7 +1596,7 @@ function Footer({ t }) {
           </div>
         </div>
 
-        <p className="footer-bottom">© {new Date().getFullYear()} {company.name}. {t.footer.rights}</p>
+        <p className="footer-bottom">© <LtrValue>{new Date().getFullYear()}</LtrValue> <LtrValue>{company.name}</LtrValue>. {t.footer.rights}</p>
       </div>
     </footer>
   );
